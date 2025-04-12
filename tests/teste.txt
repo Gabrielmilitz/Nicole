@@ -1,0 +1,41 @@
+gabriel
+0.0007 0.0001 0.0002 0.0018 0.0009 0.0005 0.0012
+
+Total dos valores: 0.0054
+
+
+pedro
+0.0016 0.0005 0.0004 0.0018 0.0015
+
+Total dos valores: 0.0058
+
+Processamento concluído.
+
+
+ana
+0.0001 0.0014 0.0001
+
+Total dos valores: 0.0016
+
+
+Recebe uma entrada (pergunta do usuário)
+
+Codifica essa entrada (transforma letras em números pequenos)
+
+Compara com um conhecimento aprendido (processador.json)
+
+Decide se vai responder ou não baseado na similaridade
+
+Isso já é:
+
+Processamento simbólico (tratando símbolos e transformando em dados numéricos)
+
+Reconhecimento de padrões (comparar similaridades)
+
+Tomada de decisão (escolher ou não uma resposta)
+
+Aprendizado supervisionado manual (você treina ela dando novas frases e significados
+
+
+
+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

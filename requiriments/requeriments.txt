@@ -1,0 +1,8 @@
+Flask
+sentence-transformers
+requests
+PyMuPDF
+Pillow
+waitress
+torch
+transformers

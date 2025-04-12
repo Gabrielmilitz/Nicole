@@ -1,0 +1,1188 @@
+{
+    "gabriel": {
+        "encodificacao": "0.0007 0.0001 0.0002 0.0018 0.0009 0.0005 0.0012",
+        "total": 0.0054,
+        "significado": "Nome do criador"
+    },
+    "oi": {
+        "encodificacao": "0.0015 0.0009",
+        "total": 0.0024,
+        "significado": "Olá, meu nome É Nicole! Sou uma assistente virtual em treinamento. Como posso ajudar hoje?"
+    },
+    "olá": {
+        "encodificacao": "0.0015 0.0012 0",
+        "total": 0.0027,
+        "significado": "Olá, como posso ajudar?"
+    },
+    "ola": {
+        "encodificacao": "0.0015 0.0012 0.0001",
+        "total": 0.0028,
+        "significado": "olá .."
+    },
+    "o": {
+        "encodificacao": "0.0015",
+        "total": 0.0015,
+        "significado": "não entendi"
+    },
+    "eai": {
+        "encodificacao": "0.0005 0.0001 0.0009",
+        "total": 0.0015,
+        "significado": "Olá, como posso ajudar ?"
+    },
+    "estou feliz": {
+        "encodificacao": "0.0005 0.0019 0.002 0.0015 0.0021 0 0.0006 0.0005 0.0012 0.0009 0.0026",
+        "total": 0.0138,
+        "significado": "Nossa! Fico feliz em saber disso. Como posso ajudar?"
+    },
+    "bom dia": {
+        "encodificacao": "0.0002 0.0015 0.0013 0 0.0004 0.0009 0.0001",
+        "total": 0.0044,
+        "significado": "Bom dia! Gostaria de saber em como posso ajudar voce? digite < System >"
+    },
+    "boa tarde": {
+        "codificacao": "0.0002 0.0015 0.0001 0 0.002 0.0001 0.0018 0.0004 0.0005",
+        "total": 0.0066,
+        "significado": "Boa tarde! Como posso ajudar?"
+    },
+    "boa noite": {
+        "encodificacao": "0.0002 0.0015 0.0001 0 0.0014 0.0015 0.0009 0.002 0.0005",
+        "total": 0.0081,
+        "significado": "Gostaria de saber em como posso ajudar voce? digite < System >"
+    },
+    "gato": {
+        "encodificacao": "0.0007 0.0001 0.002 0.0015",
+        "total": 0.0043,
+        "significado": "Eu adoro gatos, acredito que logo vou conseguir gerar lindas imagens"
+    },
+    "cachorro": {
+        "encodificacao": "0.0003 0.0001 0.0003 0.0008 0.0015 0.0018 0.0018 0.0015",
+        "total": 0.0081,
+        "significado": "Eu amo cachorros! você gostaria de ver um ?"
+    },
+    "ver um cachorro": {
+        "encodificacao": "0.0022 0.0005 0.0018 0 0.0021 0.0013 0 0.0003 0.0001 0.0003 0.0008 0.0015 0.0018 0.0018 0.0015",
+        "total": 0.016,
+        "significado": "https://www.bing.com/images/search?view=detailV2&ccid=9n9UtbD4&id=1A8D94842E5696FA4BDF9E45E9922DD8EE097E37&thid=OIP.9n9UtbD4BTgRB3n68PpIFAHaE7&mediaurl=https%3a%2f%2fsuper.abril.com.br%2fwp-content%2fuploads%2f2018%2f05%2ffilhotes-de-cachorro-alcanc3a7am-o-c3a1pice-de-fofura-com-8-semanas1.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.f67f54b5b0f80538110779faf0fa4814%3frik%3dN34J7tgtkulFng%26pid%3dImgRaw%26r%3d0&exph=682&expw=1024&q=imagem+de+um+cachorro&simid=607994553606803417&FORM=IRPRST&ck=387D541DDD67BA0BB34E5F1A98616BD7&selectedIndex=0&itb=0&idpp=overlayview&ajaxhist=0&ajaxserp=0"
+    },
+    "& c:/users/gabriel/appdata/local/programs/python/python313/python.exe \"c:/users/gabriel/desktop/falta so correcao de erros/brains.py\"": {
+        "encodificacao": "0 0 0.0003 0 0 0.0021 0.0019 0.0005 0.0018 0.0019 0 0.0007 0.0001 0.0002 0.0018 0.0009 0.0005 0.0012 0 0.0001 0.0016 0.0016 0.0004 0.0001 0.002 0.0001 0 0.0012 0.0015 0.0003 0.0001 0.0012 0 0.0016 0.0018 0.0015 0.0007 0.0018 0.0001 0.0013 0.0019 0 0.0016 0.0025 0.002 0.0008 0.0015 0.0014 0 0.0016 0.0025 0.002 0.0008 0.0015 0.0014 0 0 0 0 0.0016 0.0025 0.002 0.0008 0.0015 0.0014 0 0.0005 0.0024 0.0005 0 0 0.0003 0 0 0.0021 0.0019 0.0005 0.0018 0.0019 0 0.0007 0.0001 0.0002 0.0018 0.0009 0.0005 0.0012 0 0.0004 0.0005 0.0019 0.0011 0.002 0.0015 0.0016 0 0.0006 0.0001 0.0012 0.002 0.0001 0 0.0019 0.0015 0 0.0003 0.0015 0.0018 0.0018 0.0005 0.0003 0.0001 0.0015 0 0.0004 0.0005 0 0.0005 0.0018 0.0018 0.0015 0.0019 0 0.0002 0.0018 0.0001 0.0009 0.0014 0.0019 0 0.0016 0.0025 0",
+        "total": 0.1245,
+        "significado": "oi"
+    },
+    "obrigado": {
+        "encodificacao": "0.0015 0.0002 0.0018 0.0009 0.0007 0.0001 0.0004 0.0015",
+        "total": 0.0071,
+        "significado": "de nada"
+    },
+    "agradeço": {
+        "encodificacao": "0.0001 0.0007 0.0018 0.0001 0.0004 0.0005 0 0.0015",
+        "total": 0.0051,
+        "significado": "de nada"
+    },
+    "tudo bem": {
+        "encodificacao": "0.002 0.0021 0.0004 0.0005 0 0.0002 0.0005 0.0013",
+        "total": 0.0069,
+        "significado": "Sim! Está tudo ótimo. Espero que com você também!"
+    },
+    "quem é você": {
+        "encodificacao": "0.0011 0.0005 0.0005 0.0013 0 0.0005 0 0.0015 0.0009 0.0005",
+        "total": 0.0068,
+        "significado": "Sou Nicole, uma assistente virtual em treinamento para te ajudar!"
+    },
+    "qual seu nome": {
+        "encodificacao": "0.0011 0.0019 0.0001 0.0012 0 0.0002 0.0005 0.0021 0 0.0014 0.0015 0.0013",
+        "total": 0.0123,
+        "significado": "Meu nome é Nicole!"
+    },
+    "me ajude": {
+        "encodificacao": "0.0013 0.0005 0 0.0001 0.0007 0.0005 0.0004 0.0005",
+        "total": 0.0037,
+        "significado": "Claro! Estou aqui para ajudar. Me diga o que você precisa."
+    },
+    "preciso de ajuda": {
+        "encodificacao": "0.0002 0.0019 0.0005 0.0003 0.0009 0.0018 0 0.0004 0.0005 0.0001 0.0007 0.0004 0.0005",
+        "total": 0.0077,
+        "significado": "Conte comigo! Vou fazer o meu melhor para te ajudar."
+    },
+    "quero saber mais": {
+        "encodificacao": "0.0011 0.0002 0.0005 0.0013 0 0.0002 0.0001 0.0002 0.0005 0 0.0013 0.0001 0.0009",
+        "total": 0.0084,
+        "significado": "Ótimo! Pergunte à vontade."
+    },
+    "não sei": {
+        "encodificacao": "0.0014 0.0001 0.0018 0 0.0019 0.0005 0.0009",
+        "total": 0.0056,
+        "significado": "Sem problemas! Estou aqui para te ajudar a descobrir."
+    },
+    "estou triste": {
+        "encodificacao": "0.0005 0.0019 0.002 0.0015 0.0021 0 0.0019 0.0015 0.0009 0.002 0.0005",
+        "total": 0.0143,
+        "significado": "Sinto muito... Estou aqui para te apoiar. Quer conversar sobre isso?"
+    },
+    "estou bravo": {
+        "encodificacao": "0.0005 0.0019 0.002 0.0015 0.0021 0 0.0002 0.0018 0.0001 0.0015 0.0019",
+        "total": 0.0139,
+        "significado": "Respire fundo... Quer me contar o que aconteceu?"
+    },
+    "estou cansado": {
+        "encodificacao": "0.0005 0.0019 0.002 0.0015 0.0021 0 0.0003 0.0001 0.0018 0.0001 0.0004 0.0015 0.0018",
+        "total": 0.0149,
+        "significado": "Você merece descansar! Cuide-se bem."
+    },
+    "gosto de você": {
+        "encodificacao": "0.0007 0.0015 0.0018 0.002 0.0015 0 0.0004 0.0005 0 0.0015 0.0009 0.0005",
+        "total": 0.0098,
+        "significado": "Eu também gosto de interagir com você! 💬"
+    },
+    "vamos conversar": {
+        "encodificacao": "0.0022 0.0001 0.0013 0.0015 0.0018 0 0.0003 0.0015 0.0018 0.0015 0.0019",
+        "total": 0.0121,
+        "significado": "Claro! Sobre o que você quer conversar?"
+    },
+    "abra o sistema": {
+        "encodificacao": "0.0001 0.0002 0.0001 0.0001 0 0.0015 0 0.002 0.0018 0.0001 0.0005 0.0013",
+        "total": 0.0086,
+        "significado": "Abrindo o sistema! Aguarde um momento..."
+    },
+    "me mostre opções": {
+        "encodificacao": "0.0013 0.0005 0 0.0013 0.0015 0.002 0.0018 0 0.0015 0.0014 0.0011 0.0009 0.0014",
+        "total": 0.0135,
+        "significado": "Aqui estão algumas opções disponíveis para você!"
+    },
+    "estou cansado e triste": {
+        "encodificacao": "0.0005 0.0019 0.002 0.0015 0.0021 0 0.0003 0.0001 0.0018 0.0001 0.0004 0.0015 0.0018 0 0.0019 0.0015 0.0009 0.002 0.0005",
+        "total": 0.0205,
+        "significado": "Parece que foi um dia difícil... Respire fundo, você é forte!"
+    },
+    "você é legal": {
+        "encodificacao": "0.0022 0.0015 0.0005 0.0015 0 0.0015 0.0012 0.0007 0.0001",
+        "total": 0.0092,
+        "significado": "Ahh, você também é incrível! Obrigada! 😊"
+    },
+    "não gosto disso": {
+        "encodificacao": "0.0014 0.0001 0.0018 0 0.0007 0.0015 0.0018 0.002 0 0.0018 0.0009 0.002",
+        "total": 0.0114,
+        "significado": "Tudo bem! Vamos mudar para algo melhor."
+    },
+    "preciso descansar": {
+        "encodificacao": "0.0002 0.0019 0.0005 0.0003 0.0009 0.0018 0 0.0004 0.0005 0.0004 0.0001 0.0018 0.0001",
+        "total": 0.0089,
+        "significado": "Descansar é essencial! Tenha um bom descanso."
+    },
+    "estou com medo": {
+        "encodificacao": "0.0005 0.0019 0.002 0.0015 0.0021 0 0.0003 0.0015 0.0018 0 0.0013 0.0005 0.0004 0.0018",
+        "total": 0.0126,
+        "significado": "Calma... Estou com você. Vai ficar tudo bem!"
+    },
+    "me anime": {
+        "encodificacao": "0.0013 0.0005 0 0.0001 0.0018 0.0013 0.0005",
+        "total": 0.0055,
+        "significado": "Você é mais forte do que imagina! Continue firme! 💪"
+    },
+    "me conte uma piada": {
+        "encodificacao": "0.0013 0.0005 0 0.0003 0.0015 0.0018 0.0005 0 0.0021 0.0013 0.0001 0.0004 0.0001",
+        "total": 0.0094,
+        "significado": "Por que o livro foi ao médico? Porque ele estava com muitas páginas doentes! 😂"
+    },
+    "está tudo bem": {
+        "encodificacao": "0.0005 0.0019 0.002 0.0001 0 0.002 0.0021 0.0004 0.0005 0",
+        "total": 0.0085,
+        "significado": "Fico feliz em saber disso! 😊"
+    },
+    "qual a missão da empresa": {
+        "encodificacao": "0.0011 0.0001 0.0001 0.0012 0 0.0001 0.0019 0.0021 0.0015 0 0.0001 0.0013 0.0005 0.0018 0.0001",
+        "total": 0.0138,
+        "significado": "A missão da empresa é entregar produtos e serviços de excelência, gerando valor para clientes, colaboradores e sociedade."
+    },
+    "qual a visão da empresa": {
+        "encodificacao": "0.0011 0.0001 0.0001 0.0012 0 0.0019 0.0005 0.0026 0.0009 0 0.0001 0.0013 0.0005 0.0018 0.0001",
+        "total": 0.0137,
+        "significado": "A visão da empresa é ser referência em inovação e qualidade no mercado em que atua."
+    },
+    "quais são os valores da empresa": {
+        "encodificacao": "0.0011 0.0001 0.0005 0.0021 0 0.0019 0.0005 0.0015 0 0.0015 0.0018 0 0.0015 0.0019 0.0018 0 0.0001 0.0013 0.0005 0.0018 0.0001",
+        "total": 0.0189,
+        "significado": "Os valores da empresa incluem ética, respeito, responsabilidade social, inovação contínua e foco no cliente."
+    },
+    "como funciona o processo de vendas": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0002 0.0021 0.0019 0.0008 0.0001 0.0001 0 0.0015 0.002 0.0005 0.0019 0.0014 0.0005 0.0018",
+        "total": 0.0193,
+        "significado": "O processo de vendas inicia com a prospecção de clientes, passa pela apresentação de propostas, negociação e finaliza com o fechamento do contrato."
+    },
+    "como é feita a gestão de projetos": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0015 0 0.0006 0.0005 0.0019 0 0.0003 0.0019 0.0015 0.0013 0.0005 0.002",
+        "total": 0.0173,
+        "significado": "A gestão de projetos é realizada através de metodologias ágeis ou tradicionais, buscando garantir a entrega no prazo, custo e qualidade esperados."
+    },
+    "o que é cultura organizacional": {
+        "encodificacao": "0.0015 0 0.0011 0.0005 0 0.0015 0.0005 0.0021 0.0005 0.0018 0.0001 0.0004 0.0005 0.0018 0.0001 0.0005 0.0013 0.0001",
+        "total": 0.0176,
+        "significado": "Cultura organizacional é o conjunto de valores, crenças e práticas que definem o comportamento e as decisões dentro da empresa."
+    },
+    "como melhorar a comunicação interna": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0013 0.0005 0.0015 0.0001 0.0018 0.0001 0.0004 0.0015 0.0019 0.0018 0.0001",
+        "total": 0.0156,
+        "significado": "A comunicação interna pode ser melhorada através de reuniões regulares, uso de canais digitais eficientes e criação de uma cultura de feedback aberto."
+    },
+    "qual a importância da inovação nas empresas": {
+        "encodificacao": "0.0011 0.0001 0.0001 0.0012 0 0.0005 0.0015 0.0015 0.0021 0.0015 0 0.0014 0.0018 0.0005 0.0005 0.0019 0.0013 0.0005 0.0018",
+        "total": 0.0196,
+        "significado": "A inovação é essencial para manter a competitividade, responder às mudanças de mercado e gerar crescimento sustentável para as empresas."
+    },
+    "o que são indicadores de desempenho": {
+        "encodificacao": "0.0015 0 0.0011 0.0005 0 0.0019 0.002 0.0003 0.0018 0.0005 0.0002 0.0001 0.0018 0 0.0004 0.0005 0.0019 0.0015",
+        "total": 0.0167,
+        "significado": "Indicadores de desempenho são métricas usadas para medir e acompanhar a eficiência, eficácia e qualidade dos processos dentro da organização."
+    },
+    "como fazer um plano de negócios": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0006 0.0001 0.0004 0 0.0021 0.0013 0 0.0004 0.0005 0.0007 0.0015 0.0018",
+        "total": 0.0153,
+        "significado": "Para fazer um plano de negócios é importante definir o mercado-alvo, estratégias de marketing, projeções financeiras e objetivos de curto e longo prazo."
+    },
+    "como funciona as vendas": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0006 0.0021 0.0014 0.0003 0.0009 0.0015 0.0014 0.0001 0 0.0001 0.0019 0 0.0022 0.0005 0.0014 0.0004 0.0001 0.0019",
+        "total": 0.0214,
+        "significado": "as vendas são um processo que envolvem desde a concepção do produto até o processo final de entrega para o cliente"
+    },
+    "o que é fluxo de caixa": {
+        "encodificacao": "0.0015 0 0.0011 0.0005 0 0.0006 0.0012 0.0021 0.0017 0 0.0003 0.0001 0.0012 0.0024 0 0.0003 0.0001 0.0017 0.0001",
+        "total": 0.0185,
+        "significado": "Fluxo de caixa é o movimento de entrada e saída de dinheiro em um período. Ele demonstra a capacidade da empresa de honrar compromissos e fazer investimentos."
+    },
+    "como fazer um orçamento empresarial": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0006 0.0001 0.0004 0 0.0021 0.0013 0 0.0015 0.0014 0.0012 0.0013 0.0001 0.0015 0.0014 0.0018 0.0001 0.0005 0.0001 0.0012",
+        "total": 0.0236,
+        "significado": "Para elaborar um orçamento empresarial é necessário estimar receitas, prever despesas, planejar investimentos e monitorar o desempenho financeiro regularmente."
+    },
+    "o que é balanço patrimonial": {
+        "encodificacao": "0.0015 0 0.0011 0.0005 0 0.0002 0.0001 0.0012 0.0014 0.0013 0.0014 0 0.0016 0.0001 0.0019 0.0009 0.0013 0.0001",
+        "total": 0.0162,
+        "significado": "Balanço patrimonial é um relatório contábil que apresenta a posição financeira da empresa em determinado período, listando ativos, passivos e patrimônio líquido."
+    },
+    "o que é receita líquida": {
+        "encodificacao": "0.0015 0 0.0011 0.0005 0 0.0018 0.0005 0.0003 0.0005 0.0021 0 0.0012 0.0009 0.0021 0.0001 0.0004 0.0005",
+        "total": 0.0154,
+        "significado": "Receita líquida é o valor obtido pela empresa após deduzir impostos, devoluções e descontos da receita bruta."
+    },
+    "qual a diferença entre lucro e faturamento": {
+        "encodificacao": "0.0011 0.0001 0.0012 0 0.0004 0.0009 0.0006 0.0005 0.0018 0.0001 0 0.0015 0.0021 0.0018 0.0019 0 0.0012 0.0021 0.0018 0.0015 0.0018 0.0001 0.0002 0.0015 0.0013 0.0015",
+        "total": 0.0265,
+        "significado": "Lucro é o valor que sobra após deduzir todas as despesas da receita. Já faturamento é o valor total de vendas realizadas antes dos descontos."
+    },
+    "o que é capital de giro": {
+        "encodificacao": "0.0015 0 0.0011 0.0005 0 0.0003 0.0001 0.0016 0.0001 0.0004 0 0.0004 0.0009 0.0018 0.0015",
+        "total": 0.0136,
+        "significado": "Capital de giro representa os recursos que a empresa utiliza para financiar suas operações no curto prazo, como estoque e contas a receber."
+    },
+    "como reduzir custos": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0018 0.0005 0.0004 0.0009 0.0001 0.0019 0.0019",
+        "total": 0.0116,
+        "significado": "Para reduzir custos, é importante analisar os processos internos, renegociar contratos, eliminar desperdícios e buscar ganhos de eficiência."
+    },
+    "o que é margem de lucro": {
+        "encodificacao": "0.0015 0 0.0011 0.0005 0 0.0013 0.0001 0.0018 0.0007 0 0.0004 0.0009 0.0018",
+        "total": 0.0118,
+        "significado": "Margem de lucro indica o percentual do faturamento que se transforma em lucro, mostrando a eficiência da empresa em gerar ganhos."
+    },
+    "por que fazer análise financeira": {
+        "encodificacao": "0.0016 0.0015 0.0018 0 0.0011 0.0005 0 0.0006 0.0001 0.0004 0 0.0001 0"
+    },
+    "como fazer recrutamento e seleção": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0006 0.0001 0.0004 0 0.0018 0.0005 0.0013 0.0021 0.0015 0.0018 0.0005 0 0.0019 0.0005 0.0012 0.0005 0.0003 0.0015",
+        "total": 0.0214,
+        "significado": "O processo de recrutamento e seleção envolve atrair candidatos, analisar currículos, realizar entrevistas e escolher o perfil mais adequado às necessidades da empresa."
+    },
+    "como desenvolver líderes na empresa": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0004 0.0005 0.0002 0.0015 0.0022 0.0015 0.0005 0.0018 0 0.0015 0.0012 0.0018 0.0001 0.0005 0.0018 0.0001",
+        "total": 0.0189,
+        "significado": "Para desenvolver líderes é importante oferecer treinamentos, programas de mentoring, avaliações de desempenho e planos de carreira estruturados."
+    },
+    "qual a importância do feedback": {
+        "encodificacao": "0.0011 0.0001 0.0012 0 0.0005 0.0015 0.0015 0.0021 0.0015 0 0.0006 0.0005 0.0004 0.0005 0.0001 0.0003 0.0005",
+        "total": 0.0159,
+        "significado": "O feedback é essencial para promover o crescimento profissional, alinhar expectativas e reforçar comportamentos positivos dentro da organização."
+    },
+    "como melhorar o clima organizacional": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0013 0.0005 0.0015 0.0001 0.0018 0.0001 0.0004 0.0015 0 0.0015 0.0005 0.0018 0.0001 0.0005 0.0013 0.0001",
+        "total": 0.0178,
+        "significado": "Para melhorar o clima organizacional, é importante incentivar a comunicação aberta, reconhecer esforços, promover integração entre equipes e valorizar o bem-estar."
+    },
+    "como fazer integração de novos colaboradores": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0006 0.0001 0.0004 0 0.0013 0.0014 0.0005 0.0018 0.0001 0.0005 0.0015 0 0.0013 0.0015 0.0015 0.0015 0.0018 0.0015",
+        "total": 0.0228,
+        "significado": "A integração de novos colaboradores deve incluir apresentação da empresa, treinamentos iniciais, acompanhamento próximo e apoio para adaptação à cultura organizacional."
+    },
+    "qual o papel do rh na empresa": {
+        "encodificacao": "0.0011 0.0001 0.0012 0 0.0015 0 0.0016 0.0005 0.0016 0 0.0015 0.0018 0 0.0015 0.0012 0.0018 0.0001",
+        "total": 0.0147,
+        "significado": "O RH é responsável por gerir pessoas, promover desenvolvimento, garantir relações de trabalho saudáveis e apoiar as estratégias organizacionais."
+    },
+    "como avaliar desempenho de funcionários": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0001 0.0022 0.0001 0.0004 0 0.0004 0.0005 0.0019 0.0018 0 0.0006 0.0021 0.0013 0.0014 0.0015 0.0018 0.0015",
+        "total": 0.0227,
+        "significado": "A avaliação de desempenho consiste em medir resultados, comportamentos e competências dos colaboradores, visando o crescimento profissional e o alinhamento com os objetivos da empresa."
+    },
+    "como reter talentos": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0018 0.0005 0.0020 0 0.0001 0.0005 0.0020 0.0019",
+        "total": 0.0136,
+        "significado": "Para reter talentos, é fundamental oferecer boas condições de trabalho, planos de carreira, programas de reconhecimento e ambiente de desenvolvimento contínuo."
+    },
+    "quais são os benefícios de investir em treinamento": {
+        "encodificacao": "0.0011 0.0001 0.0005 0.0021 0 0.0019 0.0005 0.0015 0 0.0015 0.0018 0 0.0006 0.0005 0.0004 0.0005 0.0009 0.0015 0.0018 0 0.0020 0.0005 0.0019 0.0013 0.0015 0.0019 0.0015",
+        "total": 0.0278,
+        "significado": "Investir em treinamento gera aumento de produtividade, motivação, melhoria da qualidade do trabalho e maior retenção de talentos na empresa."
+    },
+    "como ser um bom líder": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0019 0.0005 0.0018 0.0021 0 0.0002 0.0015 0.0013 0 0.0011 0.0009 0.0004 0.0018",
+        "total": 0.0167,
+        "significado": "Para ser um bom líder é necessário ouvir a equipe, dar feedbacks claros, inspirar pelo exemplo e promover um ambiente de respeito e confiança."
+    },
+    "como liderar equipes de alta performance": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0012 0.0009 0.0004 0.0005 0.0018 0.0015 0 0.0005 0.0009 0.0018 0.0005 0.0018 0.0005 0.0018 0.0005 0.0015",
+        "total": 0.0207,
+        "significado": "Liderar equipes de alta performance exige comunicação eficiente, definição de metas claras, reconhecimento constante e estímulo ao desenvolvimento individual."
+    },
+    "qual o papel do líder nas organizações": {
+        "encodificacao": "0.0011 0.0001 0.0012 0 0.0015 0 0.0016 0.0005 0.0016 0 0.0011 0.0009 0.0004 0.0018 0 0.0015 0.0018 0.0015 0.0013 0.0001 0.0018 0.0001",
+        "total": 0.0191,
+        "significado": "O papel do líder nas organizações é orientar, motivar, apoiar o desenvolvimento dos colaboradores e alinhar a equipe aos objetivos estratégicos."
+    },
+    "como motivar a equipe": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0013 0.0015 0.0020 0.0009 0.0005 0.0015",
+        "total": 0.012,
+        "significado": "Para motivar uma equipe, é importante reconhecer conquistas, oferecer desafios, incentivar o crescimento pessoal e criar um ambiente de valorização e respeito."
+    },
+    "quais são as características de um bom líder": {
+        "encodificacao": "0.0011 0.0001 0.0005 0.0021 0 0.0019 0.0005 0.0015 0 0.0001 0.0019 0.0001 0.0003 0.0018 0.0005 0.0019 0.0005 0.0004 0 0.0021 0.0002 0.0002 0 0.0011 0.0009 0.0004 0.0018",
+        "total": 0.0262,
+        "significado": "As principais características de um bom líder são: empatia, comunicação clara, responsabilidade, inteligência emocional e capacidade de inspirar a equipe."
+    },
+    "como lidar com conflitos na equipe": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0012 0.0009 0.0004 0.0005 0.0018 0.0005 0.0015 0 0.0015 0.0018 0.0015 0.0013 0.0005 0.0018",
+        "total": 0.0182,
+        "significado": "Para lidar com conflitos na equipe, é fundamental ouvir todas as partes, manter a imparcialidade, buscar soluções em conjunto e promover o diálogo aberto."
+    },
+    "como melhorar a liderança pessoal": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0013 0.0005 0.0015 0.0001 0.0018 0.0001 0.0004 0.0015 0 0.0011 0.0005 0.0013 0.0005 0.0015",
+        "total": 0.0175,
+        "significado": "Para melhorar sua liderança pessoal, é importante investir em autoconhecimento, desenvolver habilidades de comunicação e buscar feedbacks contínuos para evoluir."
+    },
+    "quais são os estilos de liderança": {
+        "encodificacao": "0.0011 0.0001 0.0005 0.0021 0 0.0019 0.0005 0.0015 0 0.0015 0.0018 0 0.0005 0.0018 0.0012 0.0018 0.0005 0.0013 0.0005",
+        "total": 0.0175,
+        "significado": "Existem diversos estilos de liderança, como liderança autocrática, democrática, liberal e situacional. Cada um é mais adequado para contextos e equipes específicas."
+    },
+    "como ser um líder inspirador": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0019 0.0005 0.0018 0.0021 0 0.0002 0.0015 0.0013 0 0.0011 0.0009 0.0004 0.0018 0.0009 0.0019 0.0001",
+        "total": 0.0196,
+        "significado": "Um líder inspirador é aquele que lidera pelo exemplo, comunica claramente seus valores, reconhece os esforços da equipe e motiva as pessoas a alcançarem o melhor de si mesmas."
+    },
+    "como oferecer um bom atendimento": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0015 0.0005 0.0005 0.0015 0 0.0002 0.0015 0.0018 0.0005 0.0019 0.0013 0.0015",
+        "total": 0.0155,
+        "significado": "Para oferecer um bom atendimento é fundamental ser atencioso, ouvir as necessidades do cliente, agir com empatia e buscar sempre superar expectativas."
+    },
+    "como lidar com clientes difíceis": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0012 0.0009 0.0004 0.0005 0.0018 0 0.0013 0.0015 0.0015 0.0013 0.0005 0.0018",
+        "total": 0.017,
+        "significado": "Lidar com clientes difíceis exige manter a calma, ouvir com paciência, demonstrar compreensão, buscar soluções práticas e manter o profissionalismo em todo momento."
+    },
+    "como fidelizar clientes": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0006 0.0009 0.0004 0.0005 0.0018 0.0012 0.0005 0.0018",
+        "total": 0.0138,
+        "significado": "Fidelizar clientes é construir relacionamentos de confiança, oferecer um atendimento de qualidade consistente e criar experiências positivas em cada interação."
+    },
+    "qual a importância do atendimento ao cliente": {
+        "encodificacao": "0.0011 0.0001 0.0012 0 0.0005 0.0015 0.0015 0.0021 0.0015 0 0.0015 0.0005 0.0005 0.0015 0.0018 0 0.0013 0.0015 0.0015 0.0013 0.0005 0.0018",
+        "total": 0.0206,
+        "significado": "O atendimento ao cliente é essencial para a reputação da empresa, influencia diretamente na fidelização e pode ser um diferencial competitivo no mercado."
+    },
+    "como atender bem o cliente": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0001 0.0020 0.0004 0.0005 0 0.0015 0.0015 0.0013 0.0005 0.0018",
+        "total": 0.0149,
+        "significado": "Atender bem o cliente envolve ser cordial, solucionar dúvidas com eficiência, demonstrar interesse genuíno e garantir uma comunicação clara e respeitosa."
+    },
+    "como lidar com reclamações de clientes": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0012 0.0009 0.0004 0.0005 0.0018 0 0.0018 0.0005 0.0012 0.0001 0.0005 0.0001 0.0018 0.0005 0.0018",
+        "total": 0.0187,
+        "significado": "Lidar com reclamações exige ouvir atentamente, agradecer pelo feedback, buscar entender a raiz do problema e oferecer soluções rápidas e efetivas."
+    },
+    "como melhorar o suporte ao cliente": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0013 0.0005 0.0015 0.0001 0.0018 0.0001 0.0004 0.0015 0 0.0005 0.0021 0.0016 0.0005 0.0018 0.0015 0.0013 0.0005 0.0018",
+        "total": 0.0227,
+        "significado": "Para melhorar o suporte ao cliente é necessário investir em treinamentos, criar processos eficientes, monitorar indicadores de qualidade e buscar inovação constante."
+    },
+    "como transformar reclamações em oportunidades": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0019 0.0015 0.0018 0.0005 0.0019 0.0013 0.0015 0.0013 0 0.0005 0.0015 0.0018 0.0018 0.0021 0.0019 0.0005 0.0019 0.0019 0.0001 0.0020",
+        "total": 0.0267,
+        "significado": "Cada reclamação é uma oportunidade de identificar falhas, melhorar processos e fortalecer o relacionamento com os clientes ao resolver problemas com excelência."
+    },
+    "o que é atendimento humanizado": {
+        "encodificacao": "0.0015 0 0.0011 0.0005 0 0.0005 0.0015 0.0015 0.0021 0.0015 0 0.0008 0.0021 0.0013 0.0014 0.0001 0.0004",
+        "total": 0.0169,
+        "significado": "Atendimento humanizado significa tratar cada cliente com empatia, respeito e atenção individualizada, reconhecendo suas necessidades específicas."
+    },
+    "como tomar decisões difíceis": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0020 0.0015 0.0013 0.0001 0 0.0004 0.0005 0.0018 0.0009 0.0005 0.0018 0.0005 0.0018",
+        "total": 0.0176,
+        "significado": "Para tomar decisões difíceis é importante analisar todos os cenários possíveis, considerar consequências a curto e longo prazo, ouvir opiniões de confiança e agir com base em princípios sólidos."
+    },
+    "como avaliar riscos antes de decidir": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0001 0.0022 0.0005 0.0018 0.0018 0.0009 0.0005 0 0.0001 0.0005 0.0019 0.0005 0.0009",
+        "total": 0.0173,
+        "significado": "Avaliar riscos antes de decidir envolve identificar possíveis impactos negativos, estimar probabilidades de ocorrência e planejar alternativas para mitigar eventuais problemas."
+    },
+    "como decidir em momentos de crise": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0004 0.0005 0.0018 0.0009 0.0013 0.0005 0 0.0013 0.0018 0.0009 0.0005 0.0019 0.0005",
+        "total": 0.0169,
+        "significado": "Em momentos de crise, decisões devem ser tomadas com rapidez, baseadas em informações confiáveis e sempre considerando os riscos e prioridades mais urgentes."
+    },
+    "como manter a calma para decidir melhor": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0013 0.0001 0.0020 0.0005 0.0015 0 0.0004 0.0005 0.0018 0.0009 0.0005 0.0018 0.0005",
+        "total": 0.0171,
+        "significado": "Manter a calma durante decisões difíceis requer respiração consciente, foco no que pode ser controlado e evitar agir impulsivamente. Pausar antes de agir ajuda a pensar de forma estratégica."
+    },
+    "como lidar com consequências de decisões difíceis": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0012 0.0009 0.0004 0.0005 0.0018 0 0.0018 0.0015 0.0018 0.0009 0.0015 0.0012 0.0013 0.0005 0.0019 0.0005 0.0009",
+        "total": 0.0212,
+        "significado": "Lidar com as consequências de decisões difíceis exige resiliência, aceitação dos resultados e disposição para corrigir o curso sempre que necessário, mantendo o foco nos objetivos de longo prazo."
+    },
+    "como decidir de forma ética": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0004 0.0005 0.0018 0.0009 0.0013 0.0005 0 0.0005 0.0020 0.0003 0.0001 0.0001",
+        "total": 0.0158,
+        "significado": "Decidir de forma ética significa considerar o impacto das suas ações sobre outras pessoas, agir com transparência, justiça e respeito aos princípios morais, mesmo diante de pressões."
+    },
+    "qual o impacto das decisões na equipe": {
+        "encodificacao": "0.0011 0.0001 0.0012 0 0.0015 0.0019 0.0005 0.0015 0.0015 0.0018 0.0019 0.0009 0.0005 0.0015 0 0.0015 0.0018 0.0015",
+        "total": 0.0194,
+        "significado": "As decisões tomadas impactam diretamente a motivação, a confiança e o engajamento da equipe. É importante comunicar as decisões de forma clara e considerar o bem-estar coletivo."
+    },
+    "como decidir entre duas boas opções": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0004 0.0005 0.0018 0.0009 0.0013 0.0005 0 0.0015 0.0001 0.0015 0.0015 0.0005 0.0019",
+        "total": 0.0176,
+        "significado": "Quando há duas boas opções, deve-se alinhar a decisão aos objetivos de longo prazo, considerar os valores da organização e avaliar o potencial de impacto futuro de cada escolha."
+    },
+    "como definir metas eficazes": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0004 0.0005 0.0018 0.0009 0.0013 0.0005 0 0.0013 0.0005 0.0020 0.0001 0.0019",
+        "total": 0.0167,
+        "significado": "Definir metas eficazes exige clareza de objetivos, uso da metodologia SMART (específicas, mensuráveis, atingíveis, relevantes e temporais) e alinhamento com os valores e a visão da organização."
+    },
+    "como fazer um planejamento estratégico": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0006 0.0001 0.0004 0 0.0016 0.0012 0.0013 0.0005 0.0018 0.0005 0.0018 0.0001 0.0019",
+        "total": 0.0168,
+        "significado": "O planejamento estratégico envolve definir missão, visão, valores, analisar o ambiente interno e externo, traçar objetivos estratégicos e desenvolver planos de ação claros e mensuráveis."
+    },
+    "como definir prioridades": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0004 0.0005 0.0018 0.0009 0.0018 0.0005 0.0018 0.0009 0.0005 0.0018",
+        "total": 0.0142,
+        "significado": "Definir prioridades requer identificar o que gera maior impacto nos objetivos estratégicos, separar atividades importantes das urgentes e focar recursos nas ações de maior valor."
+    },
+    "como transformar objetivos em ações": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0019 0.0015 0.0018 0.0015 0.0005 0.0018 0.0015 0 0.0001 0.0003 0.0009 0.0015 0.0019",
+        "total": 0.0173,
+        "significado": "Para transformar objetivos em ações, é essencial dividir grandes metas em tarefas menores, atribuir responsabilidades, definir prazos e acompanhar a execução regularmente."
+    },
+    "como fazer análise swot": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0006 0.0001 0.0004 0 0.0001 0.0022 0.0015 0.0015 0.0024",
+        "total": 0.0131,
+        "significado": "A análise SWOT avalia forças, fraquezas, oportunidades e ameaças de uma organização, ajudando na formulação de estratégias para aproveitar vantagens e minimizar riscos."
+    },
+    "como revisar uma estratégia": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0018 0.0005 0.0002 0.0018 0.0009 0.0005 0 0.0019 0.0018 0.0005 0.0003 0.0001 0.0019",
+        "total": 0.0165,
+        "significado": "Revisar uma estratégia envolve analisar os resultados obtidos, identificar desvios, reavaliar objetivos e, se necessário, ajustar o plano para garantir alinhamento com o cenário atual."
+    },
+    "como alinhar a equipe à estratégia": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0001 0.0012 0.0009 0.0014 0.0001 0.0005 0 0.0015 0.0018 0.0005 0.0013 0.0005 0.0018",
+        "total": 0.0163,
+        "significado": "Alinhar a equipe à estratégia exige comunicação clara dos objetivos, demonstração do impacto individual no sucesso coletivo e criação de uma cultura de responsabilidade e colaboração."
+    },
+    "qual a importância do planejamento estratégico": {
+        "encodificacao": "0.0011 0.0001 0.0012 0 0.0005 0.0015 0.0015 0.0021 0.0015 0 0.0016 0.0012 0.0013 0.0005 0.0018 0.0005 0.0018 0.0001 0.0019",
+        "total": 0.0202,
+        "significado": "O planejamento estratégico é fundamental para definir o caminho que a organização seguirá, otimizar recursos, antecipar mudanças de mercado e alcançar crescimento sustentável."
+    },
+    "como organizar melhor minhas tarefas": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0015 0.0015 0.0007 0.0018 0.0005 0.0012 0.0018 0 0.0013 0.0005 0.0018 0.0001 0.0018",
+        "total": 0.0173,
+        "significado": "Para organizar melhor suas tarefas, utilize listas de prioridades, defina prazos, utilize ferramentas de gestão como Kanban e revise seu planejamento diariamente."
+    },
+    "como melhorar minha produtividade": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0013 0.0005 0.0015 0.0001 0.0018 0.0001 0.0004 0.0015 0 0.0016 0.0013 0.0005 0.0018 0.0005 0.0019",
+        "total": 0.0188,
+        "significado": "Melhorar a produtividade envolve estabelecer metas claras, evitar multitarefa excessiva, fazer pausas estratégicas e manter foco nas atividades mais relevantes."
+    },
+    "como evitar a procrastinação": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0005 0.0022 0.0015 0.0018 0.0001 0.0019 0.0005 0.0013 0.0009 0.0015 0.0018",
+        "total": 0.0171,
+        "significado": "Para evitar a procrastinação, divida grandes tarefas em pequenas partes, estabeleça prazos curtos, elimine distrações e busque recompensar-se ao completar etapas."
+    },
+    "como focar melhor nas atividades": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0006 0.0015 0.0018 0.0001 0.0018 0.0015 0 0.0001 0.0009 0.0018 0.0005 0.0019",
+        "total": 0.0174,
+        "significado": "Focar melhor exige definir horários específicos para tarefas importantes, bloquear distrações como redes sociais e utilizar técnicas como Pomodoro para manter a concentração."
+    },
+    "como gerenciar melhor meu tempo": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0007 0.0005 0.0018 0.0001 0.0001 0.0012 0.0018 0 0.0013 0.0005 0.0018 0.0001 0.0019",
+        "total": 0.0173,
+        "significado": "Gerenciar melhor o tempo exige planejamento diário, definição de prioridades, delegação de tarefas quando possível e avaliação constante de como o tempo está sendo utilizado."
+    },
+    "qual a importância da gestão do tempo": {
+        "encodificacao": "0.0011 0.0001 0.0012 0 0.0005 0.0015 0.0015 0.0021 0.0015 0 0.0007 0.0005 0.0018 0.0001 0.0018 0.0001",
+        "total": 0.0144,
+        "significado": "A gestão do tempo é essencial para aumentar a produtividade, reduzir o estresse, garantir a entrega de projetos no prazo e equilibrar vida pessoal e profissional."
+    },
+    "como planejar melhor meu dia": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0006 0.0001 0.0004 0.0013 0.0005 0.0018 0.0001 0.0019 0.0005",
+        "total": 0.0148,
+        "significado": "Planejar melhor o dia inclui listar as tarefas prioritárias, definir horários realistas para execução, reservar tempo para imprevistos e revisar o progresso ao final do dia."
+    },
+    "como criar uma rotina produtiva": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0003 0.0018 0.0009 0.0015 0 0.0015 0.0013 0.0001 0.0018 0.0019 0.0021",
+        "total": 0.0171,
+        "significado": "Criar uma rotina produtiva envolve acordar em horários consistentes, priorizar tarefas importantes logo no início do dia e manter hábitos saudáveis de alimentação e descanso."
+    },
+    "como evitar distrações no trabalho": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0005 0.0022 0.0015 0.0018 0.0001 0.0009 0.0005 0.0019 0.0018 0 0.0019 0.0002",
+        "total": 0.0179,
+        "significado": "Para evitar distrações no trabalho, é importante desativar notificações, criar um ambiente silencioso, definir períodos focados de trabalho e programar pausas curtas para descanso."
+    },
+    "o que é gestão de pessoas": {
+        "encodificacao": "0.0015 0 0.0011 0.0005 0 0.0007 0.0005 0.0018 0 0.0016 0.0005 0.0015 0.0015 0.0018",
+        "total": 0.0122,
+        "significado": "Gestão de pessoas é o conjunto de práticas para atrair, desenvolver, motivar e reter talentos. O objetivo é alinhar pessoas aos resultados estratégicos da organização."
+    },
+    "como ser um bom gestor": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0019 0.0005 0.0018 0.0021 0 0.0011 0.0009 0.0004 0.0018",
+        "total": 0.0159,
+        "significado": "Um bom gestor lidera pelo exemplo, comunica com clareza e toma decisões justas. Desenvolve sua equipe e cria um ambiente de confiança e produtividade."
+    },
+    "como melhorar a comunicação interna?": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0013 0.0005 0.0015 0.0001 0.0018 0.0001 0.0004 0.0015 0.0019 0.0018 0.0001",
+        "total": 0.0171,
+        "significado": "Melhore a comunicação interna com reuniões regulares, feedbacks claros e uso de canais digitais. Transparência fortalece a confiança e o alinhamento."
+    },
+    "o que é liderança situacional": {
+        "encodificacao": "0.0015 0 0.0011 0.0005 0 0.0011 0.0009 0.0004 0.0018 0.0001 0.0004 0.0015 0.0019 0.0005 0.0019",
+        "total": 0.0161,
+        "significado": "Liderança situacional adapta o estilo de liderança conforme a maturidade da equipe. Permite decisões flexíveis para diferentes situações e necessidades."
+    },
+    "como definir objetivos claros para a equipe": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0004 0.0005 0.0018 0.0009 0.0018 0.0015 0 0.0015 0.0018 0.0015 0.0013 0.0005 0.0018",
+        "total": 0.0185,
+        "significado": "Defina objetivos claros com metas específicas, prazos e critérios de sucesso. Envolva a equipe na definição para gerar maior comprometimento."
+    },
+    "qual o papel do gestor em tempos de crise": {
+        "encodificacao": "0.0011 0.0001 0.0012 0 0.0015 0.0001 0.0015 0.0018 0 0.0018 0.0015 0.0013 0.0019 0.0005 0.0019",
+        "total": 0.0167,
+        "significado": "Em crises, o gestor deve manter a calma, comunicar planos de ação e apoiar emocionalmente a equipe. Liderar com clareza faz toda diferença."
+    },
+    "como acompanhar resultados da equipe": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0001 0.0007 0.0018 0.0005 0.0001 0.0009 0.0018 0 0.0015 0.0018 0.0015 0.0013 0.0005 0.0018",
+        "total": 0.0179,
+        "significado": "Use indicadores de desempenho, reuniões semanais e feedbacks constantes. Monitore avanços e reforce o foco nos objetivos definidos."
+    },
+    "como dar feedback construtivo": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0004 0.0005 0.0018 0.0009 0.0018 0.0005 0.0005 0.0001 0.0019",
+        "total": 0.0136,
+        "significado": "Feedback construtivo é direto, focado no comportamento e oferece sugestões de melhoria. Ajuda no desenvolvimento sem gerar defensividade."
+    },
+    "como desenvolver talentos na equipe": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0004 0.0005 0.0002 0.0015 0.0022 0.0015 0.0005 0.0018 0 0.0015 0.0018 0.0015 0.0013 0.0005 0.0018",
+        "total": 0.0195,
+        "significado": "Desenvolva talentos oferecendo treinamentos, novos desafios e mentorias. Reconheça o potencial e incentive o crescimento contínuo."
+    },
+    "como ser um gestor eficaz": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0019 0.0005 0.0018 0.0021 0 0.0011 0.0009 0.0004 0.0018 0.0005 0.0009 0.0004",
+        "total": 0.0167,
+        "significado": "Ser um gestor eficaz exige liderar pelo exemplo, definir metas claras, delegar responsabilidades e acompanhar resultados. Também é fundamental desenvolver habilidades de comunicação, inteligência emocional e tomada de decisão estratégica. Um bom gestor inspira, corrige com empatia e valoriza as conquistas da equipe."
+    },
+    "como fazer uma gestão de equipe eficiente": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0006 0.0001 0.0004 0 0.0015 0.0018 0.0015 0.0013 0.0005 0.0018 0.0009",
+        "total": 0.0153,
+        "significado": "Para gerir equipes com eficiência, é necessário conhecer o perfil de cada colaborador, definir papéis claros e criar uma cultura de responsabilidade. Estabeleça comunicação aberta, feedbacks constantes e reconheça os esforços individuais e coletivos. A confiança mútua fortalece a produtividade e o engajamento."
+    },
+    "como melhorar a tomada de decisão": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0013 0.0005 0.0015 0.0001 0.0018 0.0001 0.0004 0.0015 0.0004 0.0005 0.0018",
+        "total": 0.0158,
+        "significado": "Melhorar a tomada de decisão passa por reunir informações confiáveis, ouvir opiniões diversas e analisar cenários futuros. Decida com equilíbrio entre dados e intuição. Sempre alinhe suas escolhas com os valores da organização e esteja preparado para revisar decisões diante de novas evidências."
+    },
+    "como lidar com conflitos na equipe?": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0012 0.0009 0.0004 0.0005 0.0018 0.0015 0.0018 0.0001 0.0015 0.0018",
+        "total": 0.0159,
+        "significado": "Conflitos na equipe devem ser tratados de forma rápida e imparcial. Escute todas as partes envolvidas, busque compreender as causas profundas e promova o diálogo respeitoso. Lembre-se de focar na solução e não em culpados. Conflitos bem administrados podem fortalecer o grupo e gerar aprendizado."
+    },
+    "como alinhar a equipe aos objetivos da empresa": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0001 0.0012 0.0009 0.0014 0.0001 0.0005 0.0015 0.0018 0.0015 0.0001 0.0004",
+        "total": 0.0158,
+        "significado": "Alinhar a equipe exige comunicação clara dos objetivos estratégicos da empresa e conexão do trabalho individual ao propósito coletivo. Estimule a participação nas metas, demonstre como cada ação impacta os resultados e reconheça conquistas alinhadas aos valores e metas institucionais."
+    },
+    "como avaliar o desempenho de colaboradores": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0001 0.0022 0.0005 0.0018 0.0018 0.0009 0.0015 0.0018 0.0005 0.0012",
+        "total": 0.0162,
+        "significado": "Avalie o desempenho observando indicadores de resultado, comportamentos alinhados à cultura e competências técnicas. Utilize métodos objetivos, como avaliações por metas ou 360 graus. Após a análise, forneça feedbacks construtivos, reconheça pontos fortes e trace planos de desenvolvimento."
+    },
+    "como ser um líder inspirador?": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0019 0.0005 0.0018 0.0021 0 0.0011 0.0009 0.0004 0.0018 0.0009 0.0019",
+        "total": 0.0172,
+        "significado": "Líderes inspiradores agem com autenticidade, demonstram paixão pelo que fazem e valorizam as pessoas ao redor. Inspirar é mostrar com atitudes que o crescimento é possível. Compartilhe sua visão de futuro, celebre conquistas e esteja presente para apoiar nos momentos difíceis."
+    },
+    "como garantir a inovação na gestão": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0007 0.0001 0.0018 0.0009 0.0005 0.0019 0.0005 0.0018 0.0009",
+        "total": 0.0148,
+        "significado": "Para garantir a inovação na gestão, incentive a criatividade da equipe, aceite erros como parte do processo de melhoria e mantenha-se atualizado sobre tendências. Crie um ambiente seguro onde ideias novas possam ser testadas e reconhecidas sem medo de falhar."
+    },
+    "empresa está tendo menos lucro": {
+        "encodificacao": "0.0005 0.0013 0.0015 0.0001 0.0018 0.0019 0.0005 0.0018 0 0.0013 0.0015 0.0015 0.0012 0.0001 0.0004 0.0018",
+        "total": 0.0166,
+        "significado": "Analise custos fixos e variáveis imediatamente. Corte gastos não essenciais e renegocie contratos. Reforce estratégias de vendas e revise os preços. Foque em produtos/serviços mais rentáveis no curto prazo."
+    },
+    "colaborador está rendendo menos": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0015 0.0001 0.0004 0.0005 0.0018 0.0005 0.0005 0.0009 0.0015 0.0018",
+        "total": 0.0153,
+        "significado": "Converse individualmente e busque entender causas. Estabeleça metas claras e ofereça apoio necessário. Acompanhe de perto os resultados por um período curto e ajuste o plano conforme necessário."
+    },
+    "colaborador com comportamento ruim": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0015 0.0015 0.0018 0.0015 0.0013 0.0005 0.0004 0.0015 0.0019",
+        "total": 0.0157,
+        "significado": "Chame para uma conversa franca. Descreva o comportamento observado sem julgamentos. Reforce o impacto negativo no time e defina expectativas claras para mudança imediata. Aplique medidas corretivas se necessário."
+    },
+    "equipe não está batendo metas": {
+        "encodificacao": "0.0005 0.0013 0.0015 0.0001 0.0018 0.0009 0.0005 0.0015 0.0019 0.0005 0.0015",
+        "total": 0.0122,
+        "significado": "Reavalie se as metas estão realistas e alinhadas. Identifique gargalos na execução. Divida as metas em etapas menores e aumente o acompanhamento semanal com feedbacks rápidos."
+    },
+    "cliente reclamando com frequência": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0003 0.0001 0.0015 0.0005 0.0018 0.0015 0.0015 0.0012 0.0005 0.0018",
+        "total": 0.0165,
+        "significado": "Analise padrões nas reclamações recebidas. Corrija processos ou falhas de comunicação. Melhore o treinamento da equipe de atendimento e estabeleça controle de qualidade contínuo."
+    },
+    "produto ou serviço está vendendo pouco": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0016 0.0015 0.0018 0.0005 0.0018 0.0015 0.0015 0.0012",
+        "total": 0.0142,
+        "significado": "Pesquise se o problema é preço, qualidade ou divulgação. Ajuste a proposta de valor ou reposicione o marketing. Se necessário, reestruture o mix de produtos focando em itens de maior demanda."
+    },
+    "atendimento ao cliente está ruim": {
+        "encodificacao": "0.0015 0.0005 0.0005 0.0015 0.0018 0 0.0005 0.0021 0.0016 0.0005 0.0018 0.0015 0.0013 0.0005",
+        "total": 0.0152,
+        "significado": "Reforce treinamentos de atendimento imediatamente. Estabeleça padrões claros de excelência e implemente auditorias. Valorize e recompense comportamentos que elevem a satisfação do cliente."
+    },
+    "processos internos estão lentos": {
+        "encodificacao": "0.0005 0.0013 0.0015 0.0015 0.0012 0.0015 0.0018 0.0015 0.0013 0.0015",
+        "total": 0.0126,
+        "significado": "Mapeie cada etapa dos processos. Elimine burocracias desnecessárias e automatize tarefas repetitivas. Treine a equipe para melhorar agilidade sem perder qualidade."
+    },
+    "equipe desmotivada": {
+        "encodificacao": "0.0015 0.0015 0.0018 0.0015 0.0013 0.0019 0.0015 0.0018 0.0015 0.0013",
+        "total": 0.0143,
+        "significado": "Converse abertamente sobre desafios e expectativas. Reforce propósito e reconhecimento individual. Reavalie metas para que sejam alcançáveis e promova pequenas vitórias rápidas."
+    },
+    "alta rotatividade de colaboradores": {
+        "encodificacao": "0.0001 0.0012 0.0015 0.0005 0.0018 0.0015 0.0015 0.0018 0.0001 0.0018 0.0015 0.0013 0.0018 0.0013",
+        "total": 0.0174,
+        "significado": "Realize entrevistas de desligamento para identificar padrões. Melhore o processo de integração e programas de desenvolvimento. Ajuste benefícios e cultura organizacional se necessário."
+    },
+    "líderes despreparados": {
+        "encodificacao": "0.0011 0.0009 0.0004 0.0018 0.0015 0.0019 0.0015 0.0013 0.0005 0.0004 0.0018",
+        "total": 0.0121,
+        "significado": "Implemente um programa de capacitação de líderes. Trabalhe soft skills como comunicação, gestão de conflitos e feedback. Estabeleça mentorias para acelerar desenvolvimento."
+    },
+    "baixo índice de inovação": {
+        "encodificacao": "0.0002 0.0015 0.0005 0.0018 0.0018 0.0015 0.0015 0.0019",
+        "total": 0.0107,
+        "significado": "Crie espaços para geração de ideias sem julgamentos. Estimule projetos pilotos rápidos. Recompense tentativas de inovação, mesmo que falhem, para criar uma cultura criativa."
+    },
+    "comunicação interna ineficiente": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0013 0.0005 0.0015 0.0001 0.0018 0.0015 0.0015 0.0012",
+        "total": 0.0141,
+        "significado": "Simplifique fluxos de comunicação. Defina canais oficiais e normas claras para atualizações. Faça reuniões curtas regulares para alinhamento de equipe e feedbacks abertos."
+    },
+    "metas mal definidas ou confusas": {
+        "encodificacao": "0.0013 0.0005 0.0018 0.0001 0.0012 0.0018 0.0015 0.0015 0.0013",
+        "total": 0.0118,
+        "significado": "Redefina metas seguindo critérios SMART. Envolva a equipe na construção das metas para gerar senso de pertencimento. Revise e ajuste metas periodicamente conforme mudanças."
+    },
+    "excesso de retrabalho nas equipes": {
+        "encodificacao": "0.0005 0.0013 0.0015 0.0012 0.0005 0.0018 0.0015 0.0015 0.0013",
+        "total": 0.0121,
+        "significado": "Mapeie os processos para identificar falhas de comunicação ou duplicidade. Estabeleça protocolos claros para execução. Treine a equipe em padronização de processos."
+    },
+    "decisões lentas demais na empresa": {
+        "encodificacao": "0.0004 0.0015 0.0012 0.0015 0.0015 0.0015 0.0018 0.0013 0.0015",
+        "total": 0.0122,
+        "significado": "Reduza níveis de aprovação onde possível. Defina autoridade de decisão para líderes de área. Estimule a cultura de decisões ágeis baseadas em dados confiáveis."
+    },
+    "estou com problema na minha equipe no trabalho": {
+        "encodificacao": "0.0005 0.0019 0.002 0.0015 0.0021 0 0.0003 0.0015 0.0013 0 0.0016 0.0018 0.0015 0.0002 0.0012 0.0005 0.0013 0.0001 0 0.0014 0.0001 0 0.0013 0.0009 0.0014 0.0008 0.0001 0 0.0005 0.0017 0.0021 0.0009 0.0016 0.0005 0 0.0014 0.0015 0 0.002 0.0018 0.0001 0.0002 0.0001 0.0012 0.0008 0.0015",
+        "total": 0.0432,
+        "significado": "Problemas no trabalho podem envolver varias situações.. voce gostaria de especificar?"
+    },
+    "como fazer relatório de baixa performance de colaborador": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0006 0.0001 0.0004 0.0018 0 0.0013 0.0015 0.0015 0.0012 0.0001",
+        "total": 0.0142,
+        "significado": "**Modelo de Relatório**:\n\nColaborador: [Nome]\nCargo: [Cargo]\nProblema Identificado: [Descreva]\nImpacto no desempenho: [Descreva]\nAções recomendadas: [Descreva]\nPrazo para melhoria: [Data]\nObservações: [Observações complementares]"
+    },
+    "como fazer relatório de atraso em metas": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0004 0.0018 0.0015 0.0018 0.0015",
+        "total": 0.0124,
+        "significado": "**Modelo de Relatório**:\n\nEquipe: [Nome da Equipe]\nMeta: [Meta estabelecida]\nResultado Atual: [Desempenho atual]\nCausas do Atraso: [Fatores identificados]\nPlano de Recuperação: [Medidas corretivas]\nResponsáveis: [Nomes]\nNovo Prazo: [Data]"
+    },
+    "como fazer relatório de problemas no atendimento ao cliente": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0005 0.0009 0.0018 0.0015 0.0013 0.0015",
+        "total": 0.0131,
+        "significado": "**Modelo de Relatório**:\n\nCliente: [Nome do Cliente]\nData do Atendimento: [Data]\nProblema Reportado: [Descrição]\nAtendente Responsável: [Nome]\nAnálise Interna: [Causas]\nSolução Proposta: [Ações tomadas]\nStatus: [Aberto/Fechado]"
+    },
+    "como fazer relatório de avaliação de desempenho": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0001 0.0022 0.0005 0.0018 0.0001 0.0019 0.0015 0.0018",
+        "total": 0.0154,
+        "significado": "**Modelo de Relatório**:\n\nNome: [Nome do Avaliado]\nDepartamento: [Setor]\nPeríodo Avaliado: [Data inicial - Data final]\nPontos Fortes: [Descrição]\nPontos de Melhoria: [Descrição]\nPlano de Desenvolvimento: [Ações propostas]\nNota Final: [Nota]"
+    },
+    "como fazer relatório de projeto atrasado": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0004 0.0015 0.0018 0.0005 0.0001 0.0019",
+        "total": 0.0123,
+        "significado": "**Modelo de Relatório**:\n\nProjeto: [Nome do Projeto]\nStatus: Atrasado\nMotivo do Atraso: [Descreva]\nImpacto no Cronograma: [Descrição]\nMedidas Corretivas: [Plano de ação]\nNova Data de Entrega: [Data]\nResponsáveis: [Equipe envolvida]"
+    },
+    "como fazer relatório de turnover alto": {
+        "encodificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0016 0.0015 0.0018 0.0005 0.0018 0.0005 0.0015",
+        "total": 0.0136,
+        "significado": "**Modelo de Relatório**:\n\nPeríodo Analisado: [Data Inicial - Data Final]\nÍndice de Rotatividade: [Percentual]\nPrincipais Causas: [Listar motivos]\nImpacto no Negócio: [Descrição]\nPlanos de Retenção: [Medidas planejadas]\nRecomendações: [Sugestões para reduzir turnover]"
+    },
+    "como está hoje nicole?": {
+        "significado": "Eu estou super bem! Como posso ajudar?"
+    },
+    "oi nick!": {
+        "significado": "Oláaa! Nossa, bom ouvir isso!"
+    },
+    "kk": {
+        "significado": "haha"
+    },
+    "legal": {
+        "significado": "maneira mano"
+    },
+    "haha": {
+        "significado": "hahahah desculpe, é engraçado"
+    },
+    "kkk": {
+        "significado": "hahaha"
+    },
+    "clear": {
+        "significado": "Desculpe mas não consigo executar esse comando"
+    },
+    "nossa que doido": {
+        "significado": "doido mano! saco?"
+    },
+    "entedi": {
+        "significado": "certo, ajudo com algo mais?"
+    },
+    "não": {
+        "significado": "até mais!"
+    },
+    "mentira": {
+        "significado": "Verdade hahaha, não acredita? "
+    },
+    "de nada": {
+        "codificacao": "0.0004 0.0005 0 0.0014 0.0001 0.0004 0.0001",
+        "total": 0.0029,
+        "significado": "Eu que agradeço!"
+    },
+    "tudo bem!": {
+        "codificacao": "0.002 0.0021 0.0004 0.0015 0 0.0002 0.0005 0.0013 0",
+        "total": 0.008,
+        "significado": "legal"
+    },
+    "estou bem!": {
+        "codificacao": "0.0005 0.0019 0.002 0.0015 0.0021 0 0.0002 0.0005 0.0013 0",
+        "total": 0.01,
+        "significado": "fico feliz em ouvir que voce está bem! como posso ajudar?"
+    },
+    "estou triste hoje": {
+        "codificacao": "0.0005 0.0019 0.002 0.0015 0.0021 0 0.002 0.0018 0.0009 0.0019 0.002 0.0005 0 0.0008 0.0015 0.001 0.0005",
+        "total": 0.0209,
+        "significado": "Nossa! Fico triste em saber disso.. Voce gostaria de falar mais sobre?"
+    },
+    "não me sinto bem": {
+        "codificacao": "0.0014 0 0.0015 0 0.0013 0.0005 0 0.0019 0.0009 0.0014 0.002 0.0015 0 0.0002 0.0005 0.0013",
+        "total": 0.0144,
+        "significado": "Sério? existe algum motivo?"
+    },
+    "terminei meu namoro": {
+        "codificacao": "0.002 0.0005 0.0018 0.0013 0.0009 0.0014 0.0005 0.0009 0 0.0013 0.0005 0.0021 0 0.0014 0.0001 0.0013 0.0015 0.0018 0.0015",
+        "total": 0.0208,
+        "significado": "Nossa, por essa não esperava"
+    },
+    "como melhorar meu desempenho?": {
+        "codificacao": "0.0003 0.0015 0.0013 0.0015 0 0.0013 0.0005 0.0012 0.0008 0.0015 0.0018 0.0001 0.0018 0 0.0013 0.0005 0.0021 0 0.0004 0.0005 0.0019 0.0005 0.0013 0.0016 0.0005 0.0014 0.0008 0.0015 0",
+        "total": 0.0279,
+        "significado": "Em qual sentido de desempenho? existe várias formas e técnicas? gostaria de saber algumas delas?"
+    },
+    "qual a previsão do tempo?": {
+        "codificacao": "0.0017 0.0021 0.0001 0.0012 0 0.0001 0 0.0016 0.0018 0.0005 0.0022 0.0009 0.0019 0 0.0015 0 0.0004 0.0015 0 0.002 0.0005 0.0013 0.0016 0.0015 0",
+        "total": 0.0244,
+        "significado": "não sei, não sou metereologista!"
+    },
+
+    
+        "conte uma piada": {
+            "codificacao": "0.0003 0.0015 0.0014 0.0015 0 0.0003 0.0013 0.0005 0.0001 0.0015 0 0.0009 0.0009 0.0001 0.0004",
+            "total": 0.0117,
+            "significado": "Claro! Por que o computador foi ao médico? Porque ele tinha um vírus! 😂"
+        },
+        "me faz rir": {
+            "codificacao": "0.0013 0.0005 0 0.0006 0.0001 0.0002 0.0012 0.0013 0.0002",
+            "total": 0.0064,
+            "significado": "O que o pato disse para a pata? Vem quá! 🦆😂"
+        },
+        "estou entediado": {
+            "codificacao": "0.0005 0.0013 0.0014 0.0016 0.0015 0 0.0005 0.0013 0.0014 0.0015 0.0013 0.0004 0.0001",
+            "total": 0.0133,
+            "significado": "Vamos animar! Que tal uma piada ruim? Qual é o cúmulo do azar? Ser atropelado por um carro funerário vazio! 😅"
+        },
+        "me conte algo engraçado": {
+            "codificacao": "0.0013 0.0005 0 0.0003 0.0015 0.0014 0.0015 0 0.0001 0.0013 0.0012 0.0014 0.0015 0.0005 0.0013 0.0001 0.0004 0.0005",
+            "total": 0.0168,
+            "significado": "Sabia que a maioria dos acidentes domésticos acontecem em casa? 🤡 (essa é profunda)"
+        },
+        "quero dar risada": {
+            "codificacao": "0.0017 0.0005 0.0001 0.0012 0.0013 0 0.0002 0.0015 0.0013 0.0012 0.0005 0.0014",
+            "total": 0.0129,
+            "significado": "Porque o jacaré tirou o jacarezinho da escola? Porque ele réptil de ano! 🐊😂"
+        },
+        "estou triste!": {
+            "codificacao": "0.0005 0.0013 0.0014 0.0016 0.0015 0 0.0014 0.0015 0.0013 0.0014 0.0015 0.0013",
+            "total": 0.0137,
+            "significado": "Vamos mudar isso! Um sorriso pode mudar seu dia! 😄✨"
+        },
+        "estou desanimado": {
+            "codificacao": "0.0005 0.0013 0.0014 0.0016 0.0015 0 0.0013 0.0013 0.0014 0.0013 0.0015 0.0012",
+            "total": 0.0135,
+            "significado": "Não desanime! Grandes jornadas começam com um pequeno passo. 🚀"
+        },
+        "preciso de força": {
+            "codificacao": "0.0016 0.0002 0.0005 0.0003 0.0013 0.0015 0 0.0014 0.0015 0.0012",
+            "total": 0.0105,
+            "significado": "A sua força está dentro de você. Acredite e siga em frente! 💪"
+        },
+        "me motive": {
+            "codificacao": "0.0013 0.0005 0 0.0013 0.0015 0.0014 0.0015",
+            "total": 0.0075,
+            "significado": "Você é mais forte do que imagina. Acredite nos seus sonhos! ✨"
+        },
+        "estou sem esperança": {
+            "codificacao": "0.0005 0.0013 0.0014 0.0016 0.0015 0 0.0014 0.0015 0.0005 0.0015 0.0013 0.0012",
+            "total": 0.0137,
+            "significado": "Até a noite mais escura termina com o nascer do sol. Nunca desista! 🌅"
+        },
+        "não consigo continuar": {
+            "codificacao": "0.0015 0.0013 0.0014 0 0.0002 0.0016 0.0013 0.0015 0.0014 0 0.0015 0.0016 0.0014 0.0012",
+            "total": 0.0169,
+            "significado": "Respire fundo. Você já venceu todos os seus piores dias até aqui. ✨"
+        },
+        "quero desistir": {
+            "codificacao": "0.0017 0.0005 0.0001 0.0012 0 0.0015 0.0014 0.0015 0.0013 0.0015",
+            "total": 0.0107,
+            "significado": "Desistir não é opção! Você veio até aqui, não pare agora! 🔥"
+        },
+        
+            "estou ansioso": {
+                "codificacao": "0.0005 0.0013 0.0014 0.0016 0.0015 0 0.0001 0.0015 0.0012 0.0015",
+                "total": 0.0096,
+                "significado": "Entendo como se sente. A ansiedade pode ser desafiadora, mas lembre-se: ela não define quem você é. Vamos focar na respiração e em pequenos passos. Você é capaz."
+            },
+            "estou deprimido": {
+                "codificacao": "0.0005 0.0013 0.0014 0.0016 0.0015 0 0.0004 0.0005 0.0015 0.0013 0.0012",
+                "total": 0.0102,
+                "significado": "Sinto muito que esteja passando por isso. Saiba que buscar apoio é um sinal de coragem, não de fraqueza. Você não está sozinho e merece cuidado e acolhimento."
+            },
+            "como controlar a ansiedade": {
+                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0003 0.0015 0.0002 0.0015 0.0012 0.0005 0.0005 0.0015 0.0014 0.0015 0.0013 0.0015",
+                "total": 0.0157,
+                "significado": "Existem estratégias que ajudam: respiração consciente, atenção plena (mindfulness) e reorganizar pensamentos. Se a ansiedade persistir, conversar com um profissional é importante."
+            },
+            "sinto tristeza": {
+                "codificacao": "0.0012 0.0013 0.0014 0.0015 0 0.0015 0.0013 0.0014 0.0015",
+                "total": 0.0098,
+                "significado": "A tristeza é parte natural da vida e também um sinal de que algo precisa ser acolhido dentro de você. Permita-se sentir, sem se julgar, e procure apoio se necessário."
+            },
+            "como lidar com emoções": {
+                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0013 0.0015 0 0.0001 0.0013 0.0015 0.0014 0.0015 0.0013",
+                "total": 0.0134,
+                "significado": "Emoções não são inimigas. Aprender a reconhecer, nomear e acolher o que sentimos é essencial para o equilíbrio emocional. Você está no caminho certo ao buscar entender isso."
+            },
+            "quero entender a mim mesmo": {
+                "codificacao": "0.0017 0.0005 0.0001 0.0012 0 0.0013 0.0015 0.0014 0.0015 0 0.0013 0.0015",
+                "total": 0.0100,
+                "significado": "O autoconhecimento é uma jornada contínua, feita de reflexões, erros e aprendizados. Seja gentil consigo mesmo nesse processo, e considere buscar apoio terapêutico para aprofundar ainda mais."
+            }, 
+
+            
+                "o que é febre": {
+                    "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0005 0.0015 0.0012 0.0015",
+                    "total": 0.0091,
+                    "significado": "A febre é um aumento temporário da temperatura corporal, geralmente em resposta a uma infecção, inflamação ou outra condição de saúde. Ela é um sinal de que o corpo está combatendo algo anormal. Se a febre for muito alta ou persistir por mais de dois dias, é importante procurar orientação médica para avaliação adequada. 🌡️"
+                },
+                "estou gripado": {
+                    "codificacao": "0.0005 0.0013 0.0014 0.0016 0.0015 0 0.0013 0.0015 0.0014",
+                    "total": 0.0100,
+                    "significado": "A gripe é uma infecção viral comum que afeta o sistema respiratório. Sintomas como febre, dor de cabeça, dor muscular e tosse são frequentes. Normalmente, repouso, hidratação e alimentação saudável ajudam na recuperação. Se houver piora dos sintomas ou dificuldades respiratórias, é recomendado procurar atendimento médico. 🤒"
+                },
+                "dor de cabeça constante": {
+                    "codificacao": "0.0004 0.0015 0 0.0005 0.0013 0.0015 0 0.0003 0.0013 0.0015 0.0014 0.0015 0.0013 0.0012",
+                    "total": 0.0124,
+                    "significado": "Uma dor de cabeça frequente pode ter diversas causas: estresse, tensão muscular, problemas de visão, sinusite ou até questões mais sérias. Se as dores forem intensas, acompanhadas de outros sintomas (como vômito, visão turva ou confusão mental), é essencial consultar um médico para diagnóstico correto. 🧠"
+                },
+                "como fortalecer a imunidade": {
+                    "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0016 0.0012 0.0014 0.0015 0 0.0013 0.0012 0.0015 0.0014",
+                    "total": 0.0132,
+                    "significado": "Fortalecer o sistema imunológico envolve adotar hábitos saudáveis: manter uma dieta balanceada rica em frutas e vegetais, praticar atividades físicas regulares, garantir um sono de qualidade, reduzir o estresse e manter a vacinação em dia. Para orientações específicas, sempre consulte um profissional de saúde. 💪🍏"
+                },
+                "sintomas de covid": {
+                    "codificacao": "0.0012 0.0013 0.0015 0.0014 0.0015 0 0.0014 0.0012 0.0015",
+                    "total": 0.0099,
+                    "significado": "Os sintomas mais comuns da COVID-19 incluem febre, tosse seca, cansaço, perda de paladar ou olfato, dor de cabeça e dificuldade para respirar. Em caso de suspeita, é importante fazer o teste, isolar-se para evitar contágio e seguir orientações médicas. Caso tenha sintomas graves, procure atendimento imediatamente. 😷"
+                },
+                "devo tomar antibiótico": {
+                    "codificacao": "0.0004 0.0015 0.0013 0.0015 0 0.0015 0.0013 0.0015 0.0012",
+                    "total": 0.0099,
+                    "significado": "Antibióticos são medicamentos poderosos usados para tratar infecções causadas por bactérias. No entanto, seu uso indevido pode gerar resistência bacteriana. Por isso, antibióticos só devem ser usados sob prescrição médica. Nunca se automedique. Em caso de dúvida, procure orientação de um profissional de saúde. 💊"
+                },
+
+                
+                    "estou em crise de ansiedade": {
+                        "codificacao": "0.0005 0.0013 0.0014 0.0016 0.0015 0 0.0015 0.0015 0.0005 0.0013 0.0012 0.0014 0.0015",
+                        "total": 0.0135,
+                        "significado": "Em uma crise de ansiedade, respire profundamente e lembre-se: você está seguro. Tente focar sua atenção na respiração. Caso as crises sejam frequentes, buscar apoio psicológico é essencial. 🫶"
+                    },
+                    "o que é depressão": {
+                        "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0004 0.0015 0.0012 0.0015",
+                        "total": 0.0091,
+                        "significado": "A depressão é uma condição de saúde mental caracterizada por tristeza intensa, perda de interesse e cansaço. Ela precisa ser tratada com apoio psicológico e, em alguns casos, acompanhamento médico. Você não está sozinho. 🤍"
+                    },
+                    "estou tendo crise de pânico": {
+                        "codificacao": "0.0005 0.0013 0.0014 0.0016 0.0015 0 0.0015 0.0015 0.0005 0.0013 0.0014 0.0001 0.0013 0.0015",
+                        "total": 0.0142,
+                        "significado": "Crises de pânico são intensas, mas passageiras. Tente se sentar, respirar fundo e lembrar que ela vai passar. Caso aconteça frequentemente, procure um profissional de saúde mental. Você merece cuidado! 🙏"
+                    },
+                    "me sinto sozinho": {
+                        "codificacao": "0.0013 0.0012 0.0015 0 0.0013 0.0015 0.0014 0.0015",
+                        "total": 0.0097,
+                        "significado": "Sentir-se sozinho pode ser doloroso. Buscar conexões, conversar com pessoas próximas ou até iniciar terapia pode ajudar a resgatar o sentimento de pertencimento. Você é importante. 💬"
+                    },
+                    "quero desistir de tudo": {
+                        "codificacao": "0.0017 0.0005 0.0001 0.0012 0 0.0015 0.0013 0.0012 0.0015 0.0014",
+                        "total": 0.0114,
+                        "significado": "Se está se sentindo assim, saiba: sua dor é válida e você não precisa enfrentá-la sozinho. Converse com alguém de confiança e procure ajuda especializada. Cuidar da sua saúde emocional é um ato de coragem. 🛡️"
+                    },
+                    "como cuidar da minha mente": {
+                        "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0003 0.0015 0.0013 0.0015 0 0.0012 0.0014 0.0015",
+                        "total": 0.0112,
+                        "significado": "Cuidar da saúde mental envolve boas práticas: descanso adequado, falar sobre sentimentos, estabelecer limites, praticar atividades que tragam prazer e, se necessário, buscar apoio terapêutico. Você merece bem-estar. 🌻"
+                    },
+
+                    
+                        "o que é a vida": {
+                            "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0012 0.0014 0.0013 0.0015",
+                            "total": 0.0100,
+                            "significado": "A vida é uma experiência única de crescimento, aprendizado e transformação. Não existe uma resposta única: viver é construir significado todos os dias."
+                        },
+                        "qual o sentido da existência": {
+                            "codificacao": "0.0017 0.0005 0.0001 0.0012 0 0.0014 0.0015 0.0013 0.0015 0.0014 0.0015",
+                            "total": 0.0121,
+                            "significado": "O sentido da existência é algo que cada pessoa descobre através de seus valores, escolhas e relações. É mais uma construção do que uma descoberta pronta."
+                        },
+                        "quem sou eu": {
+                            "codificacao": "0.0017 0.0005 0.0001 0.0012 0 0.0013 0.0012",
+                            "total": 0.0070,
+                            "significado": "Essa é uma das perguntas mais profundas. Você é uma construção contínua: suas memórias, suas escolhas e seus sonhos em constante transformação."
+                        },
+                        "o que é felicidade": {
+                            "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0015 0.0013 0.0012 0.0014",
+                            "total": 0.0104,
+                            "significado": "A felicidade, para muitos filósofos, não é a ausência de problemas, mas a capacidade de viver em harmonia com seus valores e propósitos mais íntimos."
+                        },
+                        "como encontrar a verdade": {
+                            "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0012 0.0015 0.0013 0.0015 0.0014 0.0013",
+                            "total": 0.0129,
+                            "significado": "Encontrar a verdade é um processo de questionamento constante, de humildade diante do desconhecido, e de coragem para mudar de perspectiva quando necessário."
+                        },
+                        "o que é o tempo": {
+                            "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0015 0.0012",
+                            "total": 0.0085,
+                            "significado": "O tempo é o tecido invisível da existência, onde passado, presente e futuro se entrelaçam. Para viver plenamente, é preciso habitar o presente, sem se prender demais ao que já passou ou ao que ainda virá."
+                        },
+
+                        
+                            "o que é liberdade": {
+                                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0015 0.0012 0.0015",
+                                "total": 0.0100,
+                                "significado": "Liberdade é a capacidade de agir de acordo com sua própria consciência, respeitando a si mesmo e aos outros. Ser livre é ser responsável pelas próprias escolhas."
+                            },
+                            "o que é sabedoria": {
+                                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0015 0.0014",
+                                "total": 0.0097,
+                                "significado": "Sabedoria é mais do que acumular conhecimento. É saber discernir, refletir e agir com equilíbrio, reconhecendo o que se sabe — e o que ainda precisa ser aprendido."
+                            },
+                            "o que é consciência": {
+                                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0013 0.0014 0.0015 0.0012",
+                                "total": 0.0101,
+                                "significado": "Consciência é a percepção que temos de nós mesmos, do mundo e das consequências dos nossos atos. Cultivá-la é um caminho para a ética e para a verdadeira liberdade."
+                            },
+                            "o que é justiça": {
+                                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0013 0.0014 0.0015 0.0013",
+                                "total": 0.0104,
+                                "significado": "Justiça é buscar o equilíbrio entre os direitos e deveres de cada ser humano, respeitando a dignidade e promovendo o bem comum. Não existe justiça sem empatia."
+                            },
+                            "o que é o amor": {
+                                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0015 0.0012 0.0015",
+                                "total": 0.0096,
+                                "significado": "O amor é uma força que transcende o eu, capaz de unir, transformar e dar sentido à existência. Amar é reconhecer o outro sem querer possuí-lo."
+                            },
+                            "como alcançar a felicidade": {
+                                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0015 0.0013 0.0012 0.0014 0.0013 0.0015",
+                                "total": 0.0127,
+                                "significado": "A felicidade não é um destino final, mas o modo como caminhamos. É estar presente, agir com autenticidade e encontrar beleza nos pequenos momentos."
+                            },
+
+                            
+                                "quem foi napoleão bonaparte": {
+                                    "codificacao": "0.0017 0.0005 0.0013 0.0015 0 0.0013 0.0015 0.0014 0.0013 0.0015 0.0014",
+                                    "total": 0.0119,
+                                    "significado": "Napoleão Bonaparte foi um líder militar e político francês que se destacou durante a Revolução Francesa e se tornou imperador da França. Conhecido por suas reformas e campanhas militares, sua influência moldou a Europa moderna."
+                                },
+                                "o que foi a revolução francesa": {
+                                    "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0004 0.0015 0.0013 0.0015 0.0014 0.0015",
+                                    "total": 0.0117,
+                                    "significado": "A Revolução Francesa, iniciada em 1789, foi um movimento social e político que derrubou a monarquia absoluta e instaurou princípios de liberdade, igualdade e fraternidade, mudando profundamente a história ocidental."
+                                },
+                                "quem descobriu a américa": {
+                                    "codificacao": "0.0017 0.0005 0.0013 0.0015 0 0.0003 0.0015 0.0013 0.0012 0.0015 0.0014",
+                                    "total": 0.0114,
+                                    "significado": "Cristóvão Colombo, navegando a serviço da Espanha, chegou ao continente americano em 1492. Embora povos nativos já habitassem as Américas, a expedição de Colombo iniciou o contato europeu sistemático com o Novo Mundo."
+                                },
+                                "o que foi a segunda guerra mundial": {
+                                    "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0015 0.0012 0.0015 0.0013 0.0015 0.0014 0.0015",
+                                    "total": 0.0136,
+                                    "significado": "A Segunda Guerra Mundial (1939-1945) foi o maior conflito da história, envolvendo várias nações em combates globais. Marcada pela luta contra regimes totalitários como o nazismo, o conflito resultou em milhões de mortos e profundas mudanças geopolíticas."
+                                },
+                                "o que foi o renascimento": {
+                                    "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0013 0.0015 0.0012",
+                                    "total": 0.0099,
+                                    "significado": "O Renascimento foi um movimento cultural e intelectual que floresceu na Europa entre os séculos XIV e XVII, caracterizado pelo resgate dos valores da Antiguidade Clássica, inovações científicas e artísticas e mudanças na visão de mundo."
+                                },
+                                "quem foi martin luther king": {
+                                    "codificacao": "0.0017 0.0005 0.0013 0.0015 0 0.0013 0.0012 0.0014 0.0015 0.0013 0.0015",
+                                    "total": 0.0122,
+                                    "significado": "Martin Luther King Jr. foi um dos principais líderes do movimento pelos direitos civis nos Estados Unidos. Defensor da igualdade racial e da resistência pacífica, é lembrado por seu famoso discurso 'I Have a Dream' e seu legado de justiça social."
+                                },
+
+                                
+                                    "o que foi a independência do brasil": {
+                                        "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0012 0.0015 0.0014 0.0015 0.0013",
+                                        "total": 0.0108,
+                                        "significado": "A Independência do Brasil ocorreu em 7 de setembro de 1822, quando Dom Pedro I proclamou a separação política do Brasil em relação a Portugal. Esse marco histórico garantiu a autonomia do país, embora muitas mudanças sociais ainda demorassem a acontecer."
+                                    },
+                                    "o que foi a proclamação da república": {
+                                        "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0015 0.0014 0.0013 0.0015 0.0014",
+                                        "total": 0.0109,
+                                        "significado": "A Proclamação da República aconteceu em 15 de novembro de 1889, com a deposição do imperador Dom Pedro II. Liderado pelo marechal Deodoro da Fonseca, o Brasil passou a ser governado por um regime republicano."
+                                    },
+                                    "quem foi tiradentes": {
+                                        "codificacao": "0.0017 0.0005 0.0013 0.0015 0 0.0013 0.0012 0.0014 0.0015",
+                                        "total": 0.0104,
+                                        "significado": "Tiradentes foi um dos líderes da Inconfidência Mineira, movimento que buscava a independência do Brasil em relação a Portugal no século XVIII. Ele se tornou símbolo da luta pela liberdade após ser condenado e executado em 1792."
+                                    },
+                                    "o que foi a escravidão no brasil": {
+                                        "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0013 0.0012 0.0015 0.0014",
+                                        "total": 0.0103,
+                                        "significado": "A escravidão no Brasil durou mais de 300 anos, trazendo milhões de africanos para o trabalho forçado. Esse período deixou marcas profundas na sociedade brasileira, e a abolição só veio oficialmente em 1888 com a assinatura da Lei Áurea."
+                                    },
+                                    "o que foi a ditadura militar no brasil": {
+                                        "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0015 0.0013 0.0015 0.0012",
+                                        "total": 0.0113,
+                                        "significado": "A Ditadura Militar no Brasil durou de 1964 a 1985. Foi um período de repressão política, censura, perseguições e suspensão de direitos democráticos, mas também de crescimento econômico em determinados momentos."
+                                    },
+                                    "quem foi dom pedro ii": {
+                                        "codificacao": "0.0017 0.0005 0.0013 0.0015 0 0.0012 0.0015 0.0014",
+                                        "total": 0.0091,
+                                        "significado": "Dom Pedro II foi o segundo e último imperador do Brasil, governando de 1831 até 1889. Conhecido por seu interesse em ciência, educação e cultura, é lembrado como um monarca culto e respeitado internacionalmente."
+                                    },
+                                    
+                                        "como surgiu o rio grande do sul": {
+                                            "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0012 0.0013 0.0014 0.0015 0.0013 0.0015",
+                                            "total": 0.0118,
+                                            "significado": "O Rio Grande do Sul foi formado durante o processo de colonização portuguesa no século XVIII, em meio a disputas territoriais com os espanhóis. Sua história é marcada pela coragem dos colonizadores e pela diversidade cultural dos povos que aqui chegaram."
+                                        },
+                                        "o que foi a revolução farroupilha": {
+                                            "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0015 0.0012 0.0015 0.0013 0.0014",
+                                            "total": 0.0122,
+                                            "significado": "A Revolução Farroupilha, também chamada de Guerra dos Farrapos, foi um dos conflitos mais importantes da história do Brasil, ocorrendo de 1835 a 1845. Os gaúchos lutaram por mais autonomia frente ao governo imperial. Apesar de derrotados militarmente, o movimento consolidou o espírito de resistência e identidade do povo sul-rio-grandense."
+                                        },
+                                        "quem foi bento gonçalves": {
+                                            "codificacao": "0.0017 0.0005 0.0013 0.0015 0 0.0013 0.0015 0.0012 0.0015",
+                                            "total": 0.0099,
+                                            "significado": "Bento Gonçalves foi o principal líder da Revolução Farroupilha. Conhecido por sua bravura e liderança, tornou-se símbolo da luta pela liberdade e pelos ideais republicanos no Rio Grande do Sul."
+                                        },
+                                        "o que é a semana farroupilha": {
+                                            "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0015 0.0012 0.0015 0.0014",
+                                            "total": 0.0105,
+                                            "significado": "A Semana Farroupilha é uma celebração anual no Rio Grande do Sul, ocorrendo em setembro, em homenagem à Revolução Farroupilha. Durante essa semana, são exaltadas as tradições gaúchas, como a música, a dança, a culinária e o orgulho da história regional."
+                                        },
+                                        "o que representa a cultura gaúcha": {
+                                            "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0015 0.0012 0.0015 0.0013",
+                                            "total": 0.0108,
+                                            "significado": "A cultura gaúcha representa a identidade de um povo que valoriza a liberdade, a coragem e a tradição. Ela é expressa nos costumes, no chimarrão, nas danças típicas, na música nativista e no amor pela terra e pela história."
+                                        },
+                                        "o que foi o tratado de poncho verde": {
+                                            "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0015 0.0014 0.0013 0.0012",
+                                            "total": 0.0107,
+                                            "significado": "O Tratado de Poncho Verde, assinado em 1845, encerrou a Revolução Farroupilha. Embora os farrapos não tenham conquistado a independência desejada, o tratado garantiu anistia aos rebeldes e integração de seus líderes no Exército Imperial, selando a paz entre as partes."
+                                        },
+
+                                        
+                                            "o que é química": {
+                                                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0015 0.0012",
+                                                "total": 0.0085,
+                                                "significado": "Química é a ciência que estuda a composição, a estrutura, as propriedades e as transformações da matéria. Ela explica como as substâncias interagem e se modificam em diferentes condições."
+                                            },
+                                            "o que é átomo": {
+                                                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0012 0.0014",
+                                                "total": 0.0070,
+                                                "significado": "O átomo é a menor unidade básica da matéria. É formado por um núcleo (composto de prótons e nêutrons) e uma região ao redor chamada eletrosfera, onde ficam os elétrons."
+                                            },
+                                            "o que é reação química": {
+                                                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0015 0.0012 0.0015 0.0014",
+                                                "total": 0.0100,
+                                                "significado": "Uma reação química acontece quando duas ou mais substâncias se transformam em novas substâncias, através da reorganização de seus átomos. Exemplos: a queima da madeira ou a ferrugem do ferro."
+                                            },
+                                            "o que é tabela periódica": {
+                                                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0014 0.0015 0.0013 0.0012",
+                                                "total": 0.0098,
+                                                "significado": "A tabela periódica é uma organização dos elementos químicos de acordo com suas propriedades. Ela nos ajuda a entender a estrutura e o comportamento dos átomos."
+                                            },
+                                            "o que é molécula": {
+                                                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0012 0.0013 0.0015",
+                                                "total": 0.0089,
+                                                "significado": "Uma molécula é a união de dois ou mais átomos ligados entre si. Pode ser formada por átomos iguais, como o gás oxigênio (O₂), ou diferentes, como a água (H₂O)."
+                                            },
+                                            "o que é ácido e base": {
+                                                "codificacao": "0.0001 0.0015 0.0013 0.0015 0 0.0013 0.0015 0.0014 0.0015",
+                                                "total": 0.0101,
+                                                "significado": "Ácidos são substâncias que liberam íons H⁺ em solução. Bases são substâncias que liberam íons OH⁻. Eles têm propriedades diferentes e reagem entre si formando sais e água."
+                                            }
+                                        }
+                                        
+                                    
+                                    
+                                
+                            
+                        
+                    
+                
+            
+
+            
+    
+        
+    
+
+        
+         
