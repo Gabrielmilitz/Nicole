@@ -1,4 +1,4 @@
-Nicole is a local AI that:
+Nicole is a bot that:
 
 Understands user questions using embedding models (sentence-transformers).
 
