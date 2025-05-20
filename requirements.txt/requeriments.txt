@@ -1,6 +1,0 @@
-flask
-gunicorn
-sentence-transformers
-PyMuPDF
-googlesearch-python
-torch
