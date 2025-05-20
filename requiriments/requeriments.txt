@@ -1,8 +1,6 @@
-Flask
+flask
+gunicorn
 sentence-transformers
-requests
 PyMuPDF
-Pillow
-waitress
+googlesearch-python
 torch
-transformers
