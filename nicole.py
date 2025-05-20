@@ -20,7 +20,7 @@ def resposta_positiva(nome):
         f"Claro, {nome}! Aqui está o que encontrei:",
         f"Olha só, {nome}, achei isso para você:",
         f"Certo, {nome}. Veja essa informação:",
-        f"Encontrei algo interessante para você, {nome}!",
+        
     ]
     return random.choice(opcoes)
 
