@@ -5,7 +5,7 @@ const mensagemInput = document.getElementById("mensagem");
 
 let nome = "";
 
-formulario.addEventListener("submit", async function(e) {
+formulario.addEventListener("submit", async function (e) {
     e.preventDefault();
 
     if (!nome) {
@@ -38,19 +38,34 @@ formulario.addEventListener("submit", async function(e) {
             body: JSON.stringify({ nome: nome, mensagem: mensagem }),
         });
 
-        const data = await response.json();
         clearInterval(interval);
         digitando.remove();
+
+        if (!response.ok) {
+            adicionarMensagem("nicole", "Erro no servidor. Tente novamente mais tarde. 😕");
+            console.error("Erro HTTP:", response.status);
+            return;
+        }
+
+        const contentType = response.headers.get("content-type");
+        if (!contentType || !contentType.includes("application/json")) {
+            adicionarMensagem("nicole", "Resposta inválida do servidor. 😕");
+            console.error("Tipo de resposta inesperado:", contentType);
+            return;
+        }
+
+        const data = await response.json();
 
         if (data.imagem) {
             adicionarMensagem("nicole", `${data.resposta}<br><img src="${data.imagem}" alt="Imagem gerada" style="max-width:100%; margin-top:10px;">`);
         } else {
             adicionarMensagem("nicole", data.resposta);
         }
+
     } catch (error) {
         clearInterval(interval);
         digitando.remove();
-        adicionarMensagem("nicole", "Erro ao tentar conversar com o servidor. 😕");
+        adicionarMensagem("nicole", "Erro de conexão. Tente novamente. 😕");
         console.error("Erro:", error);
     }
 });
