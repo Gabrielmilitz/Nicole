@@ -10,9 +10,11 @@ import torch
 PASTA_PROCESSADOR = "dados"
 DIRETORIO_PDFS = "pdfs"
 
-# Função leve para carregar o modelo somente quando necessário
+# Carrega o modelo uma vez só
+modelo_global = SentenceTransformer('paraphrase-MiniLM-L3-v2')
+
 def get_modelo():
-    return SentenceTransformer('paraphrase-MiniLM-L3-v2')  # Mais leve e compatível com Render
+    return modelo_global
 
 def resposta_positiva(nome):
     return random.choice([
@@ -58,7 +60,6 @@ def preparar_base(processador):
     modelo = get_modelo()
     with torch.no_grad():
         embeddings = modelo.encode(frases, convert_to_tensor=True)
-    del modelo
     gc.collect()
     return frases, embeddings
 
@@ -95,43 +96,36 @@ def buscar_no_google(consulta):
 
 def responder_usuario(usuario, nome, frases_base, embeddings_base, trechos_pdf, embeddings_pdf, processador):
     modelo = get_modelo()
-    resposta = ""
 
-    try:
-        with torch.no_grad():
-            embedding_usuario = modelo.encode(usuario, convert_to_tensor=True)
-            similaridades = util.cos_sim(embedding_usuario, embeddings_base)[0]
-            melhor_indice = similaridades.argmax().item()
-            melhor_pontuacao = similaridades[melhor_indice].item() * 100
+    with torch.no_grad():
+        embedding_usuario = modelo.encode(usuario, convert_to_tensor=True)
+        similaridades = util.cos_sim(embedding_usuario, embeddings_base)[0]
+        melhor_indice = similaridades.argmax().item()
+        melhor_pontuacao = similaridades[melhor_indice].item() * 100
 
-            if melhor_pontuacao >= 75:
-                chave = frases_base[melhor_indice]
-                resposta_crua = processador[chave]["significado"]
-                resposta = f"{resposta_positiva(nome)} {resposta_crua.capitalize()}"
-            else:
-                encontrou_no_pdf = False
-                if embeddings_pdf:
-                    similaridades_pdf = util.cos_sim(embedding_usuario, embeddings_pdf)[0]
-                    melhor_indice_pdf = similaridades_pdf.argmax().item()
-                    melhor_pontuacao_pdf = similaridades_pdf[melhor_indice_pdf].item() * 100
+        if melhor_pontuacao >= 75:
+            chave = frases_base[melhor_indice]
+            resposta_crua = processador[chave]["significado"]
+            resposta = f"{resposta_positiva(nome)} {resposta_crua.capitalize()}"
+        else:
+            encontrou_no_pdf = False
+            if embeddings_pdf:
+                similaridades_pdf = util.cos_sim(embedding_usuario, embeddings_pdf)[0]
+                melhor_indice_pdf = similaridades_pdf.argmax().item()
+                melhor_pontuacao_pdf = similaridades_pdf[melhor_indice_pdf].item() * 100
 
-                    if melhor_pontuacao_pdf >= 50:
-                        trecho = trechos_pdf[melhor_indice_pdf]
-                        resposta = f"{resposta_positiva(nome)} {trecho[:700]}..."
-                        encontrou_no_pdf = True
+                if melhor_pontuacao_pdf >= 50:
+                    trecho = trechos_pdf[melhor_indice_pdf]
+                    resposta = f"{resposta_positiva(nome)} {trecho[:700]}..."
+                    encontrou_no_pdf = True
 
-                if not resposta:
-                    print("🔎 Buscando no Google...")
-                    resultado_google = buscar_no_google(usuario)
-                    if resultado_google:
-                        resposta = f"Não encontrei uma resposta exata ainda, {nome}, mas talvez isso te ajude: {resultado_google}"
-                    else:
-                        resposta = resposta_negativa(nome)
+            if not encontrou_no_pdf:
+                print("🔎 Buscando no Google...")
+                resultado_google = buscar_no_google(usuario)
+                if resultado_google:
+                    resposta = f"Não encontrei uma resposta exata ainda, {nome}, mas talvez isso te ajude: {resultado_google}"
+                else:
+                    resposta = resposta_negativa(nome)
 
-    except Exception as e:
-        print(f"❌ Erro ao gerar resposta: {e}")
-        resposta = "Houve um erro ao tentar responder. Tente novamente."
-
-    del modelo
     gc.collect()
     return resposta, None
