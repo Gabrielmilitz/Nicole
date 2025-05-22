@@ -10,6 +10,7 @@ processador = nicole.carregar_processador()
 frases_base, embeddings_base = nicole.preparar_base(processador)
 trechos_pdf = nicole.carregar_trechos_pdfs(nicole.DIRETORIO_PDFS)
 
+# Carrega embeddings dos PDFs, se houver
 if trechos_pdf:
     embeddings_pdf = nicole.get_modelo().encode(trechos_pdf, convert_to_tensor=True)
 else:
@@ -23,21 +24,21 @@ def index():
 def perguntar():
     try:
         data = request.get_json(force=True)
-        usuario = data.get("mensagem", "").strip().lower()
-        nome = data.get("nome", "amigo")
+        usuario = data.get("mensagem", "").lower().strip()
+        nome = data.get("nome", "").strip()
+
+        if not usuario or not nome:
+            return jsonify({"resposta": "Nome ou mensagem inválidos.", "imagem": None}), 400
 
         resposta, imagem = responder_usuario(
             usuario, nome, frases_base, embeddings_base, trechos_pdf, embeddings_pdf, processador
         )
 
         return jsonify({"resposta": resposta, "imagem": imagem})
-
+    
     except Exception as e:
         print(f"[ERRO INTERNO] {e}")
-        return jsonify({
-            "resposta": "Erro interno no servidor. 😕",
-            "imagem": None
-        }), 500
+        return jsonify({"resposta": "Erro interno no servidor. 😕", "imagem": None}), 500
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
