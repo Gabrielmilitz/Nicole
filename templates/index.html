@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicole - Assistente IA</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 
-<div class="header-nicole">
-    Nicole 
-</div>
+    <div class="header-nicole">
+        Nicole 
+    </div>
 
-<div id="chat" class="chat-container"></div>
+    <div id="chat" class="chat-container"></div>
 
-<form id="formulario">
-    <input type="text" id="nome" placeholder="Digite seu nome..." required>
-    <input type="text" id="mensagem" placeholder="Digite sua mensagem..." required>
-    <button type="submit">Enviar</button>
-</form>
+    <form id="formulario">
+        <input type="text" id="nome" placeholder="Digite seu nome..." required>
+        <input type="text" id="mensagem" placeholder="Digite sua mensagem..." required>
+        <button type="submit">Enviar</button>
+    </form>
 
-<script src="/static/js/script.js"></script>
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
 </html>

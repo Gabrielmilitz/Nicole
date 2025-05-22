@@ -2,14 +2,19 @@ import random
 import os
 import json
 import fitz
+import gc
 from googlesearch import search
 from sentence_transformers import SentenceTransformer, util
+import torch
 
 PASTA_PROCESSADOR = "dados"
 DIRETORIO_PDFS = "pdfs"
 
+# Carrega o modelo uma vez só
+modelo_global = SentenceTransformer('paraphrase-MiniLM-L3-v2')
+
 def get_modelo():
-    return SentenceTransformer('paraphrase-MiniLM-L3-v2')  # modelo mais leve
+    return modelo_global
 
 def resposta_positiva(nome):
     return random.choice([
@@ -29,7 +34,7 @@ def carregar_processador():
     processador = {}
     if not os.path.exists(PASTA_PROCESSADOR):
         return {}
-    
+
     for arquivo in os.listdir(PASTA_PROCESSADOR):
         if arquivo.endswith(".json"):
             with open(os.path.join(PASTA_PROCESSADOR, arquivo), "r", encoding="utf-8") as f:
@@ -53,7 +58,8 @@ def salvar_processador_por_tema(processador):
 def preparar_base(processador):
     frases = list(processador.keys())
     modelo = get_modelo()
-    embeddings = modelo.encode(frases, convert_to_tensor=True)
+    with torch.no_grad():
+        embeddings = modelo.encode(frases, convert_to_tensor=True)
     return frases, embeddings
 
 def carregar_trechos_pdfs(diretorio):
@@ -89,30 +95,35 @@ def buscar_no_google(consulta):
 
 def responder_usuario(usuario, nome, frases_base, embeddings_base, trechos_pdf, embeddings_pdf, processador):
     modelo = get_modelo()
-    embedding_usuario = modelo.encode(usuario, convert_to_tensor=True)
 
-    similaridades = util.cos_sim(embedding_usuario, embeddings_base)[0]
-    melhor_indice = similaridades.argmax().item()
-    melhor_pontuacao = similaridades[melhor_indice].item() * 100
+    with torch.no_grad():
+        embedding_usuario = modelo.encode(usuario, convert_to_tensor=True)
+        similaridades = util.cos_sim(embedding_usuario, embeddings_base)[0]
+        melhor_indice = similaridades.argmax().item()
+        melhor_pontuacao = similaridades[melhor_indice].item() * 100
 
-    if melhor_pontuacao >= 75:
-        chave = frases_base[melhor_indice]
-        resposta_crua = processador[chave]["significado"]
-        return f"{resposta_positiva(nome)} {resposta_crua.capitalize()}", None
+        if melhor_pontuacao >= 75:
+            chave = frases_base[melhor_indice]
+            resposta_crua = processador[chave]["significado"]
+            resposta = f"{resposta_positiva(nome)} {resposta_crua.capitalize()}"
+        else:
+            encontrou_no_pdf = False
+            if embeddings_pdf:
+                similaridades_pdf = util.cos_sim(embedding_usuario, embeddings_pdf)[0]
+                melhor_indice_pdf = similaridades_pdf.argmax().item()
+                melhor_pontuacao_pdf = similaridades_pdf[melhor_indice_pdf].item() * 100
 
-    encontrou_no_pdf = False
-    if embeddings_pdf:
-        similaridades_pdf = util.cos_sim(embedding_usuario, embeddings_pdf)[0]
-        melhor_indice_pdf = similaridades_pdf.argmax().item()
-        melhor_pontuacao_pdf = similaridades_pdf[melhor_indice_pdf].item() * 100
+                if melhor_pontuacao_pdf >= 50:
+                    trecho = trechos_pdf[melhor_indice_pdf]
+                    resposta = f"{resposta_positiva(nome)} {trecho[:700]}..."
+                    encontrou_no_pdf = True
 
-        if melhor_pontuacao_pdf >= 50:
-            trecho = trechos_pdf[melhor_indice_pdf]
-            return f"{resposta_positiva(nome)} {trecho[:700]}...", None
-            encontrou_no_pdf = True
+            if not encontrou_no_pdf:
+                print("🔍 Buscando no Google...")
+                resultado_google = buscar_no_google(usuario)
+                if resultado_google:
+                    resposta = f"Não encontrei uma resposta exata ainda, {nome}, mas talvez isso te ajude: {resultado_google}"
+                else:
+                    resposta = resposta_negativa(nome)
 
-    print("🔎 Buscando no Google...")
-    resultado_google = buscar_no_google(usuario)
-    if resultado_google:
-        return f"Não encontrei uma resposta exata ainda, {nome}, mas talvez isso te ajude: {resultado_google}", None
-    return resposta_negativa(nome), None
+    return resposta, None

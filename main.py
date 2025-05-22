@@ -1,15 +1,18 @@
 from flask import Flask, render_template, request, jsonify
 import nicole
 from nicole import responder_usuario
-import os  # Adicionado para pegar a variável PORT
+import os
 
 app = Flask(__name__)
 
+# Carrega dados e embeddings uma única vez
 processador = nicole.carregar_processador()
 frases_base, embeddings_base = nicole.preparar_base(processador)
 trechos_pdf = nicole.carregar_trechos_pdfs(nicole.DIRETORIO_PDFS)
+
+# Carrega embeddings dos PDFs, se houver
 if trechos_pdf:
-    embeddings_pdf = nicole.modelo.encode(trechos_pdf, convert_to_tensor=True)
+    embeddings_pdf = nicole.get_modelo().encode(trechos_pdf, convert_to_tensor=True)
 else:
     embeddings_pdf = None
 
@@ -23,13 +26,11 @@ def perguntar():
     usuario = data["mensagem"].lower().strip()
     nome = data["nome"]
 
-    resposta, imagem = nicole.responder_usuario(
+    resposta, imagem = responder_usuario(
         usuario, nome, frases_base, embeddings_base, trechos_pdf, embeddings_pdf, processador
     )
-
     return jsonify({"resposta": resposta, "imagem": imagem})
 
-# --- MAIN ---
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Usa a porta definida pelo Render
-    app.run(host="0.0.0.0", port=port)        # Abre para todas as interfaces
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, host="0.0.0.0", port=port)
