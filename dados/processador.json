@@ -7,8 +7,8 @@
     "correspondencia": "ajuda ajuda-me preciso ajuda comandos opções menu o que fazer validação",
     "significado": "Aqui estão algumas opções que posso te ajudar:\n\n🔹 endereço\n🔹 renda PJ\n🔹 renda PF\n🔹 renda agro\n🔹 pessoas\n🔹 relacionamento\n🔹 bem novo\n🔹 validação\n\nDigite um dos termos acima para saber mais! 😊"
   },
-  "renda agro": {
-    "correspondencia": "renda agro",
+  "agro": {
+    "correspondencia": "agro",
     "significado": "Em construção"
   },
   "pessoas": {
