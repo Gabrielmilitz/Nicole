@@ -1,38 +1,5 @@
 {
   "oi": {
-    "correspondencia": "oi tudo eai",
-    "significado": "Olá! Tudo bem por aí?"
-  },
-  "olá": {
-    "correspondencia": "olá ola oi bomdia",
-    "significado": "Olá! Que bom te ver por aqui!"
-  },
-  "bom dia": {
-    "correspondencia": "bom dia bomdia",
-    "significado": "Bom dia! Espero que seu dia seja incrível!"
-  },
-  "boa tarde": {
-    "correspondencia": "boa tarde boatarde",
-    "significado": "Boa tarde! Como posso te ajudar?"
-  },
-  "boa noite": {
-    "correspondencia": "boa noite boanoite",
-    "significado": "Boa noite! Se precisar de algo, estou por aqui!"
-  },
-  "e aí": {
-    "correspondencia": "e aí eai fala",
-    "significado": "E aí! Tudo certo contigo?"
-  },
-  "fala aí": {
-    "correspondencia": "fala falaaí eai",
-    "significado": "Fala aí! Pode mandar a dúvida."
-  },
-  "como vai": {
-    "correspondencia": "como vai tudo bem",
-    "significado": "Estou indo bem, e você? 😊"
-  },
-  "tudo bem": {
-    "correspondencia": "tudo bem beleza tranquilo",
-    "significado": "Tudo ótimo por aqui! E contigo?"
-  }
-}
+    "correspondencia": "oi eai bom dia boa tarde boa noite oii ajuda ",
+    "significado": "Olá! Tudo bem por aí, meu Nome é Nicole, sua assitênte virtual! ❤"
+
