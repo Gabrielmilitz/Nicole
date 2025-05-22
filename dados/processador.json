@@ -1,38 +1,38 @@
 {
   "oi": {
-    "tema": "saudacoes",
+    "correspondencia": "oi tudo eai",
     "significado": "Olá! Tudo bem por aí?"
   },
   "olá": {
-    "tema": "saudacoes",
+    "correspondencia": "olá ola oi bomdia",
     "significado": "Olá! Que bom te ver por aqui!"
   },
   "bom dia": {
-    "tema": "saudacoes",
+    "correspondencia": "bom dia bomdia",
     "significado": "Bom dia! Espero que seu dia seja incrível!"
   },
   "boa tarde": {
-    "tema": "saudacoes",
+    "correspondencia": "boa tarde boatarde",
     "significado": "Boa tarde! Como posso te ajudar?"
   },
   "boa noite": {
-    "tema": "saudacoes",
+    "correspondencia": "boa noite boanoite",
     "significado": "Boa noite! Se precisar de algo, estou por aqui!"
   },
   "e aí": {
-    "tema": "saudacoes",
+    "correspondencia": "e aí eai fala",
     "significado": "E aí! Tudo certo contigo?"
   },
   "fala aí": {
-    "tema": "saudacoes",
+    "correspondencia": "fala falaaí eai",
     "significado": "Fala aí! Pode mandar a dúvida."
   },
   "como vai": {
-    "tema": "saudacoes",
+    "correspondencia": "como vai tudo bem",
     "significado": "Estou indo bem, e você? 😊"
   },
   "tudo bem": {
-    "tema": "saudacoes",
+    "correspondencia": "tudo bem beleza tranquilo",
     "significado": "Tudo ótimo por aqui! E contigo?"
   }
 }
