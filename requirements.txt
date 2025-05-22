@@ -1,6 +1,6 @@
-flask
-gunicorn
-sentence-transformers
-PyMuPDF
-googlesearch-python
-torch
+flask==2.3.3
+gunicorn==21.2.0
+sentence-transformers==2.2.2
+PyMuPDF==1.22.5
+googlesearch-python==1.2.3
+torch==2.1.2
