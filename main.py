@@ -2,16 +2,16 @@ from flask import Flask, render_template, request, jsonify
 import nicole
 import os
 
+# Evita paralelismo com fork
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
 app = Flask(__name__)
 
-# Carrega dados uma única vez
+# Carrega dados e embeddings uma vez
 processador = nicole.carregar_processador()
 frases_base, embeddings_base = nicole.preparar_base(processador)
 trechos_pdf = nicole.carregar_trechos_pdfs(nicole.DIRETORIO_PDFS)
-embeddings_pdf = (
-    nicole.get_modelo().encode(trechos_pdf, convert_to_tensor=True)
-    if trechos_pdf else None
-)
+embeddings_pdf = nicole.gerar_embeddings_pdf(trechos_pdf)
 
 @app.route("/")
 def index():
