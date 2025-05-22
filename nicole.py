@@ -31,9 +31,18 @@ def resposta_negativa(nome):
     ])
 
 def responder_usuario(mensagem, nome, processador):
-    for pergunta, dados in processador.items():
-        chaves = dados.get("correspondencia", "").lower().split()
-        if any(palavra in mensagem for palavra in chaves):
-            return f"{resposta_positiva(nome)} {dados['significado']}", None
+    mensagem = mensagem.strip().lower()
+
+    # Etapa 1: Verificação direta por tópico (chave exata)
+    if mensagem in processador:
+        significado = processador[mensagem].get("significado", "")
+        return f"{resposta_positiva(nome)} {significado}", None
+
+    # Etapa 2: Verificação por palavras no campo 'correspondencia'
+    for chave, dados in processador.items():
+        correspondencia = dados.get("correspondencia", "").lower().split()
+        if any(palavra in mensagem for palavra in correspondencia):
+            significado = dados.get("significado", "")
+            return f"{resposta_positiva(nome)} {significado}", None
 
     return resposta_negativa(nome), None
