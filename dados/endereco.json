@@ -1,0 +1,66 @@
+{
+  "endereço": {
+    "correspondencia": "endereço comprovante de endereço endereço residencial endereço comercial zona rural caixa postal comprovante",
+    "significado": "Escolha o tipo de endereço que deseja consultar:\n\n🏡 residencial\n🏤 comercial\n🌾 zona rural\n📫 caixa postal\n📄 comprovantes de residência\n\nDigite um dos termos acima para saber mais detalhes."
+  },
+  "residencial": {
+    "correspondencia": "residencial endereço residencial comprovante de residência",
+    "significado": "🏡 **Endereço Residencial:**\n\nEste tipo de fluxo exige comprovação. Há regras específicas para cada tipo de documento:\n\n📌 **Conta de energia em nome do associado**: verificar se está dentro do prazo de 90 dias.\n📌 **Imposto de Renda**: segue o prazo oficial do IR e deve vir acompanhado do recibo de entrega.\n📌 **Conta de internet em nome da mãe**: necessário verificar o vínculo familiar conforme as regras do endereço residencial."
+  },
+  "comercial": {
+    "correspondencia": "comercial endereço comercial",
+    "significado": "🏤 **Endereço Comercial:**\n\nO fluxo pode ser **aprovado sem necessidade de comprovação**, mesmo com documentos incompletos, incorretos ou ausentes. Não é necessário realizar qualquer tipo de análise neste caso."
+  },
+  "zona rural": {
+    "correspondencia": "zona rural endereço rural área rural",
+    "significado": "🌾 **Zona Rural:**\n\nO fluxo pode ser **aprovado sem necessidade de comprovação**, mesmo com documentos incompletos, incorretos ou ausentes. Não é necessário realizar qualquer tipo de análise neste caso."
+  },
+  "caixa postal": {
+    "correspondencia": "caixa postal endereço caixa postal",
+    "significado": "📫 **Caixa Postal:**\n\nO fluxo pode ser **aprovado sem necessidade de comprovação**, mesmo com documentos incompletos, incorretos ou ausentes. Não é necessário realizar qualquer tipo de análise neste caso."
+  },
+  "comprovantes de residência": {
+    "correspondencia": "comprovantes de residência comprovante residencial documento de endereço prova de endereço documentos aceitos",
+    "significado": "📄 **Comprovantes de Residência – Documentos Aceitos**\n\nEscolha um dos documentos abaixo para visualizar as regras específicas:\n\n🔹 conta de água, luz, telefone\n🔹 declaração de residência\n🔹 declaração de terceiro\n🔹 imposto de renda\n🔹 contrato de locação\n🔹 consulta fornecedor\n🔹 contrato especial (idoso, arrendamento, comodato)\n🔹 CCIR (INCRA)\n🔹 declaração sindicato\n🔹 DAP, boletos, contracheques, extratos\n\nDigite o nome do documento desejado para saber mais detalhes."
+  },
+  "conta de água, luz, telefone": {
+    "correspondencia": "conta de luz conta de água telefone celular fatura cartão gás tv assinatura",
+    "significado": "🧾 **Contas (água, luz, telefone, cartão, etc.):**\n\n📌 Emitidas há no máximo 90 dias\n📌 Deve estar em nome do associado ou familiar com vínculo comprovado\n📌 Pode ser documento digital se constar o endereço do site\n📌 Leva-se em conta apenas o **logradouro e número**"
+  },
+  "declaração de residência": {
+    "correspondencia": "declaração de residência declaracao residencia",
+    "significado": "📝 **Declaração de Residência:**\n\n📌 Deve estar assinada\n📌 Emitida nos últimos 90 dias"
+  },
+  "declaração de terceiro": {
+    "correspondencia": "declaração de terceiro",
+    "significado": "📝 **Declaração de Terceiro:**\n\n📌 Assinada pelo associado\n📌 Emitida nos últimos 90 dias"
+  },
+  "imposto de renda": {
+    "correspondencia": "imposto de renda ir IRPF",
+    "significado": "📄 **Imposto de Renda (IR):**\n\n📌 Aceito com prazo anual conforme regras do IR\n📌 Deve estar acompanhado do recibo de entrega\n📌 Protegido por sigilo fiscal"
+  },
+  "contrato de locação": {
+    "correspondencia": "contrato de locação aluguel contrato de aluguel",
+    "significado": "📄 **Contrato de Locação:**\n\n📌 Precisa estar dentro do prazo da locação\n📌 Necessário registro em cartório"
+  },
+  "consulta fornecedor": {
+    "correspondencia": "consulta fornecedor serasa base fornecedores",
+    "significado": "🧾 **Consulta em Base de Fornecedores (ex: Serasa):**\n\n📌 Deve conter data de emissão\n📌 Precisa conter os dados completos do associado"
+  },
+  "contrato especial (idoso, arrendamento, comodato)": {
+    "correspondencia": "contrato idoso arrendamento comodato parceria agrícola",
+    "significado": "📄 **Contratos Especiais (idoso, arrendamento, comodato, etc.):**\n\n📌 Obrigatório o registro em cartório de títulos e documentos ou registro civil de pessoas jurídicas"
+  },
+  "CCIR (INCRA)": {
+    "correspondencia": "ccir incra cadastro imóvel rural",
+    "significado": "🌾 **Certificado de Cadastro de Imóvel Rural (CCIR):**\n\n📌 Emitido pelo INCRA\n📌 Aceito como comprovante de endereço rural"
+  },
+  "declaração sindicato": {
+    "correspondencia": "declaração sindicato rural cooperativa associação",
+    "significado": "📄 **Declaração de Sindicato, Cooperativa ou Associação:**\n\n📌 Deve ter **firma reconhecida em cartório**"
+  },
+  "DAP, boletos, contracheques, extratos": {
+    "correspondencia": "dap carnê boleto contracheque extrato bancário",
+    "significado": "📄 **Outros Documentos (DAP, boletos, contracheques, extratos):**\n\n📌 Aceitos desde que **não sejam correspondência pessoal** (ex: cartas, envelopes)"
+  }
+}
