@@ -31,9 +31,14 @@ def resposta_negativa(nome):
     ])
 
 def responder_usuario(mensagem, nome, processador):
-    for pergunta, dados in processador.items():
-        chaves = dados.get("correspondencia", "").lower().split()
-        if any(palavra in mensagem for palavra in chaves):
+    mensagem = mensagem.lower()
+
+    for chave, dados in processador.items():
+        if not isinstance(dados, dict):
+            continue
+
+        correspondencias = dados.get("correspondencia", "").lower().split()
+        if any(palavra in mensagem for palavra in correspondencias):
             return f"{resposta_positiva(nome)} {dados['significado']}", None
 
     return resposta_negativa(nome), None
