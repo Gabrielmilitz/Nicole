@@ -4,7 +4,8 @@ import os
 
 app = Flask(__name__)
 
-base = nicole.carregar_base()
+# Carrega os dados da IA apenas uma vez
+processador = nicole.carregar_processador()
 
 @app.route("/")
 def index():
@@ -13,17 +14,17 @@ def index():
 @app.route("/perguntar", methods=["POST"])
 def perguntar():
     try:
-        data = request.get_json(force=True)
+        data = request.get_json()
+        usuario = data.get("mensagem", "").strip().lower()
         nome = data.get("nome", "Usuário")
-        mensagem = data.get("mensagem", "")
 
-        resposta, imagem = nicole.responder_usuario(mensagem, nome, base)
-        return jsonify({"resposta": resposta, "imagem": imagem})
+        resposta, imagem = nicole.responder_usuario(usuario, nome, processador)
+        return jsonify({"resposta": resposta, "imagem": imagem}), 200
 
     except Exception as e:
-        print(f"[ERRO] {e}")
+        print(f"[ERRO INTERNO] {e}")
         return jsonify({
-            "resposta": "Erro interno no servidor. 😕",
+            "resposta": "Houve um erro interno no servidor. 😞",
             "imagem": None
         }), 500
 
