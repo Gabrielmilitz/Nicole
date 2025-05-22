@@ -1,38 +1,39 @@
-import os
 import json
+import os
 import random
 
-PASTA_DADOS = "dados"
+PASTA_PROCESSADOR = "dados"
 
-def carregar_base():
-    base = {}
-    if os.path.exists(PASTA_DADOS):
-        for arquivo in os.listdir(PASTA_DADOS):
-            if arquivo.endswith(".json"):
-                caminho = os.path.join(PASTA_DADOS, arquivo)
-                with open(caminho, "r", encoding="utf-8") as f:
-                    base.update(json.load(f))
-    return base
+def carregar_processador():
+    processador = {}
+    if not os.path.exists(PASTA_PROCESSADOR):
+        return {}
+
+    for arquivo in os.listdir(PASTA_PROCESSADOR):
+        if arquivo.endswith(".json"):
+            caminho = os.path.join(PASTA_PROCESSADOR, arquivo)
+            with open(caminho, "r", encoding="utf-8") as f:
+                processador.update(json.load(f))
+    return processador
 
 def resposta_positiva(nome):
     return random.choice([
-        f"Certo, {nome}! Veja o que encontrei:",
-        f"Olha só, {nome}, isso pode te ajudar:",
-        f"Aqui está, {nome}:",
+        f"Claro, {nome}! Aqui está o que encontrei:",
+        f"Olha só, {nome}, achei isso para você:",
+        f"Certo, {nome}. Veja essa informação:"
     ])
 
 def resposta_negativa(nome):
     return random.choice([
-        f"Poxa, {nome}, não encontrei nada sobre isso. 😕",
-        f"Essa eu não sei ainda, {nome}. Me ensina? 🤔",
+        f"Hmm... ainda não sei responder isso, {nome}.",
+        f"Essa me pegou, {nome}! Mas estou sempre aprendendo!",
+        f"Não achei ainda, {nome}. Me ensina?"
     ])
 
-def responder_usuario(mensagem, nome, base):
-    mensagem = mensagem.lower()
-
-    for frase, dados in base.items():
-        tema = dados.get("tema", "").lower()
-        if tema in mensagem:
+def responder_usuario(mensagem, nome, processador):
+    for pergunta, dados in processador.items():
+        chaves = dados.get("correspondencia", "").lower().split()
+        if any(palavra in mensagem for palavra in chaves):
             return f"{resposta_positiva(nome)} {dados['significado']}", None
 
     return resposta_negativa(nome), None
