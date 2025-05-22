@@ -1,90 +1,90 @@
 {
   "qual o documento necessário para comprovar estado civil?": {
     "significado": "Depende do estado civil: solteiro não precisa, casado apresenta certidão, união estável precisa de contrato, divorciado tem certidão com averbação, separado apresenta sentença, e viúvo precisa da certidão de óbito.",
-    "tema": "estado civil"
+    "correspondencia": "estado civil solteiro casado divorciado união estável separado viúvo certidão"
   },
   "como saber o regime de bens se não estiver declarado?": {
     "significado": "Se o casamento foi até 1977, considera-se comunhão universal. Após 1977, aplica-se comunhão parcial.",
-    "tema": "regime de bens"
+    "correspondencia": "regime bens comunhão casamento 1977 universal parcial"
   },
   "qual o prazo de validade para comprovante de residência?": {
     "significado": "O comprovante de residência deve ter sido emitido ou postado há menos de 90 dias.",
-    "tema": "comprovante de residência"
+    "correspondencia": "comprovante residência prazo validade 90 dias emitido postado"
   },
   "o comprovante de residência pode estar em nome de outra pessoa?": {
     "significado": "Sim, desde que seja de familiar e haja comprovação de vínculo.",
-    "tema": "comprovante de residência"
+    "correspondencia": "comprovante residência nome pessoa familiar vínculo"
   },
   "quais documentos podem ser usados como comprovante de residência?": {
     "significado": "Contas, declarações, contratos, extratos bancários, boletos e IRPF são exemplos aceitos.",
-    "tema": "comprovante de residência"
+    "correspondencia": "documentos comprovante residência contas declarações contratos extratos boletos irpf"
   },
   "qual documento é aceito como comprovante de renda?": {
     "significado": "Depende da origem da renda. Para qualquer tipo, são aceitos declaração própria (até R$10 mil/mês), IRPF com recibo, Decore, e-Social, entre outros.",
-    "tema": "comprovante de renda"
+    "correspondencia": "documento comprovante renda declaração irpf decore e-social"
   },
   "como comprovar renda por vínculo empregatício?": {
     "significado": "São aceitos contracheque, CTPS, demonstrativo oficial, extrato de salário ou contrato.",
-    "tema": "renda empregatícia"
+    "correspondencia": "renda vínculo empregatício contracheque ctps demonstrativo contrato"
   },
   "quais documentos servem para aposentadoria ou pensão?": {
     "significado": "Holerite, extratos do INSS ou demonstrativos do Sicoob são aceitos.",
-    "tema": "aposentadoria"
+    "correspondencia": "aposentadoria pensão inss holerite demonstrativo sicoob"
   },
   "como comprovar renda sem vínculo empregatício?": {
     "significado": "Documentos como pró-labore, DRE, DEFIS, nota fiscal, contrato ou DT-e são aceitos.",
-    "tema": "renda autônoma"
+    "correspondencia": "renda autônoma sem vínculo pró-labore dre defis nota fiscal contrato"
   },
   "como comprovar pensão judicial?": {
     "significado": "É necessário apresentar sentença ou documento homologado com o valor fixado.",
-    "tema": "pensão judicial"
+    "correspondencia": "pensão judicial sentença homologada valor fixado"
   },
   "como comprovar renda com aluguel ou arrendamento?": {
     "significado": "Apresentar contrato registrado e prova de propriedade do imóvel.",
-    "tema": "renda com aluguel"
+    "correspondencia": "renda aluguel arrendamento contrato propriedade imóvel"
   },
   "quais documentos são aceitos para renda agropecuária ou pesca?": {
     "significado": "São aceitos laudos técnicos, declarações de cooperativas, CAF, notas fiscais e outros documentos setoriais.",
-    "tema": "renda agropecuária"
+    "correspondencia": "renda agropecuária pesca laudo cooperativa caf nota fiscal"
   },
   "posso usar extrato bancário como comprovante de renda?": {
     "significado": "Extrato é aceito apenas como documento complementar e não pode ser usado sozinho.",
-    "tema": "extrato bancário"
+    "correspondencia": "extrato bancário renda complementar comprovante"
   },
   "como comprovar rendimentos do exterior?": {
     "significado": "Exige tradução juramentada, conversão de moeda e declaração anexa.",
-    "tema": "renda exterior"
+    "correspondencia": "rendimentos exterior tradução moeda declaração anexa"
   },
   "o que fazer se não possuir renda?": {
     "significado": "Deve ser declarado que não possui renda.",
-    "tema": "sem renda"
+    "correspondencia": "sem renda declaração nenhuma"
   },
   "como funciona o relacionamento digital com o Sicoob?": {
     "significado": "É feito pelo aplicativo. Basta documento com foto e selfie. Comprovante de renda e endereço são dispensados.",
-    "tema": "relacionamento digital"
+    "correspondencia": "relacionamento digital sicoob aplicativo selfie documento"
   },
   "o que é cartão de autógrafos?": {
     "significado": "Documento com três assinaturas, uma delas igual ao documento de identidade, para conferência. Pode ser digitalizado.",
-    "tema": "cartão de autógrafos"
+    "correspondencia": "cartão autógrafos assinaturas identidade conferência"
   },
   "quais documentos são exigidos para pessoa jurídica?": {
     "significado": "É necessário documento de constituição conforme o tipo jurídico. Pode ser substituído por certidão de inteiro teor.",
-    "tema": "pessoa jurídica"
+    "correspondencia": "documento pessoa jurídica constituição certidão tipo jurídico"
   },
   "empresa precisa de comprovante de endereço?": {
     "significado": "Não, se constar no contrato social ou no CNPJ. Caso contrário, deve apresentar comprovante conforme regras da pessoa física.",
-    "tema": "endereço empresa"
+    "correspondencia": "empresa endereço comprovante contrato cnpj"
   },
   "como comprovar faturamento da empresa?": {
     "significado": "São aceitos DRE, ECD/ECF, extratos do Simples, DASN-SIMEI, notas fiscais, previsão de faturamento e outros documentos contábeis.",
-    "tema": "faturamento"
+    "correspondencia": "faturamento empresa dre ecf simples simei notas fiscais"
   },
   "empresa nova pode declarar faturamento?": {
     "significado": "Sim, pode apresentar uma previsão anual com base nos primeiros meses.",
-    "tema": "empresa nova"
+    "correspondencia": "empresa nova previsão faturamento primeiros meses"
   },
   "e se a empresa não tiver faturamento?": {
     "significado": "Deve ser declarado que não possui faturamento.",
-    "tema": "sem faturamento"
+    "correspondencia": "sem faturamento empresa declaração"
   }
 }
