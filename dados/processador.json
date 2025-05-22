@@ -7,7 +7,6 @@
     "correspondencia": "ajuda ajuda-me preciso ajuda comandos opções menu o que fazer validação",
     "significado": "Aqui estão algumas opções que posso te ajudar:\n\n🔹 endereço\n🔹 renda PJ\n🔹 renda PF\n🔹 renda agro\n🔹 pessoas\n🔹 relacionamento\n🔹 bem novo\n🔹 validação\n\nDigite um dos termos acima para saber mais! 😊"
   },
-
   "renda agro": {
     "correspondencia": "renda agro",
     "significado": "Em construção"
@@ -24,10 +23,8 @@
     "correspondencia": "bem novo",
     "significado": "Em construção"
   },
-  "Validação": {
+  "validação": {
     "correspondencia": "validacao validacão gov",
     "significado": "https://validar.iti.gov.br/"
   }
 }
-
-
