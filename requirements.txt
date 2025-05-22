@@ -1,7 +1,3 @@
 flask
 gunicorn
-sentence-transformers==2.2.2
-PyMuPDF
 googlesearch-python
-torch
-huggingface_hub==0.11.1
