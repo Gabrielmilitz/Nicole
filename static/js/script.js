@@ -1,4 +1,3 @@
-
 const formulario = document.getElementById("formulario");
 const chat = document.getElementById("chat");
 const nomeInput = document.getElementById("nome");
@@ -6,7 +5,7 @@ const mensagemInput = document.getElementById("mensagem");
 
 let nome = "";
 
-formulario.addEventListener("submit", async function(e) {
+formulario.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     if (!nome) {
@@ -25,7 +24,6 @@ formulario.addEventListener("submit", async function(e) {
     mensagemInput.value = "";
 
     const digitando = adicionarMensagem("nicole", "<em>Nicole está digitando...</em>");
-
     let pontos = 0;
     const interval = setInterval(() => {
         pontos = (pontos + 1) % 4;
@@ -36,27 +34,26 @@ formulario.addEventListener("submit", async function(e) {
         const response = await fetch("/perguntar", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ nome: nome, mensagem: mensagem }),
+            body: JSON.stringify({ nome, mensagem }),
         });
 
-        if (!response.ok) {
-            throw new Error(`Servidor respondeu com status ${response.status}`);
-        }
-
+        if (!response.ok) throw new Error(`Servidor respondeu com status ${response.status}`);
         const data = await response.json();
+
         clearInterval(interval);
         digitando.remove();
 
         if (data.imagem) {
-            adicionarMensagem("nicole", `${data.resposta}<br><img src="${data.imagem}" alt="Imagem gerada" style="max-width:100%; margin-top:10px;">`);
+            adicionarMensagem("nicole", `${data.resposta}<br><img src="${data.imagem}" alt="Imagem" style="max-width:100%; margin-top:10px;">`);
         } else {
             adicionarMensagem("nicole", data.resposta);
         }
-    } catch (error) {
+
+    } catch (err) {
         clearInterval(interval);
         digitando.remove();
         adicionarMensagem("nicole", "Erro ao tentar conversar com o servidor. 😕");
-        console.error("Erro:", error);
+        console.error("Erro:", err);
     }
 });
 
