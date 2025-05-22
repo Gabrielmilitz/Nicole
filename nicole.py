@@ -13,7 +13,8 @@ def carregar_processador():
         if arquivo.endswith(".json"):
             caminho = os.path.join(PASTA_PROCESSADOR, arquivo)
             with open(caminho, "r", encoding="utf-8") as f:
-                processador.update(json.load(f))
+                nome_base = arquivo.replace(".json", "")
+                processador[nome_base] = json.load(f)
     return processador
 
 def resposta_positiva(nome):
@@ -33,12 +34,12 @@ def resposta_negativa(nome):
 def responder_usuario(mensagem, nome, processador):
     mensagem = mensagem.lower()
 
-    for chave, dados in processador.items():
-        if not isinstance(dados, dict):
-            continue
-
-        correspondencias = dados.get("correspondencia", "").lower().split()
-        if any(palavra in mensagem for palavra in correspondencias):
-            return f"{resposta_positiva(nome)} {dados['significado']}", None
+    for grupo in processador.values():
+        for chave, dados in grupo.items():
+            if not isinstance(dados, dict):
+                continue
+            correspondencias = dados.get("correspondencia", "").lower().split()
+            if any(palavra in mensagem for palavra in correspondencias):
+                return f"{resposta_positiva(nome)} {dados['significado']}", None
 
     return resposta_negativa(nome), None
