@@ -5,10 +5,9 @@ const mensagemInput = document.getElementById("mensagem");
 
 let nome = "";
 
-formulario.addEventListener("submit", async (e) => {
+formulario.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    // Primeiro envio: captura nome
     if (!nome) {
         nome = nomeInput.value.trim();
         if (nome) {
@@ -24,46 +23,36 @@ formulario.addEventListener("submit", async (e) => {
     adicionarMensagem("usuario", mensagem);
     mensagemInput.value = "";
 
-    const digitando = adicionarMensagem("nicole", "<em>Nicole está digitando</em>");
+    const digitando = adicionarMensagem("nicole", "<em>Nicole está digitando...</em>");
+
     let pontos = 0;
-    const interval = setInterval(() => {
+    const intervalo = setInterval(() => {
         pontos = (pontos + 1) % 4;
         digitando.innerHTML = `<em>Nicole está digitando${".".repeat(pontos)}</em>`;
     }, 400);
 
     try {
-        const response = await fetch("/perguntar", {
+        const resposta = await fetch("/perguntar", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ nome, mensagem }),
+            body: JSON.stringify({ nome: nome, mensagem: mensagem })
         });
 
-        clearInterval(interval);
+        clearInterval(intervalo);
         digitando.remove();
 
-        if (!response.ok) {
-            adicionarMensagem("nicole", "O servidor não respondeu corretamente. Código: " + response.status);
+        if (!resposta.ok) {
+            adicionarMensagem("nicole", "Erro no servidor. 😕");
             return;
         }
 
-        const contentType = response.headers.get("content-type");
-        if (!contentType || !contentType.includes("application/json")) {
-            adicionarMensagem("nicole", "Resposta inesperada do servidor.");
-            return;
-        }
-
-        const data = await response.json();
-
-        if (data.imagem) {
-            adicionarMensagem("nicole", `${data.resposta}<br><img src="${data.imagem}" alt="Imagem" style="max-width:100%; margin-top:10px;">`);
-        } else {
-            adicionarMensagem("nicole", data.resposta);
-        }
-    } catch (erro) {
-        clearInterval(interval);
+        const data = await resposta.json();
+        adicionarMensagem("nicole", data.resposta);
+    } catch (error) {
+        clearInterval(intervalo);
         digitando.remove();
-        adicionarMensagem("nicole", "Erro ao conectar com o servidor.");
-        console.error("[ERRO FRONTEND]", erro);
+        adicionarMensagem("nicole", "Erro de conexão com o servidor. 😕");
+        console.error("Erro:", error);
     }
 });
 
