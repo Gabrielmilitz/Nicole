@@ -1,6 +1,15 @@
 {
   "oi": {
-    "correspondencia": "oi eai bom dia boa tarde boa noite oii ajuda",
-    "significado": "Olá! Tudo bem por aí, meu nome é Nicole, sua assistente virtual! ❤"
+    "correspondencia": "oi eai bom dia boa tarde boa noite oii",
+    "significado": "Olá! Tudo bem por aí, meu nome é Nicole, sua assistente virtual! Digite ajuda para mais informações! ❤"
   }
 }
+
+
+{
+  "ajuda": {
+    "correspondencia": "ajuda ajuda-me preciso ajuda comandos opções menu o que fazer",
+    "significado": "Aqui estão algumas opções que posso te ajudar:\n\n🔹 endereço\n🔹 renda PJ\n🔹 renda PF\n🔹 renda agro\n🔹 pessoas\n🔹 relacionamento\n🔹 bem novo\n\nDigite um dos termos acima para saber mais! 😊"
+  }
+}
+
