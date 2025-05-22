@@ -74,7 +74,7 @@ function adicionarMensagem(tipo, conteudo) {
     const div = document.createElement("div");
     div.className = `mensagem ${tipo}`;
     div.innerHTML = conteudo;
-    chat.appendChild(div);
+    chat.appendChild(div)
     chat.scrollTop = chat.scrollHeight;
     return div;
 }
