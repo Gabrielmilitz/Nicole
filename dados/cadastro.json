@@ -1,90 +1,90 @@
 {
   "qual o documento necessário para comprovar estado civil?": {
     "significado": "Depende do estado civil: solteiro não precisa, casado apresenta certidão, união estável precisa de contrato, divorciado tem certidão com averbação, separado apresenta sentença, e viúvo precisa da certidão de óbito.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "estado civil"
   },
   "como saber o regime de bens se não estiver declarado?": {
     "significado": "Se o casamento foi até 1977, considera-se comunhão universal. Após 1977, aplica-se comunhão parcial.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "regime de bens"
   },
   "qual o prazo de validade para comprovante de residência?": {
     "significado": "O comprovante de residência deve ter sido emitido ou postado há menos de 90 dias.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "comprovante de residência"
   },
   "o comprovante de residência pode estar em nome de outra pessoa?": {
     "significado": "Sim, desde que seja de familiar e haja comprovação de vínculo.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "comprovante de residência"
   },
   "quais documentos podem ser usados como comprovante de residência?": {
     "significado": "Contas, declarações, contratos, extratos bancários, boletos e IRPF são exemplos aceitos.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "comprovante de residência"
   },
   "qual documento é aceito como comprovante de renda?": {
     "significado": "Depende da origem da renda. Para qualquer tipo, são aceitos declaração própria (até R$10 mil/mês), IRPF com recibo, Decore, e-Social, entre outros.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "comprovante de renda"
   },
   "como comprovar renda por vínculo empregatício?": {
     "significado": "São aceitos contracheque, CTPS, demonstrativo oficial, extrato de salário ou contrato.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "renda empregatícia"
   },
   "quais documentos servem para aposentadoria ou pensão?": {
     "significado": "Holerite, extratos do INSS ou demonstrativos do Sicoob são aceitos.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "aposentadoria"
   },
   "como comprovar renda sem vínculo empregatício?": {
     "significado": "Documentos como pró-labore, DRE, DEFIS, nota fiscal, contrato ou DT-e são aceitos.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "renda autônoma"
   },
   "como comprovar pensão judicial?": {
     "significado": "É necessário apresentar sentença ou documento homologado com o valor fixado.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "pensão judicial"
   },
   "como comprovar renda com aluguel ou arrendamento?": {
     "significado": "Apresentar contrato registrado e prova de propriedade do imóvel.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "renda com aluguel"
   },
   "quais documentos são aceitos para renda agropecuária ou pesca?": {
     "significado": "São aceitos laudos técnicos, declarações de cooperativas, CAF, notas fiscais e outros documentos setoriais.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "renda agropecuária"
   },
   "posso usar extrato bancário como comprovante de renda?": {
     "significado": "Extrato é aceito apenas como documento complementar e não pode ser usado sozinho.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "extrato bancário"
   },
   "como comprovar rendimentos do exterior?": {
     "significado": "Exige tradução juramentada, conversão de moeda e declaração anexa.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "renda exterior"
   },
   "o que fazer se não possuir renda?": {
     "significado": "Deve ser declarado que não possui renda.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "sem renda"
   },
   "como funciona o relacionamento digital com o Sicoob?": {
     "significado": "É feito pelo aplicativo. Basta documento com foto e selfie. Comprovante de renda e endereço são dispensados.",
-    "tema": "relacionamento_digital"
+    "tema": "relacionamento digital"
   },
   "o que é cartão de autógrafos?": {
     "significado": "Documento com três assinaturas, uma delas igual ao documento de identidade, para conferência. Pode ser digitalizado.",
-    "tema": "cadastro_pessoa_fisica"
+    "tema": "cartão de autógrafos"
   },
   "quais documentos são exigidos para pessoa jurídica?": {
     "significado": "É necessário documento de constituição conforme o tipo jurídico. Pode ser substituído por certidão de inteiro teor.",
-    "tema": "cadastro_pessoa_juridica"
+    "tema": "pessoa jurídica"
   },
   "empresa precisa de comprovante de endereço?": {
     "significado": "Não, se constar no contrato social ou no CNPJ. Caso contrário, deve apresentar comprovante conforme regras da pessoa física.",
-    "tema": "cadastro_pessoa_juridica"
+    "tema": "endereço empresa"
   },
   "como comprovar faturamento da empresa?": {
     "significado": "São aceitos DRE, ECD/ECF, extratos do Simples, DASN-SIMEI, notas fiscais, previsão de faturamento e outros documentos contábeis.",
-    "tema": "cadastro_pessoa_juridica"
+    "tema": "faturamento"
   },
   "empresa nova pode declarar faturamento?": {
     "significado": "Sim, pode apresentar uma previsão anual com base nos primeiros meses.",
-    "tema": "cadastro_pessoa_juridica"
+    "tema": "empresa nova"
   },
   "e se a empresa não tiver faturamento?": {
     "significado": "Deve ser declarado que não possui faturamento.",
-    "tema": "cadastro_pessoa_juridica"
+    "tema": "sem faturamento"
   }
 }
