@@ -60,7 +60,6 @@ def preparar_base(processador):
     modelo = get_modelo()
     with torch.no_grad():
         embeddings = modelo.encode(frases, convert_to_tensor=True)
-    gc.collect()
     return frases, embeddings
 
 def carregar_trechos_pdfs(diretorio):
@@ -120,12 +119,11 @@ def responder_usuario(usuario, nome, frases_base, embeddings_base, trechos_pdf, 
                     encontrou_no_pdf = True
 
             if not encontrou_no_pdf:
-                print("🔎 Buscando no Google...")
+                print("🔍 Buscando no Google...")
                 resultado_google = buscar_no_google(usuario)
                 if resultado_google:
                     resposta = f"Não encontrei uma resposta exata ainda, {nome}, mas talvez isso te ajude: {resultado_google}"
                 else:
                     resposta = resposta_negativa(nome)
 
-    gc.collect()
     return resposta, None
