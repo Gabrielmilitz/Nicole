@@ -1,3 +1,4 @@
+
 const formulario = document.getElementById("formulario");
 const chat = document.getElementById("chat");
 const nomeInput = document.getElementById("nome");
@@ -42,17 +43,7 @@ formulario.addEventListener("submit", async function(e) {
             throw new Error(`Servidor respondeu com status ${response.status}`);
         }
 
-        let data;
-        try {
-            data = await response.json();
-        } catch (jsonError) {
-            clearInterval(interval);
-            digitando.remove();
-            adicionarMensagem("nicole", "Erro ao processar resposta do servidor. 😕");
-            console.error("Erro ao converter JSON:", jsonError);
-            return;
-        }
-
+        const data = await response.json();
         clearInterval(interval);
         digitando.remove();
 
