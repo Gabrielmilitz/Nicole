@@ -1,15 +1,38 @@
 {
   "oi": {
-    "correspondencia": "oi eai bom dia boa tarde boa noite oii",
+    "correspondencia": "oi oii eai olá bom dia boa tarde boa noite fala aí como vai tudo bem",
     "significado": "Olá! Tudo bem por aí, meu nome é Nicole, sua assistente virtual! Digite ajuda para mais informações! ❤"
-  }
-}
-
-
-{
+  },
   "ajuda": {
     "correspondencia": "ajuda ajuda-me preciso ajuda comandos opções menu o que fazer",
     "significado": "Aqui estão algumas opções que posso te ajudar:\n\n🔹 endereço\n🔹 renda PJ\n🔹 renda PF\n🔹 renda agro\n🔹 pessoas\n🔹 relacionamento\n🔹 bem novo\n\nDigite um dos termos acima para saber mais! 😊"
+  },
+  "endereço": {
+    "correspondencia": "endereço",
+    "significado": "Em construção"
+  },
+  "renda PJ": {
+    "correspondencia": "renda PJ",
+    "significado": "Em construção"
+  },
+  "renda PF": {
+    "correspondencia": "renda PF",
+    "significado": "Em construção"
+  },
+  "renda agro": {
+    "correspondencia": "renda agro",
+    "significado": "Em construção"
+  },
+  "pessoas": {
+    "correspondencia": "pessoas",
+    "significado": "Em construção"
+  },
+  "relacionamento": {
+    "correspondencia": "relacionamento",
+    "significado": "Em construção"
+  },
+  "bem novo": {
+    "correspondencia": "bem novo",
+    "significado": "Em construção"
   }
 }
-
