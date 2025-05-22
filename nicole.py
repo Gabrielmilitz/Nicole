@@ -1,109 +1,96 @@
 import os
 import json
-import random
 import fitz
 import gc
-from googlesearch import search
-from sentence_transformers import SentenceTransformer, util
 import torch
+from sentence_transformers import SentenceTransformer, util
+from googlesearch import search
 
-PASTA_PROCESSADOR = "dados"
-DIRETORIO_PDFS = "pdfs"
+PASTA_DADOS = "dados"
+PASTA_PDFS = "pdfs"
+MODELO_NOME = "paraphrase-MiniLM-L3-v2"
 
-# Carrega modelo global leve
-modelo_global = SentenceTransformer('paraphrase-MiniLM-L3-v2')
+def carregar_json_diretorio(pasta):
+    dados = {}
+    if os.path.exists(pasta):
+        for arquivo in os.listdir(pasta):
+            if arquivo.endswith(".json"):
+                with open(os.path.join(pasta, arquivo), "r", encoding="utf-8") as f:
+                    dados.update(json.load(f))
+    return dados
 
-def get_modelo():
-    return modelo_global
-
-def resposta_positiva(nome):
-    return random.choice([
-        f"Claro, {nome}! Aqui está o que encontrei:",
-        f"Olha só, {nome}, achei isso para você:",
-        f"Certo, {nome}. Veja essa informação:",
-    ])
-
-def resposta_negativa(nome):
-    return random.choice([
-        f"Hmm... ainda não sei responder isso, {nome} 😕.",
-        f"Essa me pegou, {nome}! Mas estou sempre aprendendo! 🚀",
-        f"Não achei ainda, {nome}. Me ensina? 🙏",
-    ])
-
-def carregar_processador():
-    processador = {}
-    if not os.path.exists(PASTA_PROCESSADOR):
-        return processador
-
-    for arq in os.listdir(PASTA_PROCESSADOR):
-        if arq.endswith(".json"):
-            try:
-                with open(os.path.join(PASTA_PROCESSADOR, arq), "r", encoding="utf-8") as f:
-                    processador.update(json.load(f))
-            except Exception as e:
-                print(f"[ERRO] Falha ao carregar {arq}: {e}")
-    return processador
-
-def preparar_base(processador):
-    frases = list(processador.keys())
-    with torch.no_grad():
-        embeddings = get_modelo().encode(frases, convert_to_tensor=True)
-    gc.collect()
-    return frases, embeddings
-
-def carregar_trechos_pdfs(diretorio):
+def carregar_trechos_pdf():
     trechos = []
-    if not os.path.exists(diretorio):
+    if not os.path.exists(PASTA_PDFS):
         return trechos
 
-    for arq in os.listdir(diretorio):
-        if arq.endswith(".pdf"):
-            try:
-                with fitz.open(os.path.join(diretorio, arq)) as pdf:
-                    for pag in pdf:
-                        texto = pag.get_text()
-                        for par in texto.split("\n\n"):
-                            p = par.strip().replace("\n", " ")
-                            if len(p.split()) > 30:
-                                trechos.append(p)
-            except Exception as e:
-                print(f"[ERRO PDF] {arq}: {e}")
+    for arquivo in os.listdir(PASTA_PDFS):
+        if not arquivo.endswith(".pdf"):
+            continue
+        caminho = os.path.join(PASTA_PDFS, arquivo)
+        with fitz.open(caminho) as pdf:
+            for pagina in pdf:
+                texto = pagina.get_text().strip()
+                for trecho in texto.split('\n\n'):
+                    if trecho.count('\n') >= 10:
+                        trechos.append(trecho.replace('\n', ' '))
     return trechos
 
-def buscar_no_google(consulta):
+def buscar_no_google(pergunta):
     try:
-        for url in search(consulta, num_results=3, lang="pt"):
-            if "http" in url and not any(x in url for x in [".jpg", ".png", "imgres"]):
+        for url in search(pergunta, num_results=5, lang="pt"):
+            if url.startswith("http") and all(x not in url for x in [".jpg", ".png", ".jpeg", "/images/", "/search?"]):
                 return url
     except Exception as e:
-        print(f"[GOOGLE ERROR] {e}")
+        print(f"[Erro Google] {e}")
     return None
 
-def responder_usuario(usuario, nome, frases_base, embeddings_base, trechos_pdf, embeddings_pdf, processador):
-    modelo = get_modelo()
+def inicializar_nicole():
+    print("Carregando modelo e dados...")
+    modelo = SentenceTransformer(MODELO_NOME)
+    base = carregar_json_diretorio(PASTA_DADOS)
+    frases = list(base.keys())
+    embeddings = modelo.encode(frases, convert_to_tensor=True)
+
+    trechos_pdf = carregar_trechos_pdf()
+    embeddings_pdf = modelo.encode(trechos_pdf, convert_to_tensor=True) if trechos_pdf else None
+
+    return {
+        "modelo": modelo,
+        "base": base,
+        "frases": frases,
+        "embeddings": embeddings,
+        "trechos_pdf": trechos_pdf,
+        "embeddings_pdf": embeddings_pdf,
+    }
+
+def responder(mensagem, nome, config):
+    modelo = config["modelo"]
+    base = config["base"]
+    frases = config["frases"]
+    embeddings = config["embeddings"]
+    trechos_pdf = config["trechos_pdf"]
+    embeddings_pdf = config["embeddings_pdf"]
 
     with torch.no_grad():
-        entrada = modelo.encode(usuario, convert_to_tensor=True)
+        input_embed = modelo.encode(mensagem, convert_to_tensor=True)
+        scores = util.cos_sim(input_embed, embeddings)[0]
+        top_idx = scores.argmax().item()
+        top_score = scores[top_idx].item() * 100
 
-        if embeddings_base is not None:
-            sim = util.cos_sim(entrada, embeddings_base)[0]
-            idx = sim.argmax().item()
-            score = sim[idx].item() * 100
-
-            if score >= 75:
-                chave = frases_base[idx]
-                return f"{resposta_positiva(nome)} {processador[chave]['significado'].capitalize()}", None
+        if top_score >= 75:
+            resposta = base[frases[top_idx]]["significado"]
+            return f"{nome}, aqui está o que encontrei:\n{resposta}", None
 
         if embeddings_pdf:
-            sim_pdf = util.cos_sim(entrada, embeddings_pdf)[0]
-            idx_pdf = sim_pdf.argmax().item()
-            score_pdf = sim_pdf[idx_pdf].item() * 100
-
+            scores_pdf = util.cos_sim(input_embed, embeddings_pdf)[0]
+            idx_pdf = scores_pdf.argmax().item()
+            score_pdf = scores_pdf[idx_pdf].item() * 100
             if score_pdf >= 50:
-                trecho = trechos_pdf[idx_pdf]
-                return f"{resposta_positiva(nome)} {trecho[:700]}...", None
+                return f"{nome}, encontrei este trecho útil:\n{trechos_pdf[idx_pdf][:700]}...", None
 
-    url = buscar_no_google(usuario)
-    if url:
-        return f"Não encontrei uma resposta exata, {nome}, mas talvez isso ajude: {url}", None
-    return resposta_negativa(nome), None
+        link = buscar_no_google(mensagem)
+        if link:
+            return f"{nome}, não achei resposta exata, mas talvez isso ajude:\n{link}", None
+
+        return f"Desculpe, {nome}, não consegui entender. Pode reformular?", None
