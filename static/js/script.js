@@ -5,7 +5,7 @@ const mensagemInput = document.getElementById("mensagem");
 
 let nome = "";
 
-formulario.addEventListener("submit", async function (e) {
+formulario.addEventListener("submit", async function(e) {
     e.preventDefault();
 
     if (!nome) {
@@ -26,33 +26,27 @@ formulario.addEventListener("submit", async function (e) {
     const digitando = adicionarMensagem("nicole", "<em>Nicole está digitando...</em>");
 
     let pontos = 0;
-    const intervalo = setInterval(() => {
+    const interval = setInterval(() => {
         pontos = (pontos + 1) % 4;
         digitando.innerHTML = `<em>Nicole está digitando${".".repeat(pontos)}</em>`;
     }, 400);
 
     try {
-        const resposta = await fetch("/perguntar", {
+        const response = await fetch("/perguntar", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ nome: nome, mensagem: mensagem })
+            body: JSON.stringify({ nome: nome, mensagem: mensagem }),
         });
 
-        clearInterval(intervalo);
+        const data = await response.json();
+        clearInterval(interval);
         digitando.remove();
 
-        if (!resposta.ok) {
-            adicionarMensagem("nicole", "Erro no servidor. 😕");
-            return;
-        }
-
-        const data = await resposta.json();
         adicionarMensagem("nicole", data.resposta);
     } catch (error) {
-        clearInterval(intervalo);
+        clearInterval(interval);
         digitando.remove();
-        adicionarMensagem("nicole", "Erro de conexão com o servidor. 😕");
-        console.error("Erro:", error);
+        adicionarMensagem("nicole", "Erro ao tentar conversar com o servidor. 😕");
     }
 });
 
