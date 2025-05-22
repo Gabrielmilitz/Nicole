@@ -1,17 +1,12 @@
-import random
-import os
-import json
-import fitz
-import gc
+import random, os, json, fitz, gc
 from googlesearch import search
 from sentence_transformers import SentenceTransformer, util
 import torch
 
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
-
 PASTA_PROCESSADOR = "dados"
 DIRETORIO_PDFS = "pdfs"
 
+# Modelo global (carregado só uma vez)
 modelo_global = SentenceTransformer('paraphrase-MiniLM-L3-v2')
 
 def get_modelo():
@@ -21,100 +16,80 @@ def resposta_positiva(nome):
     return random.choice([
         f"Claro, {nome}! Aqui está o que encontrei:",
         f"Olha só, {nome}, achei isso para você:",
-        f"Certo, {nome}. Veja essa informação:",
+        f"Certo, {nome}. Veja essa informação:"
     ])
 
 def resposta_negativa(nome):
     return random.choice([
         f"Hmm... ainda não sei responder isso, {nome} 😕.",
-        f"Essa me pegou, {nome}! Mas estou sempre aprendendo! 🚀",
-        f"Não achei ainda, {nome}. Me ensina? 🙏",
+        f"Essa me pegou, {nome}! Mas estou sempre aprendendo!",
+        f"Não achei ainda, {nome}. Me ensina? 🙏"
     ])
 
 def carregar_processador():
     processador = {}
     if not os.path.exists(PASTA_PROCESSADOR):
         return {}
-    for arquivo in os.listdir(PASTA_PROCESSADOR):
-        if arquivo.endswith(".json"):
-            with open(os.path.join(PASTA_PROCESSADOR, arquivo), "r", encoding="utf-8") as f:
+    for arq in os.listdir(PASTA_PROCESSADOR):
+        if arq.endswith(".json"):
+            with open(os.path.join(PASTA_PROCESSADOR, arq), "r", encoding="utf-8") as f:
                 processador.update(json.load(f))
     return processador
 
-def salvar_processador_por_tema(processador):
-    os.makedirs(PASTA_PROCESSADOR, exist_ok=True)
-    temas = {}
-    for frase, dados in processador.items():
-        tema = dados.get("tema", "geral")
-        if tema not in temas:
-            temas[tema] = {}
-        temas[tema][frase] = dados
-    for tema, conteudo in temas.items():
-        with open(os.path.join(PASTA_PROCESSADOR, f"{tema}.json"), "w", encoding="utf-8") as f:
-            json.dump(conteudo, f, indent=4, ensure_ascii=False)
-
 def preparar_base(processador):
     frases = list(processador.keys())
-    modelo = get_modelo()
     with torch.no_grad():
-        embeddings = modelo.encode(frases, convert_to_tensor=True)
-    gc.collect()
+        embeddings = modelo_global.encode(frases, convert_to_tensor=True)
     return frases, embeddings
 
-def carregar_trechos_pdfs(diretorio):
+def carregar_trechos_pdfs(pasta):
     trechos = []
-    if not os.path.exists(diretorio):
+    if not os.path.exists(pasta):
         return trechos
-    for arquivo in os.listdir(diretorio):
-        if arquivo.endswith(".pdf"):
-            caminho = os.path.join(diretorio, arquivo)
-            with fitz.open(caminho) as pdf:
-                for pagina in pdf:
-                    texto = pagina.get_text()
-                    for p in texto.split('\n\n'):
-                        p = p.strip()
-                        if p.count('\n') >= 10:
-                            trechos.append(p.replace('\n', ' '))
+    for nome in os.listdir(pasta):
+        if nome.endswith(".pdf"):
+            doc = fitz.open(os.path.join(pasta, nome))
+            for page in doc:
+                texto = page.get_text()
+                for p in texto.split("\n\n"):
+                    if p.strip().count('\n') >= 10:
+                        trechos.append(p.strip().replace('\n', ' '))
+            doc.close()
     return trechos
 
 def buscar_no_google(consulta):
     try:
-        for url in search(consulta, num_results=5, lang="pt"):
-            if url.startswith("http") and not any(ext in url for ext in [".jpg", ".png", ".jpeg", "imgres", "/images/", "/search?"]):
+        for url in search(consulta, num_results=3, lang="pt"):
+            if url.startswith("http") and not any(x in url for x in [".png", ".jpg", "/images/"]):
                 return url
-    except Exception as e:
-        print(f"Erro na busca Google: {e}")
+    except Exception:
+        return None
     return None
 
-def responder_usuario(usuario, nome, frases_base, embeddings_base, trechos_pdf, embeddings_pdf, processador):
+def responder_usuario(pergunta, nome, frases_base, embeddings_base, trechos_pdf, embeddings_pdf, processador):
     modelo = get_modelo()
     with torch.no_grad():
-        embedding_usuario = modelo.encode(usuario, convert_to_tensor=True)
-        similaridades = util.cos_sim(embedding_usuario, embeddings_base)[0]
-        melhor_indice = similaridades.argmax().item()
-        melhor_pontuacao = similaridades[melhor_indice].item() * 100
+        emb_usuario = modelo.encode(pergunta, convert_to_tensor=True)
+        sim = util.cos_sim(emb_usuario, embeddings_base)[0]
+        idx = sim.argmax().item()
+        score = sim[idx].item() * 100
 
-        if melhor_pontuacao >= 75:
-            chave = frases_base[melhor_indice]
-            resposta_crua = processador[chave]["significado"]
-            resposta = f"{resposta_positiva(nome)} {resposta_crua.capitalize()}"
+        if score >= 75:
+            chave = frases_base[idx]
+            significado = processador[chave]["significado"]
+            return f"{resposta_positiva(nome)} {significado}", None
+
+        elif embeddings_pdf:
+            sim_pdf = util.cos_sim(emb_usuario, embeddings_pdf)[0]
+            idx_pdf = sim_pdf.argmax().item()
+            score_pdf = sim_pdf[idx_pdf].item() * 100
+
+            if score_pdf >= 50:
+                trecho = trechos_pdf[idx_pdf]
+                return f"{resposta_positiva(nome)} {trecho[:700]}...", None
+
+        url = buscar_no_google(pergunta)
+        if url:
+            return f"Não encontrei uma resposta exata, {nome}, mas talvez isso ajude: {url}", None
         else:
-            encontrou_no_pdf = False
-            if embeddings_pdf:
-                similaridades_pdf = util.cos_sim(embedding_usuario, embeddings_pdf)[0]
-                melhor_indice_pdf = similaridades_pdf.argmax().item()
-                melhor_pontuacao_pdf = similaridades_pdf[melhor_indice_pdf].item() * 100
-                if melhor_pontuacao_pdf >= 50:
-                    trecho = trechos_pdf[melhor_indice_pdf]
-                    resposta = f"{resposta_positiva(nome)} {trecho[:700]}..."
-                    encontrou_no_pdf = True
-
-            if not encontrou_no_pdf:
-                print("🔎 Buscando no Google...")
-                resultado_google = buscar_no_google(usuario)
-                resposta = (
-                    f"Não encontrei uma resposta exata ainda, {nome}, mas talvez isso ajude: {resultado_google}"
-                    if resultado_google else resposta_negativa(nome)
-                )
-    gc.collect()
-    return resposta, None
+            return resposta_negativa(nome), None
