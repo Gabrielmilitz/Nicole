@@ -2,16 +2,15 @@ from flask import Flask, render_template, request, jsonify
 import nicole
 import os
 
-# Evita paralelismo com fork
+# Evita deadlock do HuggingFace em servidores com fork
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 app = Flask(__name__)
 
-# Carrega dados e embeddings uma vez
+# Dados base
 processador = nicole.carregar_processador()
 frases_base, embeddings_base = nicole.preparar_base(processador)
 trechos_pdf = nicole.carregar_trechos_pdfs(nicole.DIRETORIO_PDFS)
-embeddings_pdf = nicole.gerar_embeddings_pdf(trechos_pdf)
 
 @app.route("/")
 def index():
@@ -25,7 +24,7 @@ def perguntar():
         nome = data.get("nome", "Usuário")
 
         resposta, imagem = nicole.responder_usuario(
-            usuario, nome, frases_base, embeddings_base, trechos_pdf, embeddings_pdf, processador
+            usuario, nome, frases_base, embeddings_base, trechos_pdf, processador
         )
 
         return jsonify({"resposta": resposta, "imagem": imagem}), 200
