@@ -13,15 +13,14 @@ def carregar_processador():
         if arquivo.endswith(".json"):
             caminho = os.path.join(PASTA_PROCESSADOR, arquivo)
             with open(caminho, "r", encoding="utf-8") as f:
-                nome_base = arquivo.replace(".json", "")
-                processador[nome_base] = json.load(f)
+                processador.update(json.load(f))
     return processador
 
 def resposta_positiva(nome):
     return random.choice([
-        f"Claro, {nome}:",
-        f"Olha só, {nome}:",
-        f"Certo, {nome}:"
+        f"Claro, {nome}! Aqui está o que encontrei:",
+        f"Olha só, {nome}, achei isso para você:",
+        f"Certo, {nome}. Veja essa informação:"
     ])
 
 def resposta_negativa(nome):
@@ -32,14 +31,9 @@ def resposta_negativa(nome):
     ])
 
 def responder_usuario(mensagem, nome, processador):
-    mensagem = mensagem.lower()
-
-    for grupo in processador.values():
-        for chave, dados in grupo.items():
-            if not isinstance(dados, dict):
-                continue
-            correspondencias = dados.get("correspondencia", "").lower().split()
-            if any(palavra in mensagem for palavra in correspondencias):
-                return f"{resposta_positiva(nome)} {dados['significado']}", None
+    for pergunta, dados in processador.items():
+        chaves = dados.get("correspondencia", "").lower().split()
+        if any(palavra in mensagem for palavra in chaves):
+            return f"{resposta_positiva(nome)} {dados['significado']}", None
 
     return resposta_negativa(nome), None
