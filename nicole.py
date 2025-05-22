@@ -18,9 +18,9 @@ def carregar_processador():
 
 def resposta_positiva(nome):
     return random.choice([
-        f"Claro, {nome}! Aqui está o que encontrei:",
-        f"Olha só, {nome}, achei isso para você:",
-        f"Certo, {nome}. Veja essa informação:"
+        f"Claro, {nome}:",
+        f"Olha só, {nome}:",
+        f"Certo, {nome}:"
     ])
 
 def resposta_negativa(nome):
