@@ -1,11 +1,10 @@
 from flask import Flask, render_template, request, jsonify
-from nicole import inicializar_nicole, responder
+import nicole
 import os
 
 app = Flask(__name__)
 
-# Inicialização única ao subir o app
-config = inicializar_nicole()
+base = nicole.carregar_base()
 
 @app.route("/")
 def index():
@@ -15,22 +14,19 @@ def index():
 def perguntar():
     try:
         data = request.get_json(force=True)
-        nome = data.get("nome", "Usuário").strip()
-        mensagem = data.get("mensagem", "").strip()
+        nome = data.get("nome", "Usuário")
+        mensagem = data.get("mensagem", "")
 
-        if not mensagem:
-            return jsonify({"resposta": "Mensagem vazia recebida.", "imagem": None}), 400
-
-        resposta, imagem = responder(mensagem, nome, config)
+        resposta, imagem = nicole.responder_usuario(mensagem, nome, base)
         return jsonify({"resposta": resposta, "imagem": imagem})
 
     except Exception as e:
-        print(f"[ERRO INTERNO] {e}")
+        print(f"[ERRO] {e}")
         return jsonify({
-            "resposta": "Ocorreu um erro interno ao processar sua pergunta.",
+            "resposta": "Erro interno no servidor. 😕",
             "imagem": None
         }), 500
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, host="0.0.0.0", port=port)
