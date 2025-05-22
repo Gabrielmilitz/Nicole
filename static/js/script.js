@@ -8,6 +8,7 @@ let nome = "";
 formulario.addEventListener("submit", async (e) => {
     e.preventDefault();
 
+    // Primeiro envio: captura nome
     if (!nome) {
         nome = nomeInput.value.trim();
         if (nome) {
@@ -23,7 +24,7 @@ formulario.addEventListener("submit", async (e) => {
     adicionarMensagem("usuario", mensagem);
     mensagemInput.value = "";
 
-    const digitando = adicionarMensagem("nicole", "<em>Nicole está digitando...</em>");
+    const digitando = adicionarMensagem("nicole", "<em>Nicole está digitando</em>");
     let pontos = 0;
     const interval = setInterval(() => {
         pontos = (pontos + 1) % 4;
@@ -37,23 +38,32 @@ formulario.addEventListener("submit", async (e) => {
             body: JSON.stringify({ nome, mensagem }),
         });
 
-        if (!response.ok) throw new Error(`Servidor respondeu com status ${response.status}`);
-        const data = await response.json();
-
         clearInterval(interval);
         digitando.remove();
+
+        if (!response.ok) {
+            adicionarMensagem("nicole", "O servidor não respondeu corretamente. Código: " + response.status);
+            return;
+        }
+
+        const contentType = response.headers.get("content-type");
+        if (!contentType || !contentType.includes("application/json")) {
+            adicionarMensagem("nicole", "Resposta inesperada do servidor.");
+            return;
+        }
+
+        const data = await response.json();
 
         if (data.imagem) {
             adicionarMensagem("nicole", `${data.resposta}<br><img src="${data.imagem}" alt="Imagem" style="max-width:100%; margin-top:10px;">`);
         } else {
             adicionarMensagem("nicole", data.resposta);
         }
-
-    } catch (err) {
+    } catch (erro) {
         clearInterval(interval);
         digitando.remove();
-        adicionarMensagem("nicole", "Erro ao tentar conversar com o servidor. 😕");
-        console.error("Erro:", err);
+        adicionarMensagem("nicole", "Erro ao conectar com o servidor.");
+        console.error("[ERRO FRONTEND]", erro);
     }
 });
 
