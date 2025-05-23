@@ -1,58 +1,50 @@
 {
   "pessoas": {
     "correspondencia": "pessoas documentos pessoais cadastro identidade cpf rg certidão nascimento civil profissão passaporte estrangeiro ctps pep jurídica pj",
-    "significado": "Escolha um dos documentos para consultar. Digite o nome do documento para ver os critérios:\n\n🧍 Pessoa Física (PF):\n🔹 ficha cadastral\n🔹 estado civil\n🔹 CNH\n🔹 identidade\n🔹 certidão de nascimento\n🔹 informações declaratórias\n🔹 documentos profissionais\n🔹 passaporte\n🔹 estrangeiro\n🔹 CTPS\n🔹 autodeclaração PEP\n\n🏢 Pessoa Jurídica (PJ):\n🔹 contrato social\n🔹 certificado MEI\n🔹 convenção condomínio\n🔹 ata síndico\n🔹 alteração contratual\n🔹 nire\n🔹 capital social\n🔹 inscrição estadual"
+    "significado": "Escolha um dos documentos para consultar. Digite o nome do documento para ver os critérios:\\n\\n🧍 Pessoa Física (PF):\\n🔹 ficha cadastral\\n🔹 estado civil\\n🔹 CNH\\n🔹 identidade\\n🔹 certidão de nascimento\\n🔹 informações declaratórias\\n🔹 documentos profissionais\\n🔹 passaporte\\n🔹 estrangeiro\\n🔹 CTPS\\n🔹 autodeclaração PEP\\n\\n🏢 Pessoa Jurídica (PJ):\\n🔹 contrato social\\n🔹 certificado MEI\\n🔹 convenção condomínio\\n🔹 ata síndico\\n🔹 alteração contratual\\n🔹 nire\\n🔹 capital social\\n🔹 inscrição estadual"
   },
   "ficha cadastral": {
     "correspondencia": "ficha cadastral",
-    "significado": "📋 **Ficha Cadastral:**\n\n❗ Deve estar assinada manualmente ou digitalmente pelo associado\n❗ Não possui prazo de validade\n❗ Complementa o cadastro, mas não substitui documentos de identificação em caso de alteração"
+    "significado": "📋 **Ficha Cadastral:**\\n\\n❗ Deve estar assinada manualmente ou digitalmente pelo associado\\n❗ Não possui prazo de validade\\n❗ Complementa o cadastro, mas não substitui documentos de identificação em caso de alteração"
   },
   "estado civil": {
     "correspondencia": "estado civil casado solteiro viúvo divorciado separado",
-    "significado": "💍 **Estado Civil:**\n\n📌 Declaratório e não precisa ser comprovado, exceto se houver divergência com documento vigente.\n📌 Situações que exigem comprovação:\n- Casado que virou divorciado, viúvo ou solteiro — solicitar comprovação."
+    "significado": "💍 **Estado Civil:**\\n\\n📌 Declaratório e não precisa ser comprovado, exceto se houver divergência com documento vigente.\\n📌 Situações que exigem comprovação:\\n- Casado que virou divorciado, viúvo ou solteiro — solicitar comprovação."
   },
   "cnh": {
     "correspondencia": "cnh carteira nacional de habilitação habilitação",
-    "significado": "🚗 **CNH:**\n\n❗ Pode ser usada mesmo vencida, se o vencimento ocorreu há menos de 10 anos\n❗ CNH digital só se exportada do app oficial (print é recusado)\n❗ Campos obrigatórios: nome, data de emissão, UF, órgão expedidor, naturalidade (se constar)"
+    "significado": "🚗 **CNH:**\\n\\n❗ Pode ser usada mesmo vencida, se o vencimento ocorreu há menos de 10 anos\\n❗ CNH digital só se exportada do app oficial (print é recusado)\\n❗ Campos obrigatórios: nome, data de emissão, UF, órgão expedidor, naturalidade (se constar)"
   },
   "identidade": {
     "correspondencia": "identidade rg carteira de identidade",
-    "significado": "🆔 **Carteira de Identidade:**\n\n❗ Verificar número, órgão expedidor, naturalidade, data de emissão\n❗ Tipo correto: 'Carteira de identidade'\n❗ Danos físicos ou divergência de assinatura devem ser analisados com a liderança\n❗ No RJ, a partir de 02/07/2024, órgão emissor será o DETRAN"
+    "significado": "🆔 **Carteira de Identidade:**\\n\\n❗ Verificar número, órgão expedidor, naturalidade, data de emissão\\n❗ Tipo correto: 'Carteira de identidade'\\n❗ Danos físicos ou divergência de assinatura devem ser analisados com a liderança\\n❗ No RJ, a partir de 02/07/2024, órgão emissor será o DETRAN"
   },
   "certidão de nascimento": {
     "correspondencia": "certidão de nascimento nascimento",
-    "significado": "👶 **Certidão de Nascimento:**\n\n❗ Deve estar no nome do associado\n❗ Não exige os 12 dígitos\n❗ Não é válido o número da declaração de nascimento vivo"
+    "significado": "👶 **Certidão de Nascimento:**\\n\\n❗ Deve estar no nome do associado\\n❗ Não exige os 12 dígitos\\n❗ Não é válido o número da declaração de nascimento vivo"
   },
   "informações declaratórias": {
     "correspondencia": "informações declaratórias escolaridade profissão regime bens natureza cooperação pai mãe",
-    "significado": "📄 **Informações Declaratórias:**\n\n📌 São dispensadas: escolaridade, profissão, natureza da cooperação, nomes dos pais\n📌 Estado civil e regime de bens são dispensáveis, exceto quando exigido\n📌 Se necessário comprovar:\n- Solteiro: nada necessário\n- Casado: certidão casamento\n- União estável: contrato registrado\n- Divorciado/separado: certidão com averbação ou sentença\n\n🔺 Regime de bens:\n- Até 1977: comunhão universal\n- Após 1977: comunhão parcial"
+    "significado": "📄 **Informações Declaratórias:**\\n\\n📌 São dispensadas: escolaridade, profissão, natureza da cooperação, nomes dos pais\\n📌 Estado civil e regime de bens são dispensáveis, exceto quando exigido\\n📌 Se necessário comprovar:\\n- Solteiro: nada necessário\\n- Casado: certidão casamento\\n- União estável: contrato registrado\\n- Divorciado/separado: certidão com averbação ou sentença\\n\\n🔺 Regime de bens:\\n- Até 1977: comunhão universal\\n- Após 1977: comunhão parcial"
   },
   "documentos profissionais": {
     "correspondencia": "documentos profissionais cra crc crm crea oab cim carteira militar conselho profissão liberal",
-    "significado": "📘 **Documentos Profissionais:**\n\n❗ Aceitos: carteira emitida por conselho de classe (CRA, CRC, CREA, OAB etc.)\n❗ Apenas se exportados de app oficial (print não aceito)\n❗ CIM (militar): física ou digital exportada via gov.br"
+    "significado": "📘 **Documentos Profissionais:**\\n\\n❗ Aceitos: carteira emitida por conselho de classe (CRA, CRC, CREA, OAB etc.)\\n❗ Apenas se exportados de app oficial (print não aceito)\\n❗ CIM (militar): física ou digital exportada via gov.br"
   },
   "passaporte": {
     "correspondencia": "passaporte",
-    "significado": "🌐 **Passaporte:**\n\n❗ Documento federal válido conforme o manual de cadastro\n❗ Pode ser usado mesmo emitido na menoridade, se ainda dentro da validade"
+    "significado": "🌐 **Passaporte:**\\n\\n❗ Documento federal válido conforme o manual de cadastro\\n❗ Pode ser usado mesmo emitido na menoridade, se ainda dentro da validade"
   },
   "estrangeiro": {
     "correspondencia": "estrangeiro estrangeira cie rne crnm nacionalidade exterior migrante imigrante",
-    "significado": "🌎 **Documentos para Estrangeiros:**\n\n📌 Aceitos se residente no Brasil\n\n| Documento | Regra |
-|-----------|--------|
-| CIE | Vigente ou visto definitivo/12+ meses |
-| RNE | Vigente ou visto definitivo/12+ meses |
-| CRNM | Vigente ou visto definitivo/12+ meses |
-| CIE (60+ anos) | Pode estar vencido |
-| Português residente | Pode usar documento igual ao brasileiro, Decreto 3.927/2001 |
-"
+    "significado": "🌎 **Documentos para Estrangeiros:**\\n\\n📌 Aceitos se residente no Brasil\\n\\n📋 Documentos aceitos:\\n- CIE: vigente ou visto definitivo/12+ meses\\n- RNE: vigente ou visto definitivo/12+ meses\\n- CRNM: vigente ou visto definitivo/12+ meses\\n- CIE (60+): pode estar vencido\\n- Português residente: documento igual ao brasileiro (Decreto 3.927/2001)"
   },
   "ctps": {
     "correspondencia": "ctps carteira de trabalho trabalho previdência social",
-    "significado": "📒 **Carteira de Trabalho (CTPS):**\n\n❗ Deve ser emitida por órgão competente\n❗ Verificar número, série, assinatura, foto, carimbo, qualificação civil"
+    "significado": "📒 **Carteira de Trabalho (CTPS):**\\n\\n❗ Deve ser emitida por órgão competente\\n❗ Verificar número, série, assinatura, foto, carimbo, qualificação civil"
   },
   "autodeclaração pep": {
     "correspondencia": "pep autodeclaração pep pessoa politicamente exposta",
-    "significado": "📑 **Autodeclaração PEP:**\n\n❗ Deve conter nome, CPF e assinatura\n❗ Deve estar na chave correta\n❗ Documento válido para declarar pessoa politicamente exposta"
+    "significado": "📑 **Autodeclaração PEP:**\\n\\n❗ Deve conter nome, CPF e assinatura\\n❗ Deve estar na chave correta\\n❗ Documento válido para declarar pessoa politicamente exposta"
   }
 }
-
