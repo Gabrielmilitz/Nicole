@@ -5,7 +5,7 @@
   },
   "ajuda": {
     "correspondencia": "ajuda ajuda-me preciso ajuda comandos opções menu o que fazer validação",
-    "significado": "Aqui estão algumas opções que posso te ajudar:\n\n🔹 endereço\n🔹 renda PJ\n🔹 renda PF\n🔹 renda agro\n🔹 pessoas\n🔹 relacionamento\n🔹 bem novo\n🔹 validação\n\nDigite um dos termos acima para saber mais! 😊"
+    "significado": "Aqui estão algumas opções que posso te ajudar:\n\n🔹 endereço\n🔹 PJ\n🔹 PF\n🔹 renda agro\n🔹 pessoas\n🔹 relacionamento\n🔹 bem novo\n🔹 validação\n\nDigite um dos termos acima para saber mais! 😊"
   },
   "agro": {
     "correspondencia": "agro",
