@@ -11,20 +11,14 @@
     "correspondencia": "agro",
     "significado": "Em construção"
   },
-  "pessoas": {
-    "correspondencia": "pessoas",
-    "significado": "Em construção"
-  },
+ 
   "relacionamento": {
     "correspondencia": "relacionamento",
     "significado": "Em construção"
   },
-  "bem novo": {
-    "correspondencia": "bem novo",
-    "significado": "Em construção"
-  },
+ 
   "validação": {
     "correspondencia": "validacao validacão gov",
-    "significado": "https://validar.iti.gov.br/"
+    "significado": "Assinatura: https://validar.iti.gov.br/  \n Simples Nacional: https://www8.receita.fazenda.gov.br/SimplesNacional/ \n Receita Federal: https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/cnpjreva_Solicitacao.asp  "
   }
 }
