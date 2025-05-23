@@ -1,0 +1,38 @@
+{
+  "bem novo": {
+    "correspondencia": "bem novo bens imóvel imóvel novo automóvel propriedade fluxo de bens",
+    "significado": "Escolha um dos tópicos sobre o bem novo para consultar. Digite o nome do item para ver os critérios:\n\n🔹 imposto de renda\n🔹 valor do bem\n🔹 diferenças entre posse e propriedade\n🔹 área no imposto de renda\n🔹 exclusão de bem\n🔹 bem com procurador\n🔹 joias e armas\n🔹 comprovantes de bens imóveis"
+  },
+  "imposto de renda": {
+    "correspondencia": "imposto de renda ir irpf declaração de bens recibo de entrega",
+    "significado": "📄 **Imposto de Renda:**\n\n❗ Deve conter os bens e direitos do declarante\n❗ Necessário estar acompanhado do recibo de entrega\n❗ Apresenta primeiro os rendimentos, depois os bens, e por último as deduções"
+  },
+  "valor do bem": {
+    "correspondencia": "valor do bem valor declarado titular propriedade",
+    "significado": "💰 **Valor do Bem:**\n\n📌 O proprietário pode ou não declarar o valor do bem\n📌 Não reprovar o fluxo se valor não estiver declarado\n📌 Em situações de posse (comodato, locação, usufruto, arrendamento), o valor do bem deve ser zerado"
+  },
+  "diferenças entre posse e propriedade": {
+    "correspondencia": "posse propriedade comodato locação usufruto arrendamento",
+    "significado": "🏷️ **Posse vs. Propriedade:**\n\n🔹 **Comodato**: empréstimo gratuito do bem\n🔹 **Locação**: empréstimo mediante pagamento\n🔹 **Usufruto**: direito real de uso e gozo de bem alheio\n🔹 **Arrendamento**: uso para exploração, normalmente rural\n📌 Em todos os casos, o valor do bem deve ser informado como zerado"
+  },
+  "área no imposto de renda": {
+    "correspondencia": "área imposto de renda metragem divergência",
+    "significado": "📐 **Área no IR:**\n\n📌 Se a área não for informada: aceitar zerado\n📌 Se houver divergência no SIS: deve estar de acordo\n📌 Pode ser cadastrada conforme descrição ou área total"
+  },
+  "exclusão de bem": {
+    "correspondencia": "exclusão de bem porcentagem zerada retirada",
+    "significado": "🚫 **Exclusão de Bem:**\n\n📌 Se a porcentagem do bem estiver zerada, significa que o sócio está excluindo o bem do cadastro"
+  },
+  "bem com procurador": {
+    "correspondencia": "bem procurador valor avaliação representação",
+    "significado": "🧾 **Bem com Procurador:**\n\n📌 Se o procurador está como proprietário:\n- Pode aceitar o fluxo\n- O valor deve ser zerado\n- Se houver valor, deve estar no campo 'valor de avaliação' com o documento de avaliação anexado"
+  },
+  "joias e armas": {
+    "correspondencia": "joias armas empreendimento bens reprovados",
+    "significado": "💣 **Joias, Armas e Empreendimentos:**\n\n⚠️ Estes itens **não são aceitos** como bem no fluxo e podem ser reprovados"
+  },
+  "comprovantes de bens imóveis": {
+    "correspondencia": "comprovantes de bens imóveis comprovante propriedade documentação imóvel",
+    "significado": "🏠 **Comprovantes de Bens Imóveis:**\n\nPara comprovação da propriedade de bens imóveis, são aceitos:\n\n✅ Declaração do Imposto de Renda com recibo Serpro\n✅ Escritura ou contrato de compra e venda registrado em cartório\n✅ Certidão de matrícula, ônus reais ou ações reais/pessoais reipersecutórias\n✅ Folha do carnê do IPTU com área construída, valor venal etc.\n✅ Declaração do ITR com recibo de entrega\n✅ VTN (Valor da Terra Nua) consultado na Receita Federal via Gov.br\n✅ Valores médios de terras agrícolas emitidos por órgão competente\n✅ Certificado de cadastro de imóvel rural (Incra)\n✅ Balanço ou balancete que discrimine os bens imóveis"
+  }
+}
