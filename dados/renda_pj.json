@@ -1,5 +1,5 @@
 {
-  "renda PJ": {
+  "PJ": {
     "correspondencia": "renda PJ pessoa jurídica empresa CNPJ faturamento",
     "significado": "Escolha uma das opções de documentos para Pessoa Jurídica:\n\n🔹 relação de faturamento\n🔹 DRE\n🔹 renda condomínios\n🔹 notas fiscais\n🔹 levantamento socioeconômico\n🔹 sem faturamento\n🔹 faturamento Sicoob\n🔹 pastas e fichas\n🔹 IRPF cartório\n🔹 SIMEI\n🔹 deixou de ser optante\n\nDigite o nome de uma das opções acima para continuar."
   },
