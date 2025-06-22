@@ -1,24 +1,42 @@
 {
   "oi": {
-    "correspondencia": "oi oii eai olá bom dia boa tarde boa noite fala aí como vai tudo bem",
-    "significado": "Olá! Tudo bem por aí, meu nome é Nicole, sua assistente virtual! Digite ajuda para mais informações! ❤"
+    "correspondencia": "oi oii oie olá ola e aí fala comigo bom dia boa tarde boa noite tudo bem como vai você está aí está online",
+    "significado": "Olá! Tudo certo? Sou a Nicole, sua assistente no sistema SIP. Digite *ajuda* para conhecer os comandos disponíveis. 😉"
   },
   "ajuda": {
-    "correspondencia": "ajuda ajuda-me preciso ajuda comandos opções menu o que fazer validação",
-    "significado": "Aqui estão algumas opções que posso te ajudar:\n\n🔹 endereço\n🔹 PJ\n🔹 PF\n🔹 renda agro\n🔹 pessoas\n🔹 relacionamento\n🔹 bem novo\n🔹 validação\n\nDigite um dos termos acima para saber mais! 😊"
+    "correspondencia": "me ajuda preciso ajuda estou perdido como funciona fazer aqui comandos disponíveis mostrar opções quais comandos como usar menu ajuda opções disponíveis não sei usar",
+    "significado": "Estas são algumas opções disponíveis na plataforma SIP:\n\n🔹 novo processo\n🔹 histórico\n🔹 painel\n🔹 exportar\n🔹 login\n🔹 cadastro inspetor\n🔹 mudar senha\n🔹 perfil\n\nDigite um dos termos para saber mais!"
   },
-  "agro": {
-    "correspondencia": "agro",
-    "significado": "Em construção"
+  "novo processo": {
+    "correspondencia": "como registrar processo onde insiro processo quero adicionar inspeção nova quero preencher processo onde coloco dados análise novo processo iniciar processo inserir dados cadastrar processo abrir processo",
+    "significado": "Na opção *Novo Processo*, você pode registrar uma nova inspeção com dados completos, como tipo de erro, descrição, gravidade, imagem e mais. Acesse pelo menu principal após login."
   },
- 
-  "relacionamento": {
-    "correspondencia": "relacionamento",
-    "significado": "Em construção"
+  "histórico": {
+    "correspondencia": "quero ver processos anteriores onde estão processos registrados histórico inspeções como vejo já fiz lista processos mostrar histórico ver relatórios passados registros anteriores onde está histórico",
+    "significado": "O *Histórico* mostra todos os processos registrados, permitindo filtrar por datas e exportar os dados em formato CSV ou PDF individualmente."
   },
- 
-  "validação": {
-    "correspondencia": "validacao validacão gov",
-    "significado": "Assinatura: https://validar.iti.gov.br/  \n Simples Nacional: https://www8.receita.fazenda.gov.br/SimplesNacional/ \n Receita Federal: https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/cnpjreva_Solicitacao.asp  "
+  "painel": {
+    "correspondencia": "onde vejo desempenho mostrar resumo geral quero ver estatísticas inspeções quero ver total processos painel controle gráficos inspeções mostrar painel desempenho geral quantidade desvios conformes",
+    "significado": "O *Painel* exibe um resumo com total de inspeções, desvios e conformes. Também permite filtrar por colaborador e comparar com meses anteriores."
+  },
+  "exportar": {
+    "correspondencia": "como baixar dados exportar tudo quero salvar relatório quero gerar csv baixar excel exportar processos quero fazer download inspeções baixar relatório salvar pdf exportar dados análise",
+    "significado": "Você pode exportar os dados das inspeções em CSV diretamente do histórico ou painel. Também é possível gerar relatórios em PDF com imagem e parecer pronto."
+  },
+  "login": {
+    "correspondencia": "como faço login onde faço acesso não consigo entrar como entrar plataforma login sistema como acessar sip onde digito senha tela login logar plataforma",
+    "significado": "Acesse o sistema informando seu e-mail corporativo e senha. Se ainda não tiver cadastro, peça à coordenação para liberar seu acesso."
+  },
+  "cadastro inspetor": {
+    "correspondencia": "quero me cadastrar como inspetor como registrar novo inspetor onde crio conta inspetor criar conta cadastro usuário novo login cadastro novo inspetor quero me registrar",
+    "significado": "Acesse a página *Cadastrar Novo* para criar um novo inspetor com e-mail corporativo, nome, liderança e coordenação. A senha será gerada automaticamente."
+  },
+  "mudar senha": {
+    "correspondencia": "como mudar senha quero trocar senha senha nova redefinir senha alterar senha esqueci senha como alterar senha preciso trocar senha",
+    "significado": "Para mudar sua senha, acesse a opção *Trocar Senha* no menu e informe a nova senha desejada. A senha será atualizada na base do sistema."
+  },
+  "perfil": {
+    "correspondencia": "quero ver perfil onde vejo minhas estatísticas pessoais quero saber quantas inspeções fiz onde estão dados quantidade inspeções fiz quantas foram desvio foto perfil atividade mês",
+    "significado": "Na página *Meu Perfil* você pode ver sua foto, o total de inspeções feitas no mês, quantas foram conformes ou com desvio e comparação com o mês anterior."
   }
 }
