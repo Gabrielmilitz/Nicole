@@ -1,11 +1,11 @@
 {
   "oi": {
     "correspondencia": "oi oii oie olá ola e aí fala comigo bom dia boa tarde boa noite tudo bem como vai você está aí está online",
-    "significado": "Olá! Tudo certo? Sou a Nicole, sua assistente no sistema SIP. Digite *ajuda* para conhecer os comandos disponíveis. 😉"
+    "significado": "Olá! Tudo certo? Sou a Nicole, sua assistente no sistema SIP. Digite *AJUDA* para conhecer os comandos disponíveis. 😉"
   },
   "ajuda": {
     "correspondencia": "me ajuda preciso ajuda estou perdido como funciona fazer aqui comandos disponíveis mostrar opções quais comandos como usar menu ajuda opções disponíveis não sei usar",
-    "significado": "Estas são algumas opções disponíveis na plataforma SIP:\n\n🔹 novo processo\n🔹 histórico\n🔹 painel\n🔹 exportar\n🔹 login\n🔹 cadastro inspetor\n🔹 mudar senha\n🔹 perfil\n\nDigite um dos termos para saber mais!"
+    "significado": "Estas são algumas opções disponíveis na plataforma SIP:\n\n 🔵 novo processo\n🔵histórico\n🔵painel\n🔵exportar\n 🔵login\n 🔵cadastro inspetor\n 🔵mudar senha\n🔵 perfil\n 🔵gráfico\n 🔵deletar registros\n🔵 gerenciamento de colaboradores\n🔵 assistente virtual\n\nDigite um dos termos para saber mais!"
   },
   "novo processo": {
     "correspondencia": "como registrar processo onde insiro processo quero adicionar inspeção nova quero preencher processo onde coloco dados análise novo processo iniciar processo inserir dados cadastrar processo abrir processo",
@@ -38,5 +38,21 @@
   "perfil": {
     "correspondencia": "quero ver perfil onde vejo minhas estatísticas pessoais quero saber quantas inspeções fiz onde estão dados quantidade inspeções fiz quantas foram desvio foto perfil atividade mês",
     "significado": "Na página *Meu Perfil* você pode ver sua foto, o total de inspeções feitas no mês, quantas foram conformes ou com desvio e comparação com o mês anterior."
+  },
+  "gráfico": {
+    "correspondencia": "quero ver gráfico quero visualizar dados com gráfico mostrar gráfico de inspeções gráfico de desempenho gráfico de conformidade visualizar gráfico comparativo",
+    "significado": "A funcionalidade *Gráfico* permite visualizar um resumo visual das inspeções, com destaque para conformes e desvios ao longo do tempo, por colaborador ou mês."
+  },
+  "deletar registros": {
+    "correspondencia": "como excluir processo quero deletar registro apagar processo remover dados deletar inspeção excluir entrada excluir dado remover inspeção apagar registro",
+    "significado": "Na opção *Histórico*, é possível deletar registros de inspeções. O sistema exige confirmação para garantir que nenhum dado importante seja apagado por engano."
+  },
+  "gerenciamento de colaboradores": {
+    "correspondencia": "gerenciar colaboradores adicionar colaborador novo excluir colaborador editar colaborador ver lista colaboradores controle de inspetores cadastro de equipe",
+    "significado": "A função *Gerenciamento de Colaboradores* permite que a coordenação visualize, edite e remova inspetores, garantindo controle total sobre os usuários do sistema."
+  },
+  "assistente virtual": {
+    "correspondencia": "falar com assistente conversar com nicole abrir assistente virtual como usar nicole interagir com bot ajuda automática atendimento automático",
+    "significado": "A *Assistente Virtual Nicole* está sempre pronta para ajudar. Digite qualquer dúvida na caixa de perguntas e receba instruções sobre como usar o sistema SIP."
   }
 }

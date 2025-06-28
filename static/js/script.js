@@ -1,21 +1,9 @@
 const formulario = document.getElementById("formulario");
 const chat = document.getElementById("chat");
-const nomeInput = document.getElementById("nome");
 const mensagemInput = document.getElementById("mensagem");
 
-let nome = "";
-
-formulario.addEventListener("submit", async function(e) {
+formulario.addEventListener("submit", async function (e) {
     e.preventDefault();
-
-    if (!nome) {
-        nome = nomeInput.value.trim();
-        if (nome) {
-            nomeInput.style.display = "none";
-            mensagemInput.focus();
-            return;
-        }
-    }
 
     const mensagem = mensagemInput.value.trim();
     if (!mensagem) return;
@@ -35,14 +23,15 @@ formulario.addEventListener("submit", async function(e) {
         const response = await fetch("/perguntar", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ nome: nome, mensagem: mensagem }),
+            body: JSON.stringify({ mensagem }),
         });
 
         const data = await response.json();
         clearInterval(interval);
         digitando.remove();
 
-        adicionarMensagem("nicole", data.resposta);
+        const respostaDiv = adicionarMensagem("nicole", "");
+        simularDigitacao(data.resposta, respostaDiv);
     } catch (error) {
         clearInterval(interval);
         digitando.remove();
@@ -57,4 +46,17 @@ function adicionarMensagem(tipo, conteudo) {
     chat.appendChild(div);
     chat.scrollTop = chat.scrollHeight;
     return div;
+}
+
+function simularDigitacao(texto, container, callback) {
+    let i = 0;
+    const intervalo = setInterval(() => {
+        container.innerHTML += texto.charAt(i);
+        chat.scrollTop = chat.scrollHeight;
+        i++;
+        if (i >= texto.length) {
+            clearInterval(intervalo);
+            if (callback) callback();
+        }
+    }, 25);
 }

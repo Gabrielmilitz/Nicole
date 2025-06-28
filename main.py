@@ -16,9 +16,8 @@ def perguntar():
     try:
         data = request.get_json()
         usuario = data.get("mensagem", "").strip().lower()
-        nome = data.get("nome", "Usuário")
 
-        resposta, imagem = nicole.responder_usuario(usuario, nome, processador)
+        resposta, imagem = nicole.responder_usuario(usuario, processador)
         return jsonify({"resposta": resposta, "imagem": imagem}), 200
 
     except Exception as e:

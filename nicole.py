@@ -16,33 +16,31 @@ def carregar_processador():
                 processador.update(json.load(f))
     return processador
 
-def resposta_positiva(nome):
+def resposta_positiva():
     return random.choice([
-        f"Claro, {nome}! Aqui está o que encontrei:",
-        f"Olha só, {nome}, achei isso para você:",
-        f"Certo, {nome}. Veja essa informação:"
+        "Claro! Aqui está o que encontrei:",
+        "Veja só o que achei para você:",
+        "Certo. Veja essa informação:"
     ])
 
-def resposta_negativa(nome):
+def resposta_negativa():
     return random.choice([
-        f"Hmm... ainda não sei responder isso, {nome}.",
-        f"Essa me pegou, {nome}! Mas estou sempre aprendendo!",
-        f"Não achei ainda, {nome}. Me ensina?"
+        "Hmm... ainda não sei responder isso.",
+        "Essa me pegou! Mas estou sempre aprendendo!",
+        "Não achei ainda. Quer me ensinar?"
     ])
 
-def responder_usuario(mensagem, nome, processador):
+def responder_usuario(mensagem, processador):
     mensagem = mensagem.strip().lower()
 
-    # Etapa 1: Verificação direta por tópico (chave exata)
     if mensagem in processador:
         significado = processador[mensagem].get("significado", "")
-        return f"{resposta_positiva(nome)} {significado}", None
+        return f"{resposta_positiva()} {significado}", None
 
-    # Etapa 2: Verificação por palavras no campo 'correspondencia'
     for chave, dados in processador.items():
         correspondencia = dados.get("correspondencia", "").lower().split()
         if any(palavra in mensagem for palavra in correspondencia):
             significado = dados.get("significado", "")
-            return f"{resposta_positiva(nome)} {significado}", None
+            return f"{resposta_positiva()} {significado}", None
 
-    return resposta_negativa(nome), None
+    return resposta_negativa(), None

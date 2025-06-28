@@ -1,19 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Nicole - Assistente IA</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicole – Assistente Virtual</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/nicole.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 30px 20px;
+    }
+
+    .chat-container {
+      background-color: #1e293b;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .logo-nicole {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-nicole img {
+      height: 48px;
+      margin-right: 10px;
+    }
+
+    .logo-nicole span {
+      font-size: 24px;
+      font-weight: 600;
+      background: linear-gradient(to right, #60a5fa, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    #chat {
+      flex: 1;
+      overflow-y: auto;
+      max-height: 400px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .mensagem {
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 15px;
+      max-width: 75%;
+    }
+
+    .usuario {
+      background: #eaebe9;
+      color: #0f172a;
+      align-self: flex-end;
+    }
+
+    .nicole {
+      background: #1b1a19;
+      color: white;
+      align-self: flex-start;
+    }
+
+    .formulario {
+      display: flex;
+      gap: 10px;
+    }
+
+    .formulario input {
+      flex: 1;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 14px;
+      background: #0f172a;
+      color: white;
+    }
+
+    .formulario button {
+      background: #3b82f6;
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .rodape {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #94a3b8;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <div class="header-nicole">Nicole</div>
-    <div id="chat" class="chat-container"></div>
-    <form id="formulario">
-        <input type="text" id="nome" placeholder="Digite seu nome..." required>
-        <input type="text" id="mensagem" placeholder="'Ajuda' para mais informações ou pesquise sobre algum assunto" required>
-        <button type="submit">Enviar</button>
+  <div class="chat-container">
+    <div class="logo-nicole">
+    
+      <span>Nicole</span>
+    </div>
+
+    <div id="chat"></div>
+
+    <form id="formulario" class="formulario">
+      <input type="text" id="mensagem" placeholder="Digite sua pergunta..." autocomplete="off" required>
+      <button type="submit">Enviar</button>
     </form>
-    <script src="/static/js/script.js"></script>
+  </div>
+
+  <div class="rodape">© 2025 SIP - Assistente Virtual Nicole</div>
+
+  <script src="/static/js/script.js"></script>
 </body>
 </html>
