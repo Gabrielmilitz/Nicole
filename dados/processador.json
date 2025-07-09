@@ -5,15 +5,15 @@
   },
   "ajuda": {
     "correspondencia": "me ajuda preciso ajuda estou perdido como funciona fazer aqui comandos disponíveis mostrar opções quais comandos como usar menu ajuda opções disponíveis não sei usar",
-    "significado": "Estas são algumas opções disponíveis na plataforma SIP:\n\n 🔵 novo processo\n🔵histórico\n🔵painel\n🔵exportar\n 🔵login\n 🔵cadastro inspetor\n 🔵mudar senha\n🔵 perfil\n 🔵gráfico\n 🔵deletar registros\n🔵 gerenciamento de colaboradores\n🔵 assistente virtual\n\nDigite um dos termos para saber mais!"
+    "significado": "Estas são algumas opções disponíveis na plataforma SIP:\n\n 🔵 novo processo\n🔵histórico\n🔵painel\n🔵exportar\n 🔵login\n 🔵mudar senha\n🔵 perfil\n 🔵gráfico\n 🔵deletar registros\n🔵 gerenciamento de colaboradores\n🔵 assistente virtual\n🔵Problema Email\n🔵suporte.\n\nDigite um dos termos para saber mais!"
   },
   "novo processo": {
     "correspondencia": "como registrar processo onde insiro processo quero adicionar inspeção nova quero preencher processo onde coloco dados análise novo processo iniciar processo inserir dados cadastrar processo abrir processo",
-    "significado": "Na opção *Novo Processo*, você pode registrar uma nova inspeção com dados completos, como tipo de erro, descrição, gravidade, imagem e mais. Acesse pelo menu principal após login."
+    "significado": "Na opção *Novo Processo*, você pode registrar uma nova inspeção com dados completos, como tipo de erro, descrição, gravidade, imagem e mais. Após realizada, a inspeção será automaticamente registrada no banco de dados permanentemente até que o registro seja deletado do sistema."
   },
   "histórico": {
     "correspondencia": "quero ver processos anteriores onde estão processos registrados histórico inspeções como vejo já fiz lista processos mostrar histórico ver relatórios passados registros anteriores onde está histórico",
-    "significado": "O *Histórico* mostra todos os processos registrados, permitindo filtrar por datas e exportar os dados em formato CSV ou PDF individualmente."
+    "significado": "O *Histórico* mostra todos os processos registrados, permitindo filtrar por datas e exportar os dados em formato disponível pela plataforma."
   },
   "painel": {
     "correspondencia": "onde vejo desempenho mostrar resumo geral quero ver estatísticas inspeções quero ver total processos painel controle gráficos inspeções mostrar painel desempenho geral quantidade desvios conformes",
@@ -21,15 +21,11 @@
   },
   "exportar": {
     "correspondencia": "como baixar dados exportar tudo quero salvar relatório quero gerar csv baixar excel exportar processos quero fazer download inspeções baixar relatório salvar pdf exportar dados análise",
-    "significado": "Você pode exportar os dados das inspeções em CSV diretamente do histórico ou painel. Também é possível gerar relatórios em PDF com imagem e parecer pronto."
+    "significado": "Você pode exportar os dados das inspeções diretamente do histórico. Também é possível gerar relatórios em PDF com imagem e parecer pronto."
   },
   "login": {
     "correspondencia": "como faço login onde faço acesso não consigo entrar como entrar plataforma login sistema como acessar sip onde digito senha tela login logar plataforma",
     "significado": "Acesse o sistema informando seu e-mail corporativo e senha. Se ainda não tiver cadastro, peça à coordenação para liberar seu acesso."
-  },
-  "cadastro inspetor": {
-    "correspondencia": "quero me cadastrar como inspetor como registrar novo inspetor onde crio conta inspetor criar conta cadastro usuário novo login cadastro novo inspetor quero me registrar",
-    "significado": "Acesse a página *Cadastrar Novo* para criar um novo inspetor com e-mail corporativo, nome, liderança e coordenação. A senha será gerada automaticamente."
   },
   "mudar senha": {
     "correspondencia": "como mudar senha quero trocar senha senha nova redefinir senha alterar senha esqueci senha como alterar senha preciso trocar senha",
@@ -37,7 +33,7 @@
   },
   "perfil": {
     "correspondencia": "quero ver perfil onde vejo minhas estatísticas pessoais quero saber quantas inspeções fiz onde estão dados quantidade inspeções fiz quantas foram desvio foto perfil atividade mês",
-    "significado": "Na página *Meu Perfil* você pode ver sua foto, o total de inspeções feitas no mês, quantas foram conformes ou com desvio e comparação com o mês anterior."
+    "significado": "Na página *Meu Perfil* você pode ver o total de inspeções feitas no mês, quantas foram conformes ou com desvio e comparação com o mês anterior."
   },
   "gráfico": {
     "correspondencia": "quero ver gráfico quero visualizar dados com gráfico mostrar gráfico de inspeções gráfico de desempenho gráfico de conformidade visualizar gráfico comparativo",
@@ -54,5 +50,13 @@
   "assistente virtual": {
     "correspondencia": "falar com assistente conversar com nicole abrir assistente virtual como usar nicole interagir com bot ajuda automática atendimento automático",
     "significado": "A *Assistente Virtual Nicole* está sempre pronta para ajudar. Digite qualquer dúvida na caixa de perguntas e receba instruções sobre como usar o sistema SIP."
+  },
+  "suporte": {
+    "correspondencia": "preciso entrar em contato com o suporte falar com suporte atendimento suporte suporte técnico ajuda com sistema contato suporte",
+    "significado": "Para entrar em contato com o suporte, basta direcionar um e-mail para xxxxx@meta.com.br que entraremos em contato com você!"
+  },
+  "problema email": {
+    "correspondencia": "estou com problema tento mandar email mas ele não redireciona com o parecer pronto email não abre outlook não abre email botão não funciona",
+    "significado": "Entendo... Por gentileza, verifique se o e-mail conectado é o e-mail corporativo. Caso não seja, isso pode impedir que o redirecionamento ocorra com sucesso."
   }
 }
